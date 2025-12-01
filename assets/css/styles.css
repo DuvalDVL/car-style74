@@ -1,1 +1,719 @@
+/* =========================================
+   1. Design System & Variables
+   ========================================= */
 
+:root {
+    /* Couleurs */
+    --color-bg-primary: #0A0A0A; /* Noir très foncé / Gris nuit */
+    --color-text-primary: #E5E5E5; /* Gris clair élégant */
+    --color-accent-cta: #1E3A8A; /* Bleu Nuit Profond (CTA principal) */
+    --color-accent-secondary: #FFD700; /* Or subtil pour détails (étoiles) */
+    --color-border-subtle: #1f1f1f;
+
+    /* Typographie */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+    --font-size-base: 1.125rem; /* 18px */
+
+    /* Espacements */
+    --spacing-xxs: 0.5rem;
+    --spacing-xs: 1rem;
+    --spacing-sm: 2rem;
+    --spacing-md: 4rem;
+    --spacing-lg: 6rem;
+    --spacing-xl: 8rem;
+
+    /* Transitions & Ombres */
+    --transition-fast: 0.2s ease-in-out;
+    --shadow-subtle: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   2. Reset & Base Styles
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    overflow-x: hidden;
+}
+
+/* Typographie */
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    color: var(--color-text-primary);
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 1.75rem; }
+
+/* Liens */
+a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-accent-cta);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-accent-cta);
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-accent-cta);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    transition: all var(--transition-fast);
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    color: var(--color-accent-cta);
+}
+
+/* Sections */
+section {
+    padding: var(--spacing-lg) 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: var(--spacing-xs);
+    padding-right: var(--spacing-xs);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--color-accent-cta);
+    margin: var(--spacing-xs) auto 0;
+}
+
+
+/* =========================================
+   3. Header & Navigation (Inclut Top Bar)
+   ========================================= */
+
+/* Top Bar (Barre de Contact) */
+.top-bar {
+    background-color: #000000;
+    padding: 0.5rem var(--spacing-xs);
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.top-bar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-contact, .top-bar-social {
+    display: flex;
+    gap: var(--spacing-xs);
+    align-items: center;
+}
+
+.top-bar-contact a, .top-bar-contact span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #999999;
+}
+
+.top-bar-social a {
+    color: var(--color-text-primary);
+    font-size: 1.2rem;
+}
+
+/* Sticky Header (Navbar) */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-bg-primary);
+    box-shadow: var(--shadow-subtle);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--spacing-xs);
+}
+
+.logo a {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-text-primary);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Menu Déroulant (Dropdown) */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--color-bg-primary);
+    min-width: 250px;
+    border: 1px solid var(--color-border-subtle);
+    padding: var(--spacing-xs) 0;
+    list-style: none;
+    display: none; /* Caché par défaut */
+    z-index: 1010;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem var(--spacing-xs);
+    white-space: nowrap;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--color-accent-cta);
+    color: var(--color-text-primary);
+}
+
+.nav-item:hover > .dropdown-menu {
+    display: block; /* Affiché au survol (desktop) */
+}
+
+/* Hamburger pour Mobile */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color-text-primary);
+}
+
+
+/* =========================================
+   4. Hero Section & Confiance
+   ========================================= */
+
+.hero {
+    position: relative;
+    height: 80vh; /* Moins haut pour laisser le sticky bar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-text-primary);
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Image fixe / Parallax subtil */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Overlay Noir à 30% */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    padding: var(--spacing-xs);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-xs);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.trust-badge {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.75rem var(--spacing-xs);
+    border-radius: 6px;
+    margin-top: var(--spacing-xs);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    border: 1px solid var(--color-border-subtle);
+}
+
+.stars {
+    color: var(--color-accent-secondary); /* Or */
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================================
+   5. Sections & Composants Spécifiques
+   ========================================= */
+
+/* 5.1. Bandeau "Livraison Confort Plus" (Option 1) */
+.delivery-banner {
+    background-color: var(--color-accent-cta);
+    color: var(--color-text-primary);
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+/* 5.2. Service Cards (Ligne de 4) */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.service-card {
+    background-color: #121212;
+    border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: var(--spacing-xs);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    margin: var(--spacing-xs) 0;
+    color: var(--color-accent-cta);
+}
+
+.service-card p {
+    padding: 0 var(--spacing-xs);
+    font-size: 1rem;
+    color: #BBBBBB;
+}
+
+.service-card .cta-link {
+    display: block;
+    margin-top: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--color-accent-secondary);
+}
+
+
+/* 5.3. Section Instagram Reels */
+.reels-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+
+.reel-container {
+    background-color: #121212;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--color-border-subtle);
+    padding: var(--spacing-xs);
+}
+
+/* Style de la vidéo (sera intégrée via JS/iframe) */
+.reel-video {
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* 5.4. Section Témoignages Google (avec logo GMB) */
+.testimonials-section {
+    background-color: #121212;
+    border-top: 5px solid var(--color-accent-cta);
+    padding: var(--spacing-lg) 0;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+.testimonial-card {
+    padding: var(--spacing-xs);
+    background-color: var(--color-bg-primary);
+    border-radius: 6px;
+    border: 1px solid var(--color-border-subtle);
+}
+
+.testimonial-card blockquote {
+    font-style: italic;
+    color: #BBBBBB;
+    margin-bottom: var(--spacing-xs);
+}
+
+.gmb-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: var(--spacing-xs);
+}
+
+/* Style pour le logo Google Business Profile (simple texte) */
+.gmb-logo {
+    font-weight: bold;
+    color: #4285F4; /* Bleu Google */
+}
+
+
+/* 5.5. Formulaire de Contact (2 Colonnes) */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.form-column, .info-column {
+    padding: var(--spacing-xs);
+    background-color: #121212;
+    border-radius: 8px;
+    border: 1px solid var(--color-border-subtle);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-xs);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border-subtle);
+    color: var(--color-text-primary);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.info-column h3 {
+    color: var(--color-accent-cta);
+    margin-bottom: var(--spacing-xs);
+}
+
+.contact-info p {
+    margin-bottom: var(--spacing-xxs);
+    color: #BBBBBB;
+}
+
+.map-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    border: 1px solid var(--color-border-subtle);
+    margin-top: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    /* Remplacer par l'iframe Google Maps réel */
+}
+
+
+/* 5.6. Cartes Prestations/Tarifs (Future Pages Services) */
+.price-card {
+    background-color: var(--color-bg-primary);
+    border: 2px solid var(--color-accent-secondary);
+    border-radius: 8px;
+    padding: var(--spacing-xs);
+    text-align: center;
+    transition: all var(--transition-fast);
+}
+
+.price-card:hover {
+    box-shadow: 0 0 20px rgba(30, 58, 138, 0.5); /* Ombre légère de la couleur accent */
+}
+
+
+/* =========================================
+   6. Footer (Design Provisoire)
+   ========================================= */
+
+footer {
+    background-color: #000000;
+    color: #999999;
+    padding: var(--spacing-md) var(--spacing-xs) 1rem;
+    border-top: 1px solid var(--color-border-subtle);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+
+.footer-col h4 {
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: var(--spacing-xxs);
+}
+
+.footer-col a {
+    color: #999999;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-xs);
+    border-top: 1px solid var(--color-border-subtle);
+    font-size: 0.9rem;
+}
+
+
+/* =========================================
+   7. Responsive Design (Mobile-First)
+   ========================================= */
+
+/* Mobile (jusqu'à 768px) */
+@media (max-width: 768px) {
+    
+    /* Général */
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    section { padding: var(--spacing-md) var(--spacing-xs); }
+    
+    /* Header */
+    .top-bar { display: none; } /* On cache la top bar sur mobile */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--color-bg-primary);
+        border-top: 1px solid var(--color-border-subtle);
+        padding: var(--spacing-xs) 0;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-item:hover > .dropdown-menu, .nav-item.active > .dropdown-menu {
+        position: static;
+        border: none;
+        box-shadow: none;
+        background-color: #1a1a1a;
+        padding-left: var(--spacing-xs);
+    }
+    .dropdown-menu {
+        display: none; /* Masqué par défaut sur mobile, ouvert par JS */
+    }
+    
+    /* Hero */
+    .hero { height: 60vh; }
+    .hero h1 { font-size: 3rem; }
+    
+    /* Grilles */
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+        gap: var(--spacing-xs);
+    }
+    
+    .reels-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+        gap: var(--spacing-xs);
+    }
+    
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    }
+    
+}
+
+/* Tablette (jusqu'à 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr); /* Ligne de 2 */
+    }
+    .reels-grid {
+        grid-template-columns: repeat(3, 1fr); /* Ligne de 3 */
+    }
+}
+
+
+/* =========================================
+   8. Click-to-Call (Sticky Mobile)
+   ========================================= */
+
+#click-to-call-btn {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #38C172; /* Couleur Téléphone */
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+}
+
+@media (max-width: 768px) {
+    #click-to-call-btn {
+        display: block; /* Affiché sur mobile */
+    }
+}
+
+/* =========================================
+   9. Lightbox (Galerie)
+   ========================================= */
+.lightbox {
+    display: none; /* Masqué par défaut */
+    position: fixed;
+    z-index: 10001;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
