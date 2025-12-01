@@ -63,7 +63,8 @@ h1, h2, h3, h4 {
 
 /* Le texte dans les sections sombres sera inversé */
 .hero h1, .hero p, .delivery-banner, 
-header, .top-bar, footer {
+header, .top-bar, footer, 
+.testimonials-section h2, .testimonials-section h3 {
     color: var(--color-text-light); 
 }
 
@@ -82,7 +83,6 @@ a:hover {
     color: var(--color-accent-cta);
 }
 
-/* CTA Button reste le même */
 .cta-button {
     display: inline-block;
     padding: 0.75rem 2rem;
@@ -101,7 +101,7 @@ a:hover {
     color: var(--color-accent-cta);
 }
 
-/* Sections de contenu */
+/* Sections */
 section {
     padding: var(--spacing-lg) 0;
     max-width: 1200px;
@@ -110,13 +110,13 @@ section {
     padding-right: var(--spacing-xs);
 }
 
-/* Style de titre inchangé */
 .section-title {
     text-align: center;
     margin-bottom: var(--spacing-md);
     position: relative;
     color: var(--color-text-dark);
 }
+
 .section-title::after {
     content: '';
     display: block;
@@ -138,7 +138,32 @@ section {
     font-size: 0.9rem;
     border-bottom: 1px solid var(--color-border-dark);
 }
-/* ... styles top-bar-contact et top-bar-social inchangés, ils utilisent var(--color-text-primary) */
+
+.top-bar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-contact, .top-bar-social {
+    display: flex;
+    gap: var(--spacing-xs);
+    align-items: center;
+}
+
+.top-bar-contact a, .top-bar-contact span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #999999;
+}
+
+.top-bar-social a {
+    color: var(--color-text-light); /* Clair */
+    font-size: 1.2rem;
+}
 
 /* Sticky Header (Navbar) */
 header {
@@ -149,20 +174,78 @@ header {
     box-shadow: var(--shadow-subtle);
 }
 
-.logo a {
-    color: var(--color-text-light); /* Logo clair sur fond noir */
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--spacing-xs);
 }
 
-/* ... styles nav-menu inchangés ... */
+.logo a {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--color-text-light); /* Clair */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-text-light); /* Clair */
+}
 
 /* Menu Déroulant (Dropdown) */
 .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
     background-color: var(--color-bg-dark); /* Noir */
+    min-width: 250px;
     border: 1px solid var(--color-border-dark);
+    padding: var(--spacing-xs) 0;
+    list-style: none;
+    display: none;
+    z-index: 1010;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
+
 .dropdown-menu a {
-    color: var(--color-text-light); /* Texte clair dans le menu déroulant */
+    display: block;
+    padding: 0.75rem var(--spacing-xs);
+    white-space: nowrap;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+    color: var(--color-text-light); /* Clair */
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--color-accent-cta);
+    color: var(--color-text-light);
+}
+
+.nav-item:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Hamburger pour Mobile */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--color-text-light); /* Clair */
 }
 
 
@@ -171,78 +254,219 @@ header {
    ========================================= */
 
 .hero {
-    /* ... styles hero inchangés ... */
-    color: var(--color-text-light); /* Texte clair dans la hero */
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-text-light);
+    overflow: hidden;
 }
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 .hero-overlay {
-    background-color: rgba(0, 0, 0, 0.4); /* Overlay Noir */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    max-width: 800px;
+    padding: var(--spacing-xs);
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-xs);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: var(--color-text-light); /* Clair */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.trust-badge {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.75rem var(--spacing-xs);
+    border-radius: 6px;
+    margin-top: var(--spacing-xs);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    border: 1px solid var(--color-border-dark);
+    color: var(--color-text-light);
+}
+
+.stars {
+    color: var(--color-accent-secondary);
+    letter-spacing: 0.1em;
 }
 
 
 /* =========================================
-   5. Sections de Contenu (Claires)
+   5. Sections & Composants Spécifiques (Adaptés au fond CLAIR)
    ========================================= */
 
 /* 5.1. Bandeau "Livraison Confort Plus" (Sombre) */
 .delivery-banner {
     background-color: var(--color-accent-cta);
     color: var(--color-text-light);
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 
-/* 5.2. Service Cards (Ligne de 4) - Cartes claires avec accents sombres */
+/* 5.2. Service Cards (Ligne de 4) - Cartes claires */
 .service-grid {
-    /* ... inchangé ... */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
 }
+
 .service-card {
-    background-color: var(--color-bg-light); /* Fond de carte blanc */
+    background-color: var(--color-bg-light); /* Blanc */
     border: 1px solid var(--color-border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding-bottom: var(--spacing-xs);
+    color: var(--color-text-dark);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Légère ombre */
-    color: var(--color-text-dark); /* Texte sombre */
 }
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Ombre plus visible au survol */
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 .service-card h3 {
+    margin: var(--spacing-xs) 0;
     color: var(--color-accent-cta);
 }
+
 .service-card p {
+    padding: 0 var(--spacing-xs);
+    font-size: 1rem;
     color: var(--color-text-dark);
 }
 
+.service-card .cta-link {
+    display: block;
+    margin-top: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--color-accent-secondary);
+}
 
-/* 5.4. Section Témoignages Google (Sombre, comme un bloc de confiance) */
+
+/* 5.3. Section Instagram Reels (Clair) */
+.reels-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+
+.reel-container {
+    background-color: #F0F0F0; /* Très léger fond grisé */
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--color-border-subtle);
+    padding: var(--spacing-xs);
+}
+
+
+/* 5.4. Section Témoignages Google (Sombre) */
 .testimonials-section {
     background-color: var(--color-bg-dark); /* Reste sombre pour le contraste */
     border-top: 5px solid var(--color-accent-cta);
-    color: var(--color-text-light);
+    padding: var(--spacing-lg) 0;
 }
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
 .testimonial-card {
-    background-color: #1a1a1a; /* Plus clair que le fond du body, mais foncé */
+    padding: var(--spacing-xs);
+    background-color: #1a1a1a; /* Gris foncé */
+    border-radius: 6px;
     border: 1px solid var(--color-border-dark);
     color: var(--color-text-light);
 }
+
 .testimonial-card blockquote {
+    font-style: italic;
     color: #CCCCCC;
+    margin-bottom: var(--spacing-xs);
 }
-.testimonials-section .section-title {
-    color: var(--color-text-light); /* Titre clair dans la section sombre */
+
+.gmb-link {
+    color: var(--color-text-light);
 }
 
 
-/* 5.5. Formulaire de Contact (2 Colonnes) - Arrière-plan clair pour cette section */
+/* 5.5. Formulaire de Contact (2 Colonnes) - Arrière-plan clair pour les colonnes */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
 .form-column, .info-column {
+    padding: var(--spacing-sm);
     background-color: #F8F8F8; /* Gris très clair pour le fond des colonnes */
+    border-radius: 8px;
     border: 1px solid var(--color-border-subtle);
     color: var(--color-text-dark);
 }
+
 .form-group label {
     color: var(--color-text-dark);
 }
+
 .form-group input, .form-group textarea, .form-group select {
     background-color: var(--color-bg-light); /* Blanc pur pour les champs */
     border: 1px solid var(--color-border-subtle);
     color: var(--color-text-dark);
+    /* ... reste inchangé ... */
 }
 
-/* ... Le reste des styles reste inchangé ou s'adapte automatiquement ... */
+/* ... Le reste des styles de contact inchangé ... */
 
 
 /* =========================================
@@ -252,17 +476,37 @@ header {
 footer {
     background-color: var(--color-bg-dark); /* Noir */
     color: #999999;
+    padding: var(--spacing-md) var(--spacing-xs) 1rem;
     border-top: 1px solid var(--color-border-dark);
 }
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+
 .footer-col h4 {
     color: var(--color-text-light);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.25rem;
+    text-transform: uppercase;
 }
+
 .footer-col a {
     color: #999999;
 }
+
 .footer-bottom {
+    text-align: center;
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-xs);
     border-top: 1px solid var(--color-border-dark);
+    font-size: 0.9rem;
 }
+
 
 /* =========================================
    7. Responsive Design (Mobile-First)
