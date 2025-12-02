@@ -1,7 +1,7 @@
 /* ================================================
    CAR STYLE 74 - JAVASCRIPT (CORRIGÉ)
    Fonctionnalités : Header/Footer dynamiques, Menu, 
-   Lightbox, Reels, Formulaire, Animations
+   Lightbox, Reels, Formulaire, Animations, Langue
    ================================================ */
 
 // ===== CONFIGURATION =====
@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', async function() {
     
     // Initialiser les fonctionnalités du header après chargement
     initHeader();
+    initLanguageSelector();
+    initStickyLanguageButton();
   } catch (error) {
     console.error('Erreur chargement header:', error);
   }
@@ -73,6 +75,114 @@ function initHeader() {
   });
 }
 
+// ===== SÉLECTEUR DE LANGUE (DESKTOP) =====
+function initLanguageSelector() {
+  const selector = document.querySelector('.language-selector.desktop-only');
+  if (!selector) return;
+  
+  const toggle = selector.querySelector('.language-toggle');
+  const dropdown = selector.querySelector('.language-dropdown');
+  const options = selector.querySelectorAll('.language-option');
+  const currentLangSpan = selector.querySelector('.current-language');
+  
+  // Ouvrir/fermer au clic
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    selector.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+  
+  // Changer la langue
+  options.forEach(option => {
+    option.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const lang = option.dataset.lang;
+      
+      // Retirer la classe active de toutes les options
+      options.forEach(opt => opt.classList.remove('active'));
+      // Ajouter la classe active à l'option sélectionnée
+      option.classList.add('active');
+      
+      // Mettre à jour l'affichage
+      currentLangSpan.textContent = lang.toUpperCase();
+      
+      // Fermer le dropdown
+      selector.classList.remove('active');
+      toggle.classList.remove('active');
+      
+      // Changer la langue (fonction à implémenter)
+      changeLanguage(lang);
+    });
+  });
+  
+  // Fermer au clic en dehors
+  document.addEventListener('click', (e) => {
+    if (!selector.contains(e.target)) {
+      selector.classList.remove('active');
+      toggle.classList.remove('active');
+    }
+  });
+}
+
+// ===== BOUTON STICKY LANGUE (MOBILE) =====
+function initStickyLanguageButton() {
+  const stickyButton = document.querySelector('.sticky-language-button');
+  if (!stickyButton) return;
+  
+  const toggle = stickyButton.querySelector('.sticky-lang-toggle');
+  const menu = stickyButton.querySelector('.sticky-lang-menu');
+  const options = stickyButton.querySelectorAll('.sticky-lang-option');
+  const currentFlag = stickyButton.querySelector('.current-flag');
+  
+  // Ouvrir/fermer au clic
+  toggle.addEventListener('click', (e) => {
+    e.stopPropagation();
+    stickyButton.classList.toggle('active');
+  });
+  
+  // Changer la langue
+  options.forEach(option => {
+    option.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const lang = option.dataset.lang;
+      const flag = option.querySelector('.language-flag').textContent;
+      
+      // Retirer la classe active de toutes les options
+      options.forEach(opt => opt.classList.remove('active'));
+      // Ajouter la classe active à l'option sélectionnée
+      option.classList.add('active');
+      
+      // Mettre à jour le drapeau affiché
+      currentFlag.textContent = flag;
+      
+      // Fermer le menu
+      stickyButton.classList.remove('active');
+      
+      // Changer la langue
+      changeLanguage(lang);
+    });
+  });
+  
+  // Fermer au clic en dehors
+  document.addEventListener('click', (e) => {
+    if (!stickyButton.contains(e.target)) {
+      stickyButton.classList.remove('active');
+    }
+  });
+}
+
+// ===== CHANGEMENT DE LANGUE =====
+function changeLanguage(lang) {
+  console.log(`Changement de langue vers: ${lang}`);
+  // TODO: Implémenter le système de traduction
+  // Pour l'instant, juste un log pour confirmer que ça fonctionne
+  
+  // Exemple d'implémentation future:
+  // - Charger un fichier JSON avec les traductions
+  // - Parcourir tous les éléments [data-translate]
+  // - Remplacer le texte par la traduction correspondante
+}
+
 // ===== MENU MOBILE =====
 function initMobileMenu() {
   const toggle = document.querySelector('.mobile-menu-toggle');
@@ -87,10 +197,24 @@ function initMobileMenu() {
     body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
   });
   
-  // Fermer au clic sur un lien
-  const navLinks = nav.querySelectorAll('a');
+  // Fermer au clic sur un lien SANS dropdown
+  const navLinks = nav.querySelectorAll('.nav-link');
   navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (e) => {
+      // Ne fermer que si ce n'est pas un lien avec dropdown
+      const parentItem = link.closest('.nav-item');
+      if (window.innerWidth <= 1024 && !parentItem.classList.contains('has-dropdown')) {
+        toggle.classList.remove('active');
+        nav.classList.remove('active');
+        body.style.overflow = '';
+      }
+    });
+  });
+  
+  // Fermer au clic sur un item de dropdown
+  const dropdownItems = nav.querySelectorAll('.dropdown-item');
+  dropdownItems.forEach(item => {
+    item.addEventListener('click', () => {
       if (window.innerWidth <= 1024) {
         toggle.classList.remove('active');
         nav.classList.remove('active');
@@ -125,6 +249,8 @@ function initDropdownMenus() {
       const navLink = item.querySelector('.nav-link');
       navLink.addEventListener('click', (e) => {
         e.preventDefault();
+        e.stopPropagation(); // Empêcher la propagation pour ne pas fermer le menu
+        
         item.classList.toggle('active');
         
         // Fermer les autres menus
@@ -138,11 +264,11 @@ function initDropdownMenus() {
   });
   
   // Gérer le responsive
-  window.addEventListener('resize', () => {
+  window.addEventListener('resize', debounce(() => {
     if (window.innerWidth > 1024) {
       navItems.forEach(item => item.classList.remove('active'));
     }
-  });
+  }, 250));
 }
 
 // ===== SMOOTH SCROLL =====
