@@ -1180,6 +1180,7 @@ section {
   height: 100%;
   object-fit: cover;
   display: block;
+  background: #000; /* Fallback si pas de poster */
 }
 
 .reel-play-overlay {
@@ -1257,7 +1258,9 @@ section {
   z-index: 10;
   opacity: 0;
   transform: translateY(10px);
-  display: none; /* Masqué par défaut Instagram */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .reel-card:hover .reel-instagram-link {
