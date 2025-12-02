@@ -42,50 +42,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   initFormspree();
   initLazyLoading();
   initAnimationsOnScroll();
-   // ===== GESTION DES REELS VIDÉOS =====
-function initReels() {
-  const isMobile = window.innerWidth <= 768;
-  const reelCards = document.querySelectorAll('.reel-card');
-  let observer = null;
-  
-  reelCards.forEach(card => {
-    const video = card.querySelector('.reel-video');
-    if (!video) return;
-    
-    if (isMobile) {
-      // Mobile : lecture automatique au scroll
-      if (!observer) {
-        observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            const vid = entry.target.querySelector('.reel-video');
-            const cardEl = entry.target;
-            
-            if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-              vid.play().catch(err => console.log('Erreur lecture:', err));
-              cardEl.classList.add('playing');
-            } else {
-              vid.pause();
-              cardEl.classList.remove('playing');
-            }
-          });
-        }, { threshold: [0, 0.5, 1] });
-      }
-      observer.observe(card);
-    } else {
-      // Desktop : lecture au survol
-      card.addEventListener('mouseenter', () => {
-        video.play().catch(err => console.log('Erreur lecture:', err));
-        card.classList.add('playing');
-      });
-      
-      card.addEventListener('mouseleave', () => {
-        video.pause();
-        video.currentTime = 0;
-        card.classList.remove('playing');
-      });
-    }
-  });
-}
+  initReels(); // APPELER ICI
 });
 
 // ===== INITIALISATION HEADER =====
@@ -521,6 +478,69 @@ function initAnimationsOnScroll() {
     
     animatedElements.forEach(el => animationObserver.observe(el));
   }
+}
+
+// ===== GESTION DES REELS VIDÉOS =====
+function initReels() {
+  const isMobile = window.innerWidth <= 768;
+  const reelCards = document.querySelectorAll('.reel-card');
+  
+  console.log(`🎬 Init Reels - ${reelCards.length} vidéos trouvées - Mode: ${isMobile ? 'MOBILE' : 'DESKTOP'}`);
+  
+  if (reelCards.length === 0) {
+    console.warn('⚠️ Aucune carte reel trouvée !');
+    return;
+  }
+  
+  let observer = null;
+  
+  reelCards.forEach((card, index) => {
+    const video = card.querySelector('.reel-video');
+    
+    if (!video) {
+      console.warn(`⚠️ Pas de vidéo trouvée pour la carte ${index + 1}`);
+      return;
+    }
+    
+    console.log(`✅ Vidéo ${index + 1} trouvée:`, video.querySelector('source')?.src);
+    
+    if (isMobile) {
+      // Mobile : lecture automatique au scroll
+      if (!observer) {
+        observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const vid = entry.target.querySelector('.reel-video');
+            const cardEl = entry.target;
+            
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+              console.log('▶️ Lecture vidéo mobile');
+              vid.play().catch(err => console.log('Erreur lecture:', err));
+              cardEl.classList.add('playing');
+            } else {
+              console.log('⏸️ Pause vidéo mobile');
+              vid.pause();
+              cardEl.classList.remove('playing');
+            }
+          });
+        }, { threshold: [0, 0.5, 1] });
+      }
+      observer.observe(card);
+    } else {
+      // Desktop : lecture au survol
+      card.addEventListener('mouseenter', () => {
+        console.log('▶️ Lecture vidéo desktop (survol)');
+        video.play().catch(err => console.log('Erreur lecture:', err));
+        card.classList.add('playing');
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        console.log('⏸️ Pause vidéo desktop');
+        video.pause();
+        video.currentTime = 0;
+        card.classList.remove('playing');
+      });
+    }
+  });
 }
 
 // ===== UTILITAIRE : Débounce =====
