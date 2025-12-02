@@ -1,5 +1,5 @@
 /* ================================================
-   CAR STYLE 74 - JAVASCRIPT
+   CAR STYLE 74 - JAVASCRIPT (CORRIGÉ)
    Fonctionnalités : Header/Footer dynamiques, Menu, 
    Lightbox, Reels, Formulaire, Animations
    ================================================ */
@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', async function() {
   initSmoothScroll();
   initScrollEffects();
   initLightbox();
-  initReelsVideos();
   initFormspree();
   initLazyLoading();
   initAnimationsOnScroll();
@@ -115,7 +114,7 @@ function initMobileMenu() {
 
 // ===== MENUS DÉROULANTS =====
 function initDropdownMenus() {
-  const navItems = document.querySelectorAll('.nav-item');
+  const navItems = document.querySelectorAll('.nav-item.has-dropdown');
   
   navItems.forEach(item => {
     const dropdownMenu = item.querySelector('.dropdown-menu');
@@ -125,17 +124,15 @@ function initDropdownMenus() {
     if (window.innerWidth <= 1024) {
       const navLink = item.querySelector('.nav-link');
       navLink.addEventListener('click', (e) => {
-        if (item.querySelector('.dropdown-menu')) {
-          e.preventDefault();
-          item.classList.toggle('active');
-          
-          // Fermer les autres menus
-          navItems.forEach(otherItem => {
-            if (otherItem !== item) {
-              otherItem.classList.remove('active');
-            }
-          });
-        }
+        e.preventDefault();
+        item.classList.toggle('active');
+        
+        // Fermer les autres menus
+        navItems.forEach(otherItem => {
+          if (otherItem !== item) {
+            otherItem.classList.remove('active');
+          }
+        });
       });
     }
   });
@@ -224,38 +221,6 @@ function initLightbox() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && lightbox.classList.contains('active')) {
       closeLightbox();
-    }
-  });
-}
-
-// ===== REELS INSTAGRAM (Lecture au survol) =====
-function initReelsVideos() {
-  const reelCards = document.querySelectorAll('.reel-card');
-  
-  reelCards.forEach(card => {
-    const video = card.querySelector('video');
-    if (!video) return;
-    
-    // Lecture au survol
-    card.addEventListener('mouseenter', () => {
-      video.play().catch(err => console.log('Erreur lecture vidéo:', err));
-    });
-    
-    // Pause quand on quitte
-    card.addEventListener('mouseleave', () => {
-      video.pause();
-      video.currentTime = 0;
-    });
-    
-    // Sur mobile : clic pour lire/pause
-    if (window.innerWidth <= 768) {
-      card.addEventListener('click', () => {
-        if (video.paused) {
-          video.play();
-        } else {
-          video.pause();
-        }
-      });
     }
   });
 }
