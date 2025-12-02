@@ -1115,10 +1115,12 @@ section {
   }
 }
 
-/* ===== SECTION REELS INSTAGRAM (CORRIGÉE - LECTURE AU SURVOL) ===== */
+/* ===== SECTION REELS INSTAGRAM ===== */
 .reels-section {
   background: #f9fafb;
   padding: var(--spacing-3xl) 0;
+  position: relative;
+  overflow: visible;
 }
 
 .reels-section .section-title h2 {
@@ -1150,39 +1152,16 @@ section {
   border-color: var(--color-blue-primary);
 }
 
-/* Masquer les éléments Instagram */
-.reel-card iframe {
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
-  pointer-events: none;
-}
-
-.reel-card .instagram-media,
-.reel-card blockquote {
-  width: 100% !important;
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-  background: transparent !important;
-}
-
-/* Masquer textes Instagram */
-.reel-card a,
-.reel-card .instagram-media a {
-  display: none !important;
-}
-
-/* Vidéo native pour lecture au survol */
+/* Vidéo */
 .reel-video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  background: #000; /* Fallback si pas de poster */
+  background: #000;
 }
 
+/* Overlay play */
 .reel-play-overlay {
   position: absolute;
   top: 0;
@@ -1196,9 +1175,9 @@ section {
   opacity: 1;
   transition: opacity var(--transition-medium);
   pointer-events: none;
+  z-index: 5;
 }
 
-.reel-card:hover .reel-play-overlay,
 .reel-card.playing .reel-play-overlay {
   opacity: 0;
 }
@@ -1225,35 +1204,18 @@ section {
   background: var(--color-blue-primary);
 }
 
-@media (max-width: 1024px) {
-  .reels-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .reels-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  /* Sur mobile : lecture automatique à l'affichage */
-  .reel-card {
-    cursor: default;
-  }
-   
-  /* ===== LIEN INSTAGRAM SUR REEL ===== */
+/* Lien Instagram */
 .reel-instagram-link {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.95);
   padding: 0.5rem 1rem;
   border-radius: 50px;
   color: #E1306C;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: all 0.3s ease;
   z-index: 10;
   opacity: 0;
@@ -1274,19 +1236,29 @@ section {
   color: #E1306C;
 }
 
-/* Style du SVG dans le bouton play */
-.reel-play-icon svg {
-  width: 24px;
-  height: 24px;
-  fill: white;
+/* Responsive */
+@media (max-width: 1024px) {
+  .reels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 640px) {
+  .reels-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .reel-card {
+    cursor: default;
+  }
+  
   .reel-instagram-link {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 /* ================================================
    CAR STYLE 74 - DESIGN SYSTEM
    Partie 4/4 : Témoignages, Galerie, Contact & Footer (CORRIGÉ)
