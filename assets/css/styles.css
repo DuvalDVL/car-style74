@@ -74,8 +74,8 @@ html {
 
 body {
   font-family: var(--font-primary);
-  background-color: var(--color-black);
-  color: var(--color-gray-light);
+  background-color: #ffffff;
+  color: #1f2937;
   line-height: 1.6;
   font-size: 16px;
   overflow-x: hidden;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--color-white);
+  color: #0a0a0a;
   margin-bottom: var(--spacing-md);
 }
 
@@ -110,7 +110,7 @@ h4 {
 
 p {
   margin-bottom: var(--spacing-sm);
-  color: var(--color-gray-light);
+  color: #4b5563;
 }
 
 a {
@@ -229,7 +229,7 @@ section {
 .mt-xl { margin-top: var(--spacing-xl); }
 /* ================================================
    CAR STYLE 74 - DESIGN SYSTEM
-   Partie 2/4 : Header & Navigation
+   Partie 2/4 : Header & Navigation (CORRIGÉ)
    ================================================ */
 
 /* ===== BANDEAU LIVRAISON CONFORT PLUS ===== */
@@ -342,11 +342,10 @@ section {
   padding: 1rem 0;
 }
 
-/* ===== LOGO ===== */
+/* ===== LOGO (IMAGE UNIQUEMENT) ===== */
 .logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
 .logo img {
@@ -357,14 +356,6 @@ section {
 
 .logo:hover img {
   transform: scale(1.05);
-}
-
-.logo-text {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-white);
-  letter-spacing: 0.05em;
 }
 
 /* ===== NAVIGATION ===== */
@@ -388,6 +379,7 @@ section {
   font-size: 0.95rem;
   transition: all var(--transition-fast);
   border-radius: var(--radius-sm);
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -409,12 +401,11 @@ section {
   transform: rotate(180deg);
 }
 
-/* ===== MENU DÉROULANT ===== */
+/* ===== MENU DÉROULANT (LARGEUR ADAPTATIVE) ===== */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 280px;
   background: rgba(20, 20, 20, 0.98);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(74, 144, 226, 0.2);
@@ -426,6 +417,23 @@ section {
   transition: all var(--transition-medium);
   box-shadow: var(--shadow-xl);
   z-index: 1000;
+  min-width: 100%;
+  width: max-content;
+}
+
+/* Menu déroulant 1 élément */
+.dropdown-single {
+  min-width: 220px;
+}
+
+/* Menu déroulant 2 éléments */
+.dropdown-double {
+  min-width: 280px;
+}
+
+/* Menu déroulant 3 éléments */
+.dropdown-triple {
+  min-width: 300px;
 }
 
 .nav-item:hover .dropdown-menu {
@@ -441,6 +449,7 @@ section {
   font-size: 0.95rem;
   transition: all var(--transition-fast);
   border-left: 3px solid transparent;
+  white-space: nowrap;
 }
 
 .dropdown-item:hover {
@@ -548,6 +557,8 @@ section {
     border-radius: 0;
     background: rgba(74, 144, 226, 0.05);
     margin-top: 0;
+    min-width: auto;
+    width: 100%;
   }
   
   .nav-item.active .dropdown-menu {
@@ -594,14 +605,8 @@ section {
 }
 /* ================================================
    CAR STYLE 74 - DESIGN SYSTEM
-   Partie 3/4 : Hero, Services & Sections
+   Partie 3/4 : Hero & Sections (CORRIGÉ)
    ================================================ */
-
-/* ===== BODY LIGHT BACKGROUND ===== */
-body {
-  background-color: #ffffff;
-  color: #1f2937;
-}
 
 /* ===== HERO SECTION ===== */
 .hero-section {
@@ -684,6 +689,7 @@ body {
   margin-bottom: 1.5rem;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   animation: fadeInUp 1s ease 0.2s both;
+  color: var(--color-white);
 }
 
 .hero-subtitle {
@@ -740,6 +746,7 @@ body {
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
+  color: #0a0a0a;
 }
 
 .section-title h2::after {
@@ -779,6 +786,8 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card::before {
@@ -842,10 +851,12 @@ body {
   color: var(--color-gray-medium);
   line-height: 1.6;
   margin-bottom: 1.5rem;
+  flex-grow: 1;
 }
 
 .service-card .btn {
   margin-top: auto;
+  width: 100%;
 }
 
 /* ===== RESPONSIVE SERVICES GRID ===== */
@@ -887,6 +898,10 @@ body {
   padding: var(--spacing-3xl) 0;
 }
 
+.reels-section .section-title h2 {
+  color: #0a0a0a;
+}
+
 .reels-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -899,10 +914,11 @@ body {
   aspect-ratio: 9/16;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  background: var(--color-black);
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.95), rgba(25, 25, 25, 0.95));
   box-shadow: var(--shadow-lg);
   cursor: pointer;
   transition: transform var(--transition-medium);
+  border: 1px solid rgba(74, 144, 226, 0.1);
 }
 
 .reel-card:hover {
@@ -910,10 +926,11 @@ body {
   box-shadow: var(--shadow-xl);
 }
 
-.reel-card video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.reel-card .instagram-media {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  border: none !important;
 }
 
 .reel-overlay {
@@ -928,35 +945,11 @@ body {
   padding: 1rem;
   opacity: 0;
   transition: opacity var(--transition-medium);
+  pointer-events: none;
 }
 
 .reel-card:hover .reel-overlay {
   opacity: 1;
-}
-
-.reel-play-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  background: rgba(74, 144, 226, 0.9);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition-medium);
-}
-
-.reel-card:hover .reel-play-icon {
-  opacity: 0;
-}
-
-.reel-play-icon i {
-  color: white;
-  font-size: 1.5rem;
-  margin-left: 3px;
 }
 
 @media (max-width: 1024px) {
@@ -973,13 +966,17 @@ body {
 }
 /* ================================================
    CAR STYLE 74 - DESIGN SYSTEM
-   Partie 4/4 : Témoignages, Galerie, Contact & Footer
+   Partie 4/4 : Témoignages, Galerie, Contact & Footer (CORRIGÉ)
    ================================================ */
 
 /* ===== SECTION TÉMOIGNAGES ===== */
 .testimonials-section {
   background: #ffffff;
   position: relative;
+}
+
+.testimonials-section .section-title h2 {
+  color: #0a0a0a;
 }
 
 .testimonials-header {
@@ -1064,6 +1061,7 @@ body {
   font-weight: 700;
   color: white;
   font-size: 1.25rem;
+  flex-shrink: 0;
 }
 
 .testimonial-author h4 {
@@ -1104,6 +1102,10 @@ body {
 /* ===== SECTION GALERIE ===== */
 .gallery-section {
   background: #f9fafb;
+}
+
+.gallery-section .section-title h2 {
+  color: #0a0a0a;
 }
 
 .gallery-grid {
@@ -1219,6 +1221,10 @@ body {
   background: #ffffff;
 }
 
+.contact-section .section-title h2 {
+  color: #0a0a0a;
+}
+
 .contact-container {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -1258,6 +1264,11 @@ body {
   font-family: inherit;
   font-size: 1rem;
   transition: all var(--transition-fast);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .form-group input:focus,
