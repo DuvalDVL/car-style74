@@ -1240,6 +1240,49 @@ section {
   .reel-card {
     cursor: default;
   }
+   
+  /* ===== LIEN INSTAGRAM SUR REEL ===== */
+.reel-instagram-link {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: #E1306C;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(10px);
+  display: none; /* Masqué par défaut Instagram */
+}
+
+.reel-card:hover .reel-instagram-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reel-instagram-link:hover {
+  background: white;
+  transform: scale(1.05) translateY(0);
+  color: #E1306C;
+}
+
+/* Style du SVG dans le bouton play */
+.reel-play-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+@media (max-width: 640px) {
+  .reel-instagram-link {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /* ================================================
    CAR STYLE 74 - DESIGN SYSTEM
