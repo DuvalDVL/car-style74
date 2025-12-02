@@ -1,11 +1,14 @@
 <!-- Bandeau Livraison Confort Plus -->
 <div class="delivery-banner">
   <div class="container">
-    🚗 <strong>Livraison Confort Plus</strong> <span>|</span> Récupération et livraison de votre véhicule à domicile ou au travail
+    <span class="delivery-banner-icon">🚗</span>
+    <strong data-translate="delivery-title">Livraison Confort Plus</strong>
+    <span>|</span>
+    <span data-translate="delivery-text">Récupération et livraison de votre véhicule à domicile ou au travail</span>
   </div>
 </div>
 
-<!-- Top Bar (Contact + Réseaux sociaux) -->
+<!-- Top Bar (Contact + Réseaux + Langue) -->
 <div class="top-bar">
   <div class="container">
     <div class="top-bar-content">
@@ -18,13 +21,14 @@
         </a>
         
         <!-- Adresse -->
-        <a href="https://maps.app.goo.gl/CdN0hXbDBrjFYkdDN" target="_blank" rel="noopener" class="top-bar-item">
+        <a href="https://share.google/OK0KN1CwsdazNd3yb" target="_blank" rel="noopener" class="top-bar-item">
           <i class="fas fa-map-marker-alt"></i>
           <span>685 Route de Plan Mouillé, 74920 Combloux</span>
         </a>
       </div>
       
       <div class="top-bar-right">
+        <!-- Réseaux sociaux -->
         <div class="social-links">
           <a href="https://www.instagram.com/car_style74/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
             <i class="fab fa-instagram"></i>
@@ -35,6 +39,33 @@
           <a href="https://www.linkedin.com/company/car-style/posts/?feedView=all" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
             <i class="fab fa-linkedin-in"></i>
           </a>
+        </div>
+        
+        <!-- Sélecteur de langue (Desktop) -->
+        <div class="language-selector">
+          <div class="language-toggle">
+            <i class="fas fa-globe"></i>
+            <span class="current-language">FR</span>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="language-dropdown">
+            <div class="language-option active" data-lang="fr">
+              <span class="language-flag">🇫🇷</span>
+              <span>Français</span>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span class="language-flag">🇬🇧</span>
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="de">
+              <span class="language-flag">🇩🇪</span>
+              <span>Deutsch</span>
+            </div>
+            <div class="language-option" data-lang="it">
+              <span class="language-flag">🇮🇹</span>
+              <span>Italiano</span>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -47,7 +78,7 @@
   <div class="container">
     <div class="header-content">
       
-      <!-- Logo (IMAGE UNIQUEMENT) -->
+      <!-- Logo -->
       <a href="/car-style74/" class="logo">
         <img src="/car-style74/assets/images/logo.jpg" alt="Car Style 74 - Detailing Auto Combloux">
       </a>
@@ -58,53 +89,76 @@
           
           <!-- Accueil -->
           <li class="nav-item">
-            <a href="/car-style74/" class="nav-link">Accueil</a>
+            <a href="/car-style74/" class="nav-link" data-translate="nav-home">Accueil</a>
           </li>
           
           <!-- Nettoyage -->
           <li class="nav-item has-dropdown">
             <a href="/car-style74/nettoyage/" class="nav-link">
-              Nettoyage
+              <span data-translate="nav-cleaning">Nettoyage</span>
               <i class="fas fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-single">
-              <li><a href="/car-style74/nettoyage/decontamination/" class="dropdown-item">Décontamination</a></li>
+              <li><a href="/car-style74/nettoyage/decontamination/" class="dropdown-item" data-translate="nav-decontamination">Décontamination</a></li>
             </ul>
           </li>
           
           <!-- Rénovation & Protection -->
           <li class="nav-item has-dropdown">
             <a href="/car-style74/renovation-protection/" class="nav-link">
-              Rénovation & Protection
+              <span data-translate="nav-renovation">Rénovation & Protection</span>
               <i class="fas fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-double">
-              <li><a href="/car-style74/renovation-protection/lustrage-polissage/" class="dropdown-item">Lustrage et polissage</a></li>
-              <li><a href="/car-style74/renovation-protection/protection-cire-ceramique/" class="dropdown-item">Protection cire & céramique</a></li>
+              <li><a href="/car-style74/renovation-protection/lustrage-polissage/" class="dropdown-item" data-translate="nav-polishing">Lustrage et polissage</a></li>
+              <li><a href="/car-style74/renovation-protection/protection-cire-ceramique/" class="dropdown-item" data-translate="nav-ceramic">Protection cire & céramique</a></li>
             </ul>
           </li>
           
           <!-- Services Esthétiques -->
           <li class="nav-item has-dropdown">
             <a href="/car-style74/esthetiques/" class="nav-link">
-              Services esthétiques
+              <span data-translate="nav-aesthetic">Services esthétiques</span>
               <i class="fas fa-chevron-down"></i>
             </a>
             <ul class="dropdown-menu dropdown-triple">
-              <li><a href="/car-style74/esthetiques/covering-vitres/" class="dropdown-item">Covering & vitres teintées</a></li>
-              <li><a href="/car-style74/esthetiques/accessoires/" class="dropdown-item">Installation d'accessoires</a></li>
-              <li><a href="/car-style74/esthetiques/ciel-etoile-led/" class="dropdown-item">Ciel étoilé / LED d'ambiance</a></li>
+              <li><a href="/car-style74/esthetiques/covering-vitres/" class="dropdown-item" data-translate="nav-covering">Covering & vitres teintées</a></li>
+              <li><a href="/car-style74/esthetiques/accessoires/" class="dropdown-item" data-translate="nav-accessories">Installation d'accessoires</a></li>
+              <li><a href="/car-style74/esthetiques/ciel-etoile-led/" class="dropdown-item" data-translate="nav-starlight">Ciel étoilé / LED d'ambiance</a></li>
             </ul>
           </li>
           
           <!-- Galerie -->
           <li class="nav-item">
-            <a href="/car-style74/galerie/" class="nav-link">Galerie</a>
+            <a href="/car-style74/galerie/" class="nav-link" data-translate="nav-gallery">Galerie</a>
           </li>
           
           <!-- Contact CTA -->
           <li class="nav-item nav-cta">
-            <a href="/car-style74/contact/" class="btn btn-primary">Demander un devis</a>
+            <a href="/car-style74/contact/" class="btn btn-primary" data-translate="nav-quote">Demander un devis</a>
+          </li>
+          
+          <!-- Sélecteur langue mobile (dans le menu) -->
+          <li class="nav-item language-selector-mobile">
+            <div style="color: var(--color-gray-light); margin-bottom: 0.75rem; font-weight: 600;">
+              <i class="fas fa-globe"></i> <span data-translate="language">Langue</span>
+            </div>
+            <div class="language-option active" data-lang="fr">
+              <span class="language-flag">🇫🇷</span>
+              <span>Français</span>
+            </div>
+            <div class="language-option" data-lang="en">
+              <span class="language-flag">🇬🇧</span>
+              <span>English</span>
+            </div>
+            <div class="language-option" data-lang="de">
+              <span class="language-flag">🇩🇪</span>
+              <span>Deutsch</span>
+            </div>
+            <div class="language-option" data-lang="it">
+              <span class="language-flag">🇮🇹</span>
+              <span>Italiano</span>
+            </div>
           </li>
           
         </ul>
@@ -120,3 +174,28 @@
     </div>
   </div>
 </header>
+
+<!-- Bouton Sticky Langue (Mobile) -->
+<div class="sticky-language-button">
+  <div class="sticky-lang-toggle">
+    <span class="current-flag">🇫🇷</span>
+  </div>
+  <div class="sticky-lang-menu">
+    <div class="sticky-lang-option active" data-lang="fr">
+      <span class="language-flag">🇫🇷</span>
+      <span>FR</span>
+    </div>
+    <div class="sticky-lang-option" data-lang="en">
+      <span class="language-flag">🇬🇧</span>
+      <span>EN</span>
+    </div>
+    <div class="sticky-lang-option" data-lang="de">
+      <span class="language-flag">🇩🇪</span>
+      <span>DE</span>
+    </div>
+    <div class="sticky-lang-option" data-lang="it">
+      <span class="language-flag">🇮🇹</span>
+      <span>IT</span>
+    </div>
+  </div>
+</div>
