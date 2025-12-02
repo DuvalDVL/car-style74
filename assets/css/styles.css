@@ -229,10 +229,10 @@ section {
 .mt-xl { margin-top: var(--spacing-xl); }
 /* ================================================
    CAR STYLE 74 - DESIGN SYSTEM
-   Partie 2/4 : Header & Navigation (CORRIGÉ v2)
+   Partie 2/4 : Header & Navigation (CORRIGÉ v3)
    ================================================ */
 
-/* ===== BANDEAU LIVRAISON CONFORT PLUS ===== */
+/* ===== BANDEAU LIVRAISON CONFORT PLUS (STICKY) ===== */
 .delivery-banner {
   background: linear-gradient(135deg, var(--color-blue-dark), var(--color-blue-primary));
   color: var(--color-white);
@@ -240,7 +240,9 @@ section {
   text-align: center;
   font-size: 0.9rem;
   font-weight: 500;
-  z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1001;
   box-shadow: var(--shadow-md);
 }
 
@@ -374,15 +376,17 @@ section {
   border-radius: var(--radius-md);
   padding: 0.5rem 0;
   min-width: 150px;
+  display: none;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
   transition: all var(--transition-medium);
   box-shadow: var(--shadow-xl);
-  z-index: 1001;
+  z-index: 1002;
 }
 
 .language-selector.active .language-dropdown {
+  display: block;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -526,7 +530,7 @@ section {
   min-width: 280px;
 }
 
-/* Menu déroulant 3 éléments - CORRECTION DÉBORDEMENT */
+/* Menu déroulant 3 éléments */
 .dropdown-triple {
   min-width: 380px;
   max-width: 400px;
@@ -547,7 +551,9 @@ section {
   border-left: 3px solid transparent;
   white-space: normal;
   word-wrap: break-word;
-   /* Amélioration affichage mobile */
+}
+
+/* Amélioration affichage mobile */
 @media (max-width: 1024px) {
   .dropdown-item {
     white-space: normal;
@@ -594,13 +600,6 @@ section {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* AFFICHER sur mobile */
-@media (max-width: 1024px) {
-  .mobile-menu-toggle {
-    display: flex;
-  }
-}
-   
 /* ===== BOUTON CONTACT CTA ===== */
 .nav-cta {
   margin-left: 1rem;
@@ -653,6 +652,7 @@ section {
   border-radius: var(--radius-md);
   padding: 0.5rem;
   min-width: 150px;
+  display: none;
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
@@ -661,6 +661,7 @@ section {
 }
 
 .sticky-language-button.active .sticky-lang-menu {
+  display: block;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -703,6 +704,7 @@ section {
 
 /* ===== RESPONSIVE MOBILE ===== */
 @media (max-width: 1024px) {
+  /* Top Bar centré sur mobile */
   .top-bar-content {
     justify-content: center;
   }
@@ -711,10 +713,12 @@ section {
     justify-content: center;
   }
   
+  /* Afficher le bouton menu mobile */
   .mobile-menu-toggle {
     display: flex;
   }
   
+  /* Navigation mobile latérale */
   .main-nav {
     position: fixed;
     top: 0;
@@ -805,9 +809,6 @@ section {
   .delivery-banner {
     font-size: 0.8rem;
     padding: 0.6rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1001;
   }
   
   .logo img {
@@ -816,11 +817,6 @@ section {
   
   .main-nav {
     width: 280px;
-  }
-  
-  /* Masquer sélecteur langue sur très petit écran */
-  .language-selector {
-    display: none;
   }
 }
 /* ================================================
