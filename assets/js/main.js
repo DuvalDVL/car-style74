@@ -480,12 +480,12 @@ function initAnimationsOnScroll() {
   }
 }
 
-// ===== GESTION DES REELS VIDÉOS =====
+// ===== GESTION DES REELS VIDÉOS (AVEC SON) =====
 function initReels() {
   const isMobile = window.innerWidth <= 768;
   const reelCards = document.querySelectorAll('.reel-card');
   
-  console.log(`🎬 Init Reels - ${reelCards.length} vidéos trouvées - Mode: ${isMobile ? 'MOBILE' : 'DESKTOP'}`);
+  console.log(`🎬 Init Reels - ${reelCards.length} vidéos - Mode: ${isMobile ? 'MOBILE' : 'DESKTOP'}`);
   
   if (reelCards.length === 0) {
     console.warn('⚠️ Aucune carte reel trouvée !');
@@ -498,11 +498,14 @@ function initReels() {
     const video = card.querySelector('.reel-video');
     
     if (!video) {
-      console.warn(`⚠️ Pas de vidéo trouvée pour la carte ${index + 1}`);
+      console.warn(`⚠️ Pas de vidéo pour la carte ${index + 1}`);
       return;
     }
     
-    console.log(`✅ Vidéo ${index + 1} trouvée:`, video.querySelector('source')?.src);
+    // Forcer le chargement de la première frame au chargement
+    video.load();
+    
+    console.log(`✅ Vidéo ${index + 1} initialisée`);
     
     if (isMobile) {
       // Mobile : lecture automatique au scroll
@@ -513,12 +516,18 @@ function initReels() {
             const cardEl = entry.target;
             
             if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-              console.log('▶️ Lecture vidéo mobile');
-              vid.play().catch(err => console.log('Erreur lecture:', err));
+              console.log('▶️ Lecture mobile (avec son)');
+              vid.muted = false; // Activer le son
+              vid.play().catch(err => {
+                console.log('Son bloqué par navigateur, lecture sans son');
+                vid.muted = true;
+                vid.play();
+              });
               cardEl.classList.add('playing');
             } else {
-              console.log('⏸️ Pause vidéo mobile');
+              console.log('⏸️ Pause mobile');
               vid.pause();
+              vid.muted = true;
               cardEl.classList.remove('playing');
             }
           });
@@ -526,17 +535,23 @@ function initReels() {
       }
       observer.observe(card);
     } else {
-      // Desktop : lecture au survol
+      // Desktop : lecture au survol AVEC SON
       card.addEventListener('mouseenter', () => {
-        console.log('▶️ Lecture vidéo desktop (survol)');
-        video.play().catch(err => console.log('Erreur lecture:', err));
+        console.log('▶️ Lecture desktop (avec son)');
+        video.muted = false; // ACTIVER LE SON
+        video.play().catch(err => {
+          console.log('Son bloqué, lecture sans son');
+          video.muted = true;
+          video.play();
+        });
         card.classList.add('playing');
       });
       
       card.addEventListener('mouseleave', () => {
-        console.log('⏸️ Pause vidéo desktop');
+        console.log('⏸️ Pause desktop');
         video.pause();
         video.currentTime = 0;
+        video.muted = true; // Remettre en muet
         card.classList.remove('playing');
       });
     }
