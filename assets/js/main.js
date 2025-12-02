@@ -42,6 +42,50 @@ document.addEventListener('DOMContentLoaded', async function() {
   initFormspree();
   initLazyLoading();
   initAnimationsOnScroll();
+   // ===== GESTION DES REELS VIDÉOS =====
+function initReels() {
+  const isMobile = window.innerWidth <= 768;
+  const reelCards = document.querySelectorAll('.reel-card');
+  let observer = null;
+  
+  reelCards.forEach(card => {
+    const video = card.querySelector('.reel-video');
+    if (!video) return;
+    
+    if (isMobile) {
+      // Mobile : lecture automatique au scroll
+      if (!observer) {
+        observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const vid = entry.target.querySelector('.reel-video');
+            const cardEl = entry.target;
+            
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+              vid.play().catch(err => console.log('Erreur lecture:', err));
+              cardEl.classList.add('playing');
+            } else {
+              vid.pause();
+              cardEl.classList.remove('playing');
+            }
+          });
+        }, { threshold: [0, 0.5, 1] });
+      }
+      observer.observe(card);
+    } else {
+      // Desktop : lecture au survol
+      card.addEventListener('mouseenter', () => {
+        video.play().catch(err => console.log('Erreur lecture:', err));
+        card.classList.add('playing');
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0;
+        card.classList.remove('playing');
+      });
+    }
+  });
+}
 });
 
 // ===== INITIALISATION HEADER =====
