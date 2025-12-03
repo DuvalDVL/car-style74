@@ -237,21 +237,26 @@ function initMobileMenu() {
   });
 }
 
-// ===== MENUS DÉROULANTS =====
+// ===== MENUS DÉROULANTS (VERSION CORRIGÉE) =====
+// Remplacer la fonction initDropdownMenus() existante dans main.js par celle-ci
+
 function initDropdownMenus() {
   const navItems = document.querySelectorAll('.nav-item.has-dropdown');
   
   navItems.forEach(item => {
     const dropdownMenu = item.querySelector('.dropdown-menu');
+    const dropdownToggle = item.querySelector('.dropdown-toggle');
+    const navLink = item.querySelector('.nav-link');
+    
     if (!dropdownMenu) return;
     
-    // Sur mobile : clic pour ouvrir/fermer
-    if (window.innerWidth <= 1024) {
-      const navLink = item.querySelector('.nav-link');
-      navLink.addEventListener('click', (e) => {
+    // Sur mobile : clic sur la FLÈCHE pour ouvrir/fermer le dropdown
+    if (dropdownToggle) {
+      dropdownToggle.addEventListener('click', (e) => {
         e.preventDefault();
-        e.stopPropagation(); // Empêcher la propagation pour ne pas fermer le menu
+        e.stopPropagation();
         
+        // Toggle le dropdown
         item.classList.toggle('active');
         
         // Fermer les autres menus
@@ -262,6 +267,9 @@ function initDropdownMenus() {
         });
       });
     }
+    
+    // Le lien principal reste cliquable et navigue normalement
+    // (pas besoin de JavaScript supplémentaire, le comportement par défaut fonctionne)
   });
   
   // Gérer le responsive
