@@ -1984,6 +1984,219 @@ section {
   width: 100%;
 }
 
+/* ===== ACCORDÉON SUPPLÉMENTS À LA CARTE (MOBILE) ===== */
+
+/* Masquer la grille sur mobile, afficher l'accordéon */
+.desktop-only-grid {
+  display: grid;
+}
+
+.mobile-only-accordion {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-only-grid {
+    display: none !important;
+  }
+  
+  .mobile-only-accordion {
+    display: block;
+  }
+}
+
+/* Container accordéon */
+.service-accordion-container {
+  max-width: 100%;
+  margin-top: var(--spacing-xl);
+}
+
+/* Item accordéon */
+.accordion-item {
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.95), rgba(25, 25, 25, 0.95));
+  border-radius: var(--radius-lg);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(74, 144, 226, 0.2);
+  transition: all var(--transition-medium);
+}
+
+.accordion-item:hover {
+  border-color: var(--color-blue-primary);
+  box-shadow: 0 5px 20px rgba(74, 144, 226, 0.2);
+}
+
+.accordion-item.active {
+  border-color: var(--color-blue-primary);
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.3);
+}
+
+/* Header accordéon (bouton) */
+.accordion-header {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--color-white);
+}
+
+.accordion-header:active {
+  background: rgba(74, 144, 226, 0.05);
+}
+
+.accordion-header-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.accordion-header-content i {
+  font-size: 1.5rem;
+  color: var(--color-blue-primary);
+}
+
+.accordion-header-content span {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.accordion-icon {
+  font-size: 0.875rem;
+  color: var(--color-blue-primary);
+  transition: transform var(--transition-medium);
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* Contenu accordéon */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background: rgba(74, 144, 226, 0.02);
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 2000px; /* Valeur haute pour l'animation */
+}
+
+/* Items de service dans l'accordéon */
+.accordion-service-item {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid rgba(74, 144, 226, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: background var(--transition-fast);
+}
+
+.accordion-service-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-service-item:active {
+  background: rgba(74, 144, 226, 0.05);
+}
+
+.accordion-service-header {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.accordion-service-icon {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  background: rgba(74, 144, 226, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(74, 144, 226, 0.3);
+}
+
+.accordion-service-icon i {
+  font-size: 1.25rem;
+  color: var(--color-blue-primary);
+}
+
+.accordion-service-info {
+  flex: 1;
+}
+
+.accordion-service-info h4 {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.accordion-service-info p {
+  color: var(--color-gray-light);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.accordion-service-price {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-blue-primary);
+  white-space: nowrap;
+  text-align: right;
+  min-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.accordion-service-price span {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-gray-medium);
+  margin-top: 0.25rem;
+}
+
+/* Responsive ultra-mobile (petits écrans) */
+@media (max-width: 480px) {
+  .accordion-header {
+    padding: 1rem 1.25rem;
+  }
+  
+  .accordion-header-content span {
+    font-size: 1rem;
+  }
+  
+  .accordion-header-content i {
+    font-size: 1.25rem;
+  }
+  
+  .accordion-service-item {
+    padding: 1rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .accordion-service-price {
+    align-self: flex-start;
+    margin-top: 0.75rem;
+    margin-left: 56px; /* Aligné avec le texte */
+  }
+}
+
 /* ===== SECTION FAQ (ACCORDÉONS) ===== */
 .faq-item {
   background: linear-gradient(135deg, rgba(15, 15, 15, 0.95), rgba(25, 25, 25, 0.95));
