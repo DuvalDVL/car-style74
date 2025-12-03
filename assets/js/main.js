@@ -1,7 +1,7 @@
 /* ================================================
    CAR STYLE 74 - JAVASCRIPT (CORRIGÉ)
    Fonctionnalités : Header/Footer dynamiques, Menu, 
-   Lightbox, Reels, Formulaire, Animations, Langue
+   Lightbox, Reels, Formulaire, Animations, Langue, FAQ
    ================================================ */
 
 // ===== CONFIGURATION =====
@@ -42,7 +42,8 @@ document.addEventListener('DOMContentLoaded', async function() {
   initFormspree();
   initLazyLoading();
   initAnimationsOnScroll();
-  initReels(); // APPELER ICI
+  initReels();
+  initFAQ(); // ⬅️ AJOUTÉ
 });
 
 // ===== INITIALISATION HEADER =====
@@ -237,10 +238,7 @@ function initMobileMenu() {
   });
 }
 
-// ===== MENUS DÉROULANTS (VERSION CORRIGÉE) =====
-// Remplacer la fonction initDropdownMenus() existante dans main.js par celle-ci
-
-// ===== MENUS DÉROULANTS (VERSION AMÉLIORÉE) =====
+// ===== MENUS DÉROULANTS =====
 function initDropdownMenus() {
   const navItems = document.querySelectorAll('.nav-item.has-dropdown');
   
@@ -582,6 +580,29 @@ function initReels() {
         card.classList.remove('playing');
       });
     }
+  });
+}
+
+// ===== FAQ ACCORDÉONS =====
+function initFAQ() {
+  const faqItems = document.querySelectorAll('.faq-item');
+  
+  if (faqItems.length === 0) return;
+  
+  faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', () => {
+      // Fermer les autres items
+      faqItems.forEach(otherItem => {
+        if (otherItem !== item) {
+          otherItem.classList.remove('active');
+        }
+      });
+      
+      // Toggle l'item actuel
+      item.classList.toggle('active');
+    });
   });
 }
 
