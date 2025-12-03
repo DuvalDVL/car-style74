@@ -617,33 +617,6 @@
     }
   }
 </style>
-
-<script>
-  // Script FAQ (à ajouter dans main.js ou en inline)
-  document.addEventListener('DOMContentLoaded', function() {
-    initFAQ();
-  });
-  
-  function initFAQ() {
-    const faqItems = document.querySelectorAll('.faq-item');
-    
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      
-      question.addEventListener('click', () => {
-        // Fermer les autres items
-        faqItems.forEach(otherItem => {
-          if (otherItem !== item) {
-            otherItem.classList.remove('active');
-          }
-        });
-        
-        // Toggle l'item actuel
-        item.classList.toggle('active');
-      });
-    });
-  }
-</script>
   
   <!-- Footer dynamique -->
   <div id="footer-placeholder"></div>
