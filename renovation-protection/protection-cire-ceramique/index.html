@@ -28,6 +28,19 @@
   
   <!-- CSS Principal -->
   <link rel="stylesheet" href="/car-style74/assets/css/styles.css">
+
+    <!-- Responsive inline fixes -->
+  <style>
+    @media (max-width: 768px) {
+      .services-grid[style*="grid-template-columns: repeat(3, 1fr)"] {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+      }
+      .pricing-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
   
   <!-- Schema.org Service -->
   <script type="application/ld+json">
