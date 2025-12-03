@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   initAnimationsOnScroll();
   initReels();
   initFAQ(); // ⬅️ AJOUTÉ
+  initServicesAccordion(); // ⬅️ AJOUTER CETTE LIGNE
 });
 
 // ===== INITIALISATION HEADER =====
@@ -606,55 +607,65 @@ function initFAQ() {
   });
 }
 
-/* Nouveau code pour l'accordéon des Suppléments à la Carte */
-document.addEventListener('DOMContentLoaded', () => {
-    // Sélectionne tous les boutons d'en-tête de l'accordéon des services
-    const accordionHeaders = document.querySelectorAll('.service-accordion-container .accordion-header');
-
-    // Fonction pour vérifier si l'écran est en mode mobile
-    function isMobile() {
-        return window.innerWidth <= 768; // Utilise le même breakpoint que dans le CSS
-    }
-
-    // Fonction pour gérer le clic sur un en-tête d'accordéon
-    function toggleAccordion(event) {
-        if (!isMobile()) {
-            return; // N'active l'accordéon que sur mobile
-        }
-
-        const header = event.currentTarget;
-        const item = header.closest('.accordion-item');
-        const content = item.querySelector('.accordion-content');
-        const isActive = item.classList.contains('active');
-
-        // Ferme tous les autres accordéons
-        accordionHeaders.forEach(h => {
-            const otherItem = h.closest('.accordion-item');
-            if (otherItem !== item && otherItem.classList.contains('active')) {
-                otherItem.classList.remove('active');
-                otherItem.querySelector('.accordion-content').style.maxHeight = null;
-            }
-        });
-
-        // Ouvre ou ferme l'accordéon cliqué
-        if (isActive) {
-            item.classList.remove('active');
-            content.style.maxHeight = null;
-        } else {
-            item.classList.add('active');
-            // Définit une hauteur pour l'animation (ajustez si besoin)
-            content.style.maxHeight = content.scrollHeight + "px"; 
-        }
-    }
-
-    // Ajoute les écouteurs d'événements
-    accordionHeaders.forEach(header => {
-        header.addEventListener('click', toggleAccordion);
-    });
+// ===== ACCORDÉON SUPPLÉMENTS À LA CARTE (MOBILE) =====
+function initServicesAccordion() {
+  const accordionItems = document.querySelectorAll('.service-accordion-container .accordion-item');
+  
+  if (accordionItems.length === 0) {
+    console.log('ℹ️ Pas d\'accordéon sur cette page');
+    return;
+  }
+  
+  console.log(`✅ ${accordionItems.length} catégories d'accordéon initialisées`);
+  
+  accordionItems.forEach(item => {
+    const header = item.querySelector('.accordion-header');
+    const content = item.querySelector('.accordion-content');
     
-    // Si vous aviez déjà un code pour la FAQ, il peut rester, 
-    // assurez-vous juste qu'il gère les classes .faq-item et .faq-question.
-});
+    if (!header || !content) return;
+    
+    header.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      // Fermer tous les autres accordéons
+      accordionItems.forEach(otherItem => {
+        if (otherItem !== item && otherItem.classList.contains('active')) {
+          otherItem.classList.remove('active');
+          const otherContent = otherItem.querySelector('.accordion-content');
+          if (otherContent) {
+            otherContent.style.maxHeight = null;
+          }
+        }
+      });
+      
+      // Toggle l'accordéon actuel
+      if (isActive) {
+        item.classList.remove('active');
+        content.style.maxHeight = null;
+      } else {
+        item.classList.add('active');
+        // Calculer la hauteur réelle du contenu
+        content.style.maxHeight = content.scrollHeight + 'px';
+      }
+    });
+  });
+  
+  // Recalculer les hauteurs au resize (important pour le responsive)
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      accordionItems.forEach(item => {
+        if (item.classList.contains('active')) {
+          const content = item.querySelector('.accordion-content');
+          if (content) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        }
+      });
+    }, 250);
+  });
+}
 
 // ===== UTILITAIRE : Débounce =====
 function debounce(func, wait) {
