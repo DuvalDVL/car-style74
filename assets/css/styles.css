@@ -489,15 +489,62 @@ section {
 .nav-link.active {
   color: var(--color-blue-primary);
   background: rgba(74, 144, 226, 0.15);
+/* Séparation du lien principal et du toggle dropdown */
+.nav-link {
+  position: relative;
+  padding-right: 3rem; /* Espace pour la flèche */
 }
 
-.nav-link i {
-  font-size: 0.75rem;
-  transition: transform var(--transition-fast);
+.nav-link.has-dropdown-link {
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 
-.nav-item:hover .nav-link i {
+/* Toggle dropdown (flèche cliquable) */
+.dropdown-toggle {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(74, 144, 226, 0.1);
+  border-left: 1px solid rgba(74, 144, 226, 0.2);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.dropdown-toggle:hover {
+  background: rgba(74, 144, 226, 0.2);
+}
+
+.dropdown-toggle i {
+  font-size: 0.7rem;
+  color: var(--color-blue-primary);
+  transition: transform var(--transition-medium);
+}
+
+.nav-item.active .dropdown-toggle i {
   transform: rotate(180deg);
+}
+
+/* Indicateur visuel que le lien principal est cliquable */
+.nav-link.has-dropdown-link::after {
+  content: '';
+  position: absolute;
+  bottom: 3px;
+  left: 1.25rem;
+  right: 3rem;
+  height: 2px;
+  background: transparent;
+  transition: background var(--transition-fast);
+}
+
+.nav-link.has-dropdown-link:hover::after {
+  background: var(--color-blue-primary);
 }
 
 /* ===== MENU DÉROULANT (LARGEUR ADAPTATIVE) ===== */
@@ -536,7 +583,8 @@ section {
   max-width: 400px;
 }
 
-.nav-item:hover .dropdown-menu {
+.nav-item:hover .dropdown-menu,
+.nav-item.hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -743,10 +791,48 @@ section {
     gap: 0;
   }
   
+  /* Lien principal sur mobile */
   .nav-link {
     padding: 1rem 1.25rem;
+    padding-right: 3.5rem;
     border-radius: 0;
     border-bottom: 1px solid rgba(74, 144, 226, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Badge "cliquable" sur mobile pour les liens principaux */
+  .nav-link.has-dropdown-link::before {
+    content: '→';
+    position: absolute;
+    right: 3.5rem;
+    color: var(--color-blue-primary);
+    font-size: 1.2rem;
+    opacity: 0.5;
+    transition: all var(--transition-fast);
+  }
+  
+  .nav-link.has-dropdown-link:active::before,
+  .nav-link.has-dropdown-link:hover::before {
+    opacity: 1;
+    transform: translateX(3px);
+  }
+  
+  /* Toggle dropdown sur mobile */
+  .dropdown-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 100%;
+    background: rgba(74, 144, 226, 0.15);
+    border-left: 1px solid rgba(74, 144, 226, 0.3);
+    border-radius: 0;
+  }
+  
+  .dropdown-toggle i {
+    font-size: 0.8rem;
   }
   
   .dropdown-menu {
