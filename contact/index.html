@@ -9,12 +9,12 @@
   <title>Contact - Car Style 74 | Detailing Auto Combloux</title>
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/car-style74/assets/images/logo.png">
+  <link rel="icon" type="image/png" href="/car-style74/assets/images/favicon.png">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,108 +27,86 @@
   <!-- Header dynamique -->
   <div id="header-placeholder"></div>
 
-  <!-- Section Contact Hero -->
-  <section class="contact-hero-section">
-    <div class="contact-hero-overlay"></div>
+  <!-- ===== SECTION CONTACT ===== -->
+  <section class="contact-section">
     <div class="container">
-      <div class="contact-hero-content">
-        <h1 data-translate="contact-title">Contactez-nous</h1>
-        <p data-translate="contact-subtitle">Une question ? Un projet ? Nous sommes à votre écoute pour tous vos besoins en detailing automobile.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Contact Principal -->
-  <section class="contact-section section-light">
-    <div class="container">
-      
       <div class="section-title">
         <h2 data-translate="contact-form-title">Demandez votre devis gratuit</h2>
         <p class="section-subtitle" data-translate="contact-form-subtitle">
           Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais
         </p>
       </div>
-
+      
       <div class="contact-container">
         
         <!-- Formulaire de contact -->
-        <div class="contact-form-wrapper">
-          <form id="contact-form" action="https://formspree.io/f/mkgdbkoq" method="POST" class="contact-form">
+        <div class="contact-form">
+          <form id="contact-form" action="https://formspree.io/f/mkgdbkoq" method="POST">
             
             <div class="form-row">
               <div class="form-group">
-                <label for="nom" data-translate="form-lastname">Nom *</label>
-                <input type="text" id="nom" name="nom" required placeholder="Votre nom">
+                <label for="name" data-translate="form-name">Nom, Prénom *</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom et prénom">
               </div>
               
               <div class="form-group">
-                <label for="prenom" data-translate="form-firstname">Prénom *</label>
-                <input type="text" id="prenom" name="prenom" required placeholder="Votre prénom">
+                <label for="phone" data-translate="form-phone">Téléphone *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+33 6 00 00 00 00">
               </div>
             </div>
-
+            
             <div class="form-row">
               <div class="form-group">
-                <label for="email" data-translate="form-email">Email *</label>
+                <label for="email" data-translate="form-email">E-mail *</label>
                 <input type="email" id="email" name="email" required placeholder="votre.email@exemple.com">
               </div>
               
               <div class="form-group">
-                <label for="telephone" data-translate="form-phone">Téléphone *</label>
-                <input type="tel" id="telephone" name="telephone" required placeholder="+33 6 00 00 00 00">
+                <label for="vehicle" data-translate="form-vehicle">Modèle du véhicule</label>
+                <input type="text" id="vehicle" name="vehicle" placeholder="Ex: BMW X5">
               </div>
             </div>
-
+            
             <div class="form-group">
-              <label for="service" data-translate="form-service">Service souhaité *</label>
+              <label for="seats" data-translate="form-seats">Nombre de places dans le véhicule</label>
+              <input type="number" id="seats" name="seats" min="2" max="9" placeholder="Ex: 5">
+            </div>
+            
+            <div class="form-group">
+              <label for="service" data-translate="form-service">Prestation souhaitée *</label>
               <select id="service" name="service" required>
-                <option value="" data-translate="form-service-select">-- Sélectionnez un service --</option>
+                <option value="" data-translate="form-service-select">Sélectionnez une prestation</option>
                 <option value="nettoyage" data-translate="form-service-cleaning">Nettoyage complet</option>
-                <option value="decontamination" data-translate="form-service-decontamination">Décontamination</option>
-                <option value="polissage" data-translate="form-service-polishing">Lustrage et polissage</option>
-                <option value="protection-ceramique" data-translate="form-service-ceramic">Protection céramique</option>
+                <option value="decontamination" data-translate="form-service-decontamination">Décontamination mécanique</option>
+                <option value="lustrage" data-translate="form-service-lustrage">Lustrage</option>
+                <option value="polissage" data-translate="form-service-polishing">Polissage 40% et 90%</option>
+                <option value="ceramique" data-translate="form-service-ceramic">Protection céramique</option>
+                <option value="jantes" data-translate="form-service-wheels">Protection jantes</option>
                 <option value="covering" data-translate="form-service-covering">Covering</option>
-                <option value="vitres-teintees" data-translate="form-service-tint">Vitres teintées</option>
-                <option value="accessoires" data-translate="form-service-accessories">Installation d'accessoires</option>
-                <option value="ciel-etoile" data-translate="form-service-starlight">Ciel étoilé / LED</option>
-                <option value="autre" data-translate="form-service-other">Autre / Conseil</option>
+                <option value="vitres" data-translate="form-service-tint">Vitres teintées</option>
+                <option value="ciel-etoile" data-translate="form-service-starlight">Ciel étoilé / LED d'ambiance</option>
+                <option value="volant" data-translate="form-service-steering">Installation volant</option>
+                <option value="autre" data-translate="form-service-other">Autre service</option>
               </select>
             </div>
-
+            
             <div class="form-group">
-              <label for="vehicule" data-translate="form-vehicle">Type de véhicule</label>
-              <input type="text" id="vehicule" name="vehicule" placeholder="Marque, modèle, année (ex: BMW X5 2020)">
+              <label for="message" data-translate="form-message">Votre message (optionnel)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet ou posez-nous vos questions..."></textarea>
             </div>
-
-            <div class="form-group">
-              <label for="message" data-translate="form-message">Votre message *</label>
-              <textarea id="message" name="message" required placeholder="Décrivez votre projet, vos besoins ou posez-nous vos questions..."></textarea>
-            </div>
-
-            <div class="form-group">
-              <label class="checkbox-label">
-                <input type="checkbox" name="livraison" value="oui">
-                <span data-translate="form-delivery">Je souhaite bénéficier de la livraison Confort Plus (gratuite)</span>
-              </label>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-large form-submit" data-translate="form-submit">
-              <i class="fas fa-paper-plane"></i> Envoyer ma demande
+            
+            <button type="submit" class="btn btn-primary form-submit" data-translate="form-submit">
+              <i class="fas fa-paper-plane"></i> Envoyer la demande
             </button>
-
-            <p class="form-notice" data-translate="form-notice">
-              * Champs obligatoires - Vos données sont protégées et ne seront jamais partagées
-            </p>
-
+            
           </form>
         </div>
-
-        <!-- Informations de contact -->
+        
+        <!-- Informations contact -->
         <div class="contact-info">
           
-          <!-- Carte Contact -->
           <div class="contact-card">
-            <h3 data-translate="contact-info-title">Nos coordonnées</h3>
+            <h3 data-translate="contact-info-title">Coordonnées</h3>
             
             <div class="contact-item">
               <i class="fas fa-phone"></i>
@@ -137,15 +115,15 @@
                 <a href="tel:+33603946424">+33 6 03 94 64 24</a>
               </div>
             </div>
-
+            
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
               <div class="contact-item-text">
                 <strong data-translate="contact-email">Email</strong>
-                <a href="mailto:contact@carstyle74.fr">contact@carstyle74.fr</a>
+                <a href="mailto:carstyle740@gmail.com">carstyle740@gmail.com</a>
               </div>
             </div>
-
+            
             <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
               <div class="contact-item-text">
@@ -153,80 +131,32 @@
                 <span>685 Route de Plan Mouillé<br>74920 Combloux, France</span>
               </div>
             </div>
-          </div>
-
-          <!-- Carte Horaires -->
-          <div class="contact-card">
-            <h3 data-translate="contact-hours-title">Horaires d'ouverture</h3>
             
             <div class="contact-item">
               <i class="fas fa-clock"></i>
               <div class="contact-item-text">
-                <strong data-translate="contact-hours-weekdays">Lundi - Vendredi</strong>
-                <span>08h00 - 18h00</span>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <i class="fas fa-clock"></i>
-              <div class="contact-item-text">
-                <strong data-translate="contact-hours-saturday">Samedi</strong>
-                <span>09h00 - 17h00</span>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <i class="fas fa-clock"></i>
-              <div class="contact-item-text">
-                <strong data-translate="contact-hours-sunday">Dimanche</strong>
-                <span>Fermé</span>
+                <strong data-translate="contact-hours">Horaires</strong>
+                <span>Lundi - Vendredi : 9h - 18h<br>Sur rendez-vous uniquement</span>
               </div>
             </div>
           </div>
-
-          <!-- Carte Réseaux Sociaux -->
-          <div class="contact-card contact-card-social">
-            <h3 data-translate="contact-social-title">Suivez-nous</h3>
-            <div class="contact-social-links">
-              <a href="https://www.instagram.com/car_style74/" target="_blank" rel="noopener" class="contact-social-link" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-                <span>Instagram</span>
-              </a>
-              <a href="https://www.facebook.com/profile.php?id=100073781564651" target="_blank" rel="noopener" class="contact-social-link" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-                <span>Facebook</span>
-              </a>
-              <a href="https://www.linkedin.com/company/car-style/posts/?feedView=all" target="_blank" rel="noopener" class="contact-social-link" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-                <span>LinkedIn</span>
-              </a>
-            </div>
+          
+          <div class="contact-map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2765.123456789!2d6.6428!3d45.8961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDXCsDUzJzQ2LjAiTiA2wrAzOCczNC4xIkU!5e0!3m2!1sfr!2sfr!4v1234567890" 
+              allowfullscreen="" 
+              loading="lazy"
+              title="Localisation Car Style 74">
+            </iframe>
           </div>
-
+          
         </div>
-
+        
       </div>
-
     </div>
   </section>
 
-  <!-- Section Carte Google Maps -->
-  <section class="map-section">
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2776.53303042416!2d6.6474245!3d45.900651800000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478bfdce8d63dc05%3A0xe16fb09756adb02e!2sCar%20Style!5e0!3m2!1sfr!2sfr!4v1764723678516!5m2!1sfr!2sfr"
-        width="100%" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Localisation Car Style 74 - 685 Route de Plan Mouillé, 74920 Combloux">
-      </iframe>
-    </div>
-  </section>
-
-  <!-- Section FAQ -->
+  <!-- ===== SECTION FAQ ===== -->
   <section class="faq-section section-light">
     <div class="container">
       
@@ -237,70 +167,150 @@
         </p>
       </div>
 
-      <div class="faq-grid">
+      <div class="testimonials-grid">
         
-        <div class="faq-item">
-          <div class="faq-question">
-            <i class="fas fa-question-circle"></i>
-            <h3 data-translate="faq-q1">Combien de temps prend un detailing complet ?</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar"><i class="fas fa-question-circle"></i></div>
+            <div class="testimonial-author">
+              <h4 data-translate="faq-q1">Combien de temps prend un detailing complet ?</h4>
+            </div>
           </div>
-          <p class="faq-answer" data-translate="faq-a1">
+          <p class="testimonial-text" data-translate="faq-a1">
             Un detailing complet peut prendre entre 4 et 8 heures selon l'état du véhicule et les prestations choisies. Nous prenons le temps nécessaire pour garantir un résultat impeccable.
           </p>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question">
-            <i class="fas fa-question-circle"></i>
-            <h3 data-translate="faq-q2">Proposez-vous la livraison du véhicule ?</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar"><i class="fas fa-question-circle"></i></div>
+            <div class="testimonial-author">
+              <h4 data-translate="faq-q2">Proposez-vous la livraison du véhicule ?</h4>
+            </div>
           </div>
-          <p class="faq-answer" data-translate="faq-a2">
+          <p class="testimonial-text" data-translate="faq-a2">
             Oui ! Notre service Livraison Confort Plus vous permet de récupérer et livrer votre véhicule à domicile ou au travail, gratuitement dans un rayon de 20km autour de Combloux.
           </p>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question">
-            <i class="fas fa-question-circle"></i>
-            <h3 data-translate="faq-q3">Quels moyens de paiement acceptez-vous ?</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar"><i class="fas fa-question-circle"></i></div>
+            <div class="testimonial-author">
+              <h4 data-translate="faq-q3">Quels moyens de paiement acceptez-vous ?</h4>
+            </div>
           </div>
-          <p class="faq-answer" data-translate="faq-a3">
+          <p class="testimonial-text" data-translate="faq-a3">
             Nous acceptons les paiements par carte bancaire, espèces, chèque et virement bancaire. Un acompte peut être demandé pour certaines prestations.
           </p>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question">
-            <i class="fas fa-question-circle"></i>
-            <h3 data-translate="faq-q4">Faut-il prendre rendez-vous ?</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar"><i class="fas fa-question-circle"></i></div>
+            <div class="testimonial-author">
+              <h4 data-translate="faq-q4">Faut-il prendre rendez-vous ?</h4>
+            </div>
           </div>
-          <p class="faq-answer" data-translate="faq-a4">
+          <p class="testimonial-text" data-translate="faq-a4">
             Oui, nous travaillons uniquement sur rendez-vous pour garantir la qualité de nos prestations et vous accueillir dans les meilleures conditions. Contactez-nous par téléphone ou via le formulaire.
           </p>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question">
-            <i class="fas fa-question-circle"></i>
-            <h3 data-translate="faq-q5">Intervenez-vous sur tous types de véhicules ?</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar"><i class="fas fa-question-circle"></i></div>
+            <div class="testimonial-author">
+              <h4 data-translate="faq-q5">Intervenez-vous sur tous types de véhicules ?</h4>
+            </div>
           </div>
-          <p class="faq-answer" data-translate="faq-a5">
+          <p class="testimonial-text" data-translate="faq-a5">
             Oui, nous intervenons sur tous types de véhicules : voitures, SUV, utilitaires, motos, camping-cars, véhicules de collection, etc.
           </p>
         </div>
 
-        <div class="faq-item">
-          <div class="faq-question">
-            <i class="fas fa-question-circle"></i>
-            <h3 data-translate="faq-q6">Combien coûte un detailing ?</h3>
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar"><i class="fas fa-question-circle"></i></div>
+            <div class="testimonial-author">
+              <h4 data-translate="faq-q6">Combien coûte un detailing ?</h4>
+            </div>
           </div>
-          <p class="faq-answer" data-translate="faq-a6">
+          <p class="testimonial-text" data-translate="faq-a6">
             Les tarifs varient selon les prestations et l'état du véhicule. Demandez un devis gratuit et personnalisé via notre formulaire ou par téléphone.
           </p>
         </div>
 
       </div>
 
+    </div>
+  </section>
+
+  <!-- ===== SECTION TÉMOIGNAGES ===== -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-translate="testimonials-title">Ce que disent nos clients</h2>
+      </div>
+      
+      <div class="testimonials-header">
+        <a href="https://share.google/OK0KN1CwsdazNd3yb" target="_blank" rel="noopener" class="google-badge">
+          <img src="/car-style74/assets/images/google-logo.png" alt="Google">
+          <div class="google-rating">
+            <div class="rating-stars">★★★★★</div>
+            <div class="rating-text"><strong>5.0</strong> sur 5 • 67 avis</div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="testimonials-grid">
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">JD</div>
+            <div class="testimonial-author">
+              <h4>Jean Dupont</h4>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            Travail exceptionnel sur ma Porsche. Le polissage et la protection céramique ont transformé la voiture. Équipe professionnelle et passionnée. Je recommande vivement !
+          </p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">SM</div>
+            <div class="testimonial-author">
+              <h4>Sophie Martin</h4>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            Le service Livraison Confort Plus est génial ! Ils ont récupéré ma voiture à domicile et me l'ont ramenée impeccable. Le ciel étoilé installé est magnifique. Merci Pauline et Osama !
+          </p>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar">TB</div>
+            <div class="testimonial-author">
+              <h4>Thomas Bernard</h4>
+              <div class="testimonial-stars">★★★★★</div>
+            </div>
+          </div>
+          <p class="testimonial-text">
+            Covering complet de mon SUV, résultat au-delà de mes attentes. Finitions parfaites, conseils avisés. Prix raisonnables pour la qualité du travail. Je reviendrai !
+          </p>
+        </div>
+        
+      </div>
+      
+      <div class="testimonials-cta">
+        <a href="https://share.google/OK0KN1CwsdazNd3yb" target="_blank" class="btn btn-primary">
+          <i class="fab fa-google"></i> Voir tous les avis Google
+        </a>
+      </div>
     </div>
   </section>
 
