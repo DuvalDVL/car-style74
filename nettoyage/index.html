@@ -88,7 +88,7 @@
       <div class="hero-cta-group">
         <a href="tel:+33603946424" class="btn btn-primary btn-large">
           <i class="fas fa-phone"></i> 
-          <span data-translate="cleaning-cta-call">Appelez-nous : 06 03 94 64 24</span>
+          <span data-translate="cleaning-cta-call">Appeler maintenant</span>
         </a>
         <a href="/car-style74/contact/" class="btn btn-outline btn-large" data-translate="cleaning-cta-quote">
           Demander un devis gratuit
@@ -121,7 +121,7 @@
         
         <div class="service-card" style="padding: 2rem;">
           <div class="service-icon" style="width: 70px; height: 70px; margin-bottom: 1rem;">
-            <i class="fas fa-sparkles"></i>
+            <i class="fas fa-star"></i>
           </div>
           <h3 style="font-size: 1.25rem; margin-bottom: 0.75rem;" data-translate="cleaning-benefit-2-title">Résultat impeccable</h3>
           <p style="font-size: 0.95rem; margin: 0;" data-translate="cleaning-benefit-2-text">
@@ -140,6 +140,14 @@
         </div>
         
       </div>
+      
+      <style>
+        @media (max-width: 768px) {
+          .services-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      </style>
     </div>
   </section>
   
@@ -156,7 +164,7 @@
       <div class="pricing-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 1000px; margin: 0 auto;">
         
         <!-- FORMULE DETAILING -->
-        <div class="pricing-card featured">
+        <div class="pricing-card featured" style="display: flex; flex-direction: column;">
           <h3 data-translate="cleaning-formula-detailing-name">Formule Detailing</h3>
           <div class="pricing-price">
             299€ <span data-translate="cleaning-price-sedan">/ Berline</span>
@@ -165,7 +173,7 @@
             359€ <span style="font-size: 1rem; color: var(--color-gray-medium);" data-translate="cleaning-price-suv">/ SUV</span>
           </div>
           
-          <ul class="pricing-features">
+          <ul class="pricing-features" style="flex-grow: 1;">
             <li><i class="fas fa-check-circle"></i> <span data-translate="cleaning-detailing-1">Lavage extérieur en détails</span></li>
             <li><i class="fas fa-check-circle"></i> <span data-translate="cleaning-detailing-2">Compartiment moteur + trappe à essence + contour de portes</span></li>
             <li><i class="fas fa-check-circle"></i> <span data-translate="cleaning-detailing-3">Décontamination chimique carrosserie</span></li>
@@ -180,13 +188,13 @@
             <li><i class="fas fa-check-circle"></i> <span data-translate="cleaning-detailing-12">Parfum habitacle + arbre magique</span></li>
           </ul>
           
-          <a href="tel:+33603946424" class="btn btn-primary" style="width: 100%;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-reserve">Réserver maintenant</span>
+          <a href="tel:+33603946424" class="btn btn-primary" style="width: 100%; margin-top: auto;">
+            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-reserve">Appeler maintenant</span>
           </a>
         </div>
         
         <!-- FORMULE PREMIUM -->
-        <div class="pricing-card">
+        <div class="pricing-card" style="display: flex; flex-direction: column;">
           <h3 data-translate="cleaning-formula-premium-name">Formule Premium</h3>
           <div class="pricing-price">
             179€ <span data-translate="cleaning-price-sedan">/ Berline</span>
@@ -195,7 +203,7 @@
             219€ <span style="font-size: 1rem; color: var(--color-gray-medium);" data-translate="cleaning-price-suv">/ SUV</span>
           </div>
           
-          <ul class="pricing-features">
+          <ul class="pricing-features" style="flex-grow: 1;">
             <li><i class="fas fa-check-circle"></i> <span data-translate="cleaning-premium-1">Lavage extérieur + contour des portes + trappe à essence</span></li>
             <li><i class="fas fa-check-circle"></i> <span data-translate="cleaning-premium-2">Lavage intérieur</span></li>
             <li><i class="fas fa-check-circle"></i> <span data-translate="cleaning-premium-3">Dépoussiérage habitacle</span></li>
@@ -206,12 +214,20 @@
             <li><i class="fas fa-check-circle"></i> <span data-translate="cleaning-premium-8">Parfum habitacle + arbre magique</span></li>
           </ul>
           
-          <a href="tel:+33603946424" class="btn btn-outline" style="width: 100%;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-reserve">Réserver maintenant</span>
+          <a href="tel:+33603946424" class="btn btn-outline" style="width: 100%; margin-top: auto;">
+            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-reserve">Appeler maintenant</span>
           </a>
         </div>
         
       </div>
+      
+      <style>
+        @media (max-width: 768px) {
+          .pricing-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      </style>
     </div>
   </section>
   
@@ -247,7 +263,7 @@
         </p>
       </div>
       
-      <div class="services-grid">
+      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
         
         <!-- Prestation 1 -->
         <div class="service-card">
@@ -259,9 +275,6 @@
             45€ <span style="font-size: 1rem; color: var(--color-gray-medium);" data-translate="alacarte-from">(à partir de)</span>
           </div>
           <p data-translate="alacarte-1-desc">Lavage minutieux de la carrosserie avec produits professionnels et séchage soigné.</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
         <!-- Prestation 2 -->
@@ -274,9 +287,6 @@
             15€ <span style="font-size: 1rem; color: var(--color-gray-medium);" data-translate="alacarte-per-seat">(par place)</span>
           </div>
           <p data-translate="alacarte-2-desc">Nettoyage en profondeur des sièges en tissu avec extraction des saletés incrustées.</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
         <!-- Prestation 3 -->
@@ -289,9 +299,6 @@
             25€ <span style="font-size: 1rem; color: var(--color-gray-medium);" data-translate="alacarte-per-seat">(par place)</span>
           </div>
           <p data-translate="alacarte-3-desc">Nettoyage et nourrissage du cuir pour préserver sa souplesse et son éclat.</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
         <!-- Prestation 4 -->
@@ -304,9 +311,6 @@
             35€
           </div>
           <p data-translate="alacarte-4-desc">Élimination complète des poils d'animaux incrustés dans les tissus et moquettes.</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
         <!-- Prestation 5 -->
@@ -319,9 +323,6 @@
             45€
           </div>
           <p data-translate="alacarte-5-desc">Dégraissage complet du compartiment moteur à la vapeur sans risque pour l'électronique.</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
         <!-- Prestation 6 -->
@@ -334,9 +335,6 @@
             40€ <span style="font-size: 1rem; color: var(--color-gray-medium);" data-translate="alacarte-from">(à partir de)</span>
           </div>
           <p data-translate="alacarte-6-desc">Traitement des taches difficiles et élimination des odeurs tenaces.</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
         <!-- Prestation 7 -->
@@ -349,9 +347,6 @@
             45€
           </div>
           <p data-translate="alacarte-7-desc">Shampoing du ciel de toit pour éliminer les traces et redonner son aspect d'origine.</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
         <!-- Prestation 8 -->
@@ -364,9 +359,6 @@
             90€
           </div>
           <p data-translate="alacarte-8-desc">Polissage et protection des optiques pour retrouver transparence et sécurité.</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
         <!-- Prestation 9 -->
@@ -379,9 +371,6 @@
             45€
           </div>
           <p data-translate="alacarte-9-desc">Correction des défauts sur un élément spécifique (capot, portière, aile...).</p>
-          <a href="tel:+33603946424" class="btn btn-outline" style="margin-top: auto;">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-info">Demander un devis</span>
-          </a>
         </div>
         
       </div>
@@ -403,7 +392,7 @@
             Nous récupérons votre véhicule à domicile ou sur votre lieu de travail, effectuons le nettoyage dans nos locaux, puis vous le livrons parfaitement propre. Disponible sur Combloux, Megève, Chamonix, Sallanches et toute la Haute-Savoie.
           </p>
           <a href="tel:+33603946424" class="btn btn-primary btn-large">
-            <i class="fas fa-phone"></i> <span data-translate="cleaning-delivery-cta">Renseignements livraison</span>
+            <i class="fas fa-phone"></i> <span data-translate="cleaning-delivery-cta">Appeler maintenant</span>
           </a>
         </div>
       </div>
@@ -422,7 +411,7 @@
       
       <div style="text-align: center; margin-top: 2rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
         <a href="tel:+33603946424" class="btn btn-primary btn-large">
-          <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-call-now">Appeler : 06 03 94 64 24</span>
+          <i class="fas fa-phone"></i> <span data-translate="cleaning-cta-call-now">Appeler maintenant</span>
         </a>
         <a href="/car-style74/contact/" class="btn btn-outline btn-large">
           <i class="fas fa-envelope"></i> <span data-translate="cleaning-cta-quote-form">Formulaire de devis</span>
