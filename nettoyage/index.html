@@ -177,26 +177,70 @@
   </section>
   
   <!-- ===== ENCART DÉCONTAMINATION ===== -->
-  <section class="section-light" style="padding: 3rem 0;">
-    <div class="container">
-      <div style="background: linear-gradient(135deg, var(--color-blue-dark), var(--color-blue-primary)); padding: 3rem; border-radius: var(--radius-xl); text-align: center; color: white; box-shadow: var(--shadow-xl);">
-        <div style="max-width: 800px; margin: 0 auto;">
-          <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-atom" style="font-size: 2.5rem;"></i>
-          </div>
-          <h2 style="color: white; margin-bottom: 1rem;" data-translate="cleaning-decontamination-title">
-            Besoin d'une décontamination mécanique complète ?
-          </h2>
-          <p style="font-size: 1.125rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);" data-translate="cleaning-decontamination-text">
-            Éliminez en profondeur les contaminants incrustés dans votre carrosserie (goudron, points de rouille, sel, résine, pollution routirère et industrielle). Préparation essentielle avant polissage ou protection céramique.
-          </p>
-          <a href="/car-style74/nettoyage/decontamination/" class="btn btn-outline" style="background: white; color: var(--color-blue-primary); border-color: white;">
-            <i class="fas fa-arrow-right"></i> <span data-translate="cleaning-decontamination-cta">Découvrir la décontamination</span>
+<section class="section-light" style="padding: 3rem 0;">
+  <div class="container">
+    <div style="
+      background-image: url('/car-style74/assets/images/decontamination-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 3rem;
+      border-radius: var(--radius-xl);
+      text-align: center;
+      color: white;
+      box-shadow: var(--shadow-xl);
+      overflow: hidden;
+    ">
+      
+      <!-- Overlay opacifiant pour lisibilité -->
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, rgba(10, 10, 10, 0.85), rgba(37, 99, 235, 0.75));
+        z-index: 1;
+      "></div>
+      
+      <!-- Contenu au-dessus de l'overlay -->
+      <div style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto;">
+        <div style="width: 80px; height: 80px; margin: 0 auto 1.5rem; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <i class="fas fa-atom" style="font-size: 2.5rem;"></i>
+        </div>
+        
+        <h2 style="color: white; margin-bottom: 1rem; font-size: clamp(1.75rem, 4vw, 2.5rem);" data-translate="cleaning-decontamination-title">
+          Décontamination mécanique complète
+        </h2>
+        
+        <p style="font-size: 1.125rem; margin-bottom: 1.5rem; color: rgba(255,255,255,0.95); line-height: 1.7;" data-translate="cleaning-decontamination-text">
+          Éliminez en profondeur les contaminants incrustés dans votre carrosserie : goudron, points de rouille, sel, résine, pollution routière et industrielle. Cette prestation utilise une clay bar (barre d'argile) et des produits chimiques professionnels pour extraire mécaniquement toutes les impuretés que le lavage classique ne peut pas enlever.
+        </p>
+        
+        <p style="font-size: 1rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9); font-weight: 500;">
+          <i class="fas fa-check-circle" style="color: #4A90E2; margin-right: 0.5rem;"></i>
+          Préparation essentielle avant polissage ou protection céramique
+          <br>
+          <i class="fas fa-check-circle" style="color: #4A90E2; margin-right: 0.5rem;"></i>
+          Redonne douceur et brillance à la peinture
+          <br>
+          <i class="fas fa-check-circle" style="color: #4A90E2; margin-right: 0.5rem;"></i>
+          Traitement professionnel pour un résultat durable
+        </p>
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="/car-style74/contact/" class="btn btn-primary" style="background: white; color: var(--color-blue-primary); border-color: white;">
+            <i class="fas fa-envelope"></i> <span data-translate="cleaning-decontamination-cta">Demander un devis</span>
+          </a>
+          <a href="tel:+33603946424" class="btn btn-outline" style="background: transparent; color: white; border-color: white;">
+            <i class="fas fa-phone"></i> <span>Appeler maintenant</span>
           </a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
   
   <!-- ===== PRESTATIONS À LA CARTE ===== -->
 <section class="pricing-section">
