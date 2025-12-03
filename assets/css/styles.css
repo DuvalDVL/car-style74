@@ -489,6 +489,8 @@ section {
 .nav-link.active {
   color: var(--color-blue-primary);
   background: rgba(74, 144, 226, 0.15);
+}
+
 /* Séparation du lien principal et du toggle dropdown */
 .nav-link {
   position: relative;
