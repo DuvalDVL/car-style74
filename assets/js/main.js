@@ -240,6 +240,7 @@ function initMobileMenu() {
 // ===== MENUS DÉROULANTS (VERSION CORRIGÉE) =====
 // Remplacer la fonction initDropdownMenus() existante dans main.js par celle-ci
 
+// ===== MENUS DÉROULANTS (VERSION AMÉLIORÉE) =====
 function initDropdownMenus() {
   const navItems = document.querySelectorAll('.nav-item.has-dropdown');
   
@@ -257,14 +258,32 @@ function initDropdownMenus() {
         e.stopPropagation();
         
         // Toggle le dropdown
-        item.classList.toggle('active');
+        const isActive = item.classList.contains('active');
         
-        // Fermer les autres menus
+        // Fermer tous les autres menus
         navItems.forEach(otherItem => {
           if (otherItem !== item) {
             otherItem.classList.remove('active');
           }
         });
+        
+        // Toggle l'élément actuel
+        if (isActive) {
+          item.classList.remove('active');
+        } else {
+          item.classList.add('active');
+        }
+      });
+    }
+    
+    // Desktop : hover sur l'item entier
+    if (window.innerWidth > 1024) {
+      item.addEventListener('mouseenter', () => {
+        item.classList.add('hover');
+      });
+      
+      item.addEventListener('mouseleave', () => {
+        item.classList.remove('hover');
       });
     }
     
