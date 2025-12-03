@@ -492,9 +492,9 @@ section {
 }
 
 /* Séparation du lien principal et du toggle dropdown */
-.nav-link {
+.nav-item.has-dropdown .nav-link {
   position: relative;
-  padding-right: 3rem; /* Espace pour la flèche */
+  padding-right: 3rem; /* Espace pour la flèche UNIQUEMENT sur les menus déroulants */
 }
 
 .nav-link.has-dropdown-link {
@@ -517,6 +517,7 @@ section {
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   transition: all var(--transition-fast);
   cursor: pointer;
+  border: none;
 }
 
 .dropdown-toggle:hover {
@@ -793,15 +794,24 @@ section {
     gap: 0;
   }
   
-  /* Lien principal sur mobile */
+  /* RESET : Tous les liens en mode mobile */
   .nav-link {
     padding: 1rem 1.25rem;
-    padding-right: 3.5rem;
     border-radius: 0;
     border-bottom: 1px solid rgba(74, 144, 226, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
+    position: relative;
+    background: transparent !important; /* Forcer pas de background par défaut */
+  }
+  
+  /* Lien avec dropdown sur mobile */
+  .nav-item.has-dropdown .nav-link {
+    padding-right: 3.5rem;
+  }
+  
+  /* Désactiver l'indicateur ::after sur mobile */
+  .nav-link.has-dropdown-link::after {
+    display: none;
   }
   
   /* Badge "cliquable" sur mobile pour les liens principaux */
@@ -809,16 +819,17 @@ section {
     content: '→';
     position: absolute;
     right: 3.5rem;
+    top: 50%;
+    transform: translateY(-50%);
     color: var(--color-blue-primary);
     font-size: 1.2rem;
     opacity: 0.5;
     transition: all var(--transition-fast);
   }
   
-  .nav-link.has-dropdown-link:active::before,
-  .nav-link.has-dropdown-link:hover::before {
+  .nav-link.has-dropdown-link:active::before {
     opacity: 1;
-    transform: translateX(3px);
+    transform: translateY(-50%) translateX(3px);
   }
   
   /* Toggle dropdown sur mobile */
@@ -831,6 +842,10 @@ section {
     background: rgba(74, 144, 226, 0.15);
     border-left: 1px solid rgba(74, 144, 226, 0.3);
     border-radius: 0;
+    transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .dropdown-toggle i {
