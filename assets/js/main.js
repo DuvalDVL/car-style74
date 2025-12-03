@@ -606,6 +606,56 @@ function initFAQ() {
   });
 }
 
+/* Nouveau code pour l'accordéon des Suppléments à la Carte */
+document.addEventListener('DOMContentLoaded', () => {
+    // Sélectionne tous les boutons d'en-tête de l'accordéon des services
+    const accordionHeaders = document.querySelectorAll('.service-accordion-container .accordion-header');
+
+    // Fonction pour vérifier si l'écran est en mode mobile
+    function isMobile() {
+        return window.innerWidth <= 768; // Utilise le même breakpoint que dans le CSS
+    }
+
+    // Fonction pour gérer le clic sur un en-tête d'accordéon
+    function toggleAccordion(event) {
+        if (!isMobile()) {
+            return; // N'active l'accordéon que sur mobile
+        }
+
+        const header = event.currentTarget;
+        const item = header.closest('.accordion-item');
+        const content = item.querySelector('.accordion-content');
+        const isActive = item.classList.contains('active');
+
+        // Ferme tous les autres accordéons
+        accordionHeaders.forEach(h => {
+            const otherItem = h.closest('.accordion-item');
+            if (otherItem !== item && otherItem.classList.contains('active')) {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.accordion-content').style.maxHeight = null;
+            }
+        });
+
+        // Ouvre ou ferme l'accordéon cliqué
+        if (isActive) {
+            item.classList.remove('active');
+            content.style.maxHeight = null;
+        } else {
+            item.classList.add('active');
+            // Définit une hauteur pour l'animation (ajustez si besoin)
+            content.style.maxHeight = content.scrollHeight + "px"; 
+        }
+    }
+
+    // Ajoute les écouteurs d'événements
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', toggleAccordion);
+    });
+    
+    // Si vous aviez déjà un code pour la FAQ, il peut rester, 
+    // assurez-vous juste qu'il gère les classes .faq-item et .faq-question.
+});
+
 // ===== UTILITAIRE : Débounce =====
 function debounce(func, wait) {
   let timeout;
