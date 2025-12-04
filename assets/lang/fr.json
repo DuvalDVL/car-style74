@@ -73,6 +73,18 @@
   "contact-info-address": "Adresse",
   "contact-info-hours": "Horaires",
   "contact-info-hours-text": "Lundi - Vendredi : 9h - 18h<br>Sur rendez-vous",
+
+  "contact-service-cleaning": "Nettoyage",
+  "contact-service-decontamination": "Décontamination mécanique",
+  "contact-service-buffing": "Lustrage",
+  "contact-service-polishing": "Polissage, 40 % et 90 %",
+  "contact-service-ceramic": "Protection céramique",
+  "contact-service-wheels": "Protection jantes",
+  "contact-service-wrapping": "Covering",
+  "contact-service-windows": "Vitres teintées",
+  "contact-service-starlight": "Ciel étoilé, LED d'ambiance",
+  "contact-service-steering": "Installation volant",
+  "contact-service-other": "Autre service"
   
   "footer-about-title": "À propos",
   "footer-about-text": "Car Style 74, spécialistes du detailing automobile haut de gamme à Combloux. Service Livraison Confort Plus disponible sur Megève, Chamonix et Sallanches.",
