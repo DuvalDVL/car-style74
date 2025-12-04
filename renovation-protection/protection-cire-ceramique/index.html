@@ -1,612 +1,684 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Protection cire et céramique à Combloux. Protection 6 mois (cire) ou jusqu'à 5 ans (céramique). Protection complète carrosserie, jantes, vitres, cuir.">
-  <meta name="keywords" content="protection céramique, cire auto, protection carrosserie, traitement céramique, detailing Combloux">
-  <meta name="author" content="Car Style 74">
-  
-    <meta property="og:title" content="Protection Cire & Céramique | Car Style 74">
-  <meta property="og:description" content="Protection longue durée contre les agressions extérieures. Cire 6 mois ou céramique jusqu'à 5 ans.">
-  <meta property="og:image" content="/car-style74/assets/images/protection-ceramique-hero.jpg">
-  <meta property="og:url" content="https://car-style74.com/renovation-protection/protection-cire-ceramique/">
-  
-    <link rel="icon" type="image/png" href="/car-style74/assets/images/favicon.png">
-  
-  <title>Protection Cire & Céramique | Car Style 74 - Combloux</title>
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-    <link rel="stylesheet" href="/car-style74/assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Protection cire et céramique à Combloux. Protection 6 mois (cire) ou jusqu'à 5 ans (céramique). Protection complète carrosserie, jantes, vitres, cuir.">
+  <meta name="keywords" content="protection céramique, cire auto, protection carrosserie, traitement céramique, detailing Combloux">
+  <meta name="author" content="Car Style 74">
+  
+  <meta property="og:title" content="Protection Cire & Céramique | Car Style 74">
+  <meta property="og:description" content="Protection longue durée contre les agressions extérieures. Cire 6 mois ou céramique jusqu'à 5 ans.">
+  <meta property="og:image" content="/car-style74/assets/images/protection-ceramique-hero.jpg">
+  <meta property="og:url" content="https://car-style74.com/renovation-protection/protection-cire-ceramique/">
+  
+  <link rel="icon" type="image/png" href="/car-style74/assets/images/favicon.png">
+  
+  <title>Protection Cire & Céramique | Car Style 74 - Combloux</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="/car-style74/assets/css/styles.css">
 
-    <style>
-  @media (max-width: 768px) {
-    .services-grid[style*="grid-template-columns: repeat(3, 1fr)"],
-    .services-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
-      grid-template-columns: 1fr !important;
-      gap: 1.5rem !important;
-    }
-    .pricing-grid {
-      grid-template-columns: 1fr !important;
-    }
-  }
-  @media (max-width: 1024px) {
-    .services-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
-      grid-template-columns: repeat(2, 1fr) !important;
-    }
-  }
-  @media (max-width: 640px) {
-    .services-grid[style*="grid-template-columns: repeat(4, 1fr)"] {
-      grid-template-columns: 1fr !important;
-    }
-  }
-</style>
-  
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Protection céramique et cire automobile",
-    "provider": {
-      "@type": "AutomotiveBusiness",
-      "name": "Car Style 74",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "685 Route de Plan Mouillé",
-        "addressLocality": "Combloux",
-        "postalCode": "74920",
-        "addressCountry": "FR"
-      },
-      "telephone": "+33603946424"
-    },
-    "areaServed": ["Combloux", "Megève", "Chamonix", "Sallanches"]
-  }
-  </script>
+  <style>
+    /* Fix pour les grilles */
+    .pricing-grid-2col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .services-grid-3col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    
+    .services-grid-4col {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    
+    /* Desktop/Tablette uniquement */
+    .desktop-only-grid {
+      display: block;
+    }
+    
+    .mobile-only-accordion {
+      display: none;
+    }
+    
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .pricing-grid-2col {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .services-grid-3col {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      
+      .services-grid-4col {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .desktop-only-grid {
+        display: none !important;
+      }
+      
+      .mobile-only-accordion {
+        display: block;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .services-grid-3col,
+      .services-grid-4col {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Protection céramique et cire automobile",
+    "provider": {
+      "@type": "AutomotiveBusiness",
+      "name": "Car Style 74",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "685 Route de Plan Mouillé",
+        "addressLocality": "Combloux",
+        "postalCode": "74920",
+        "addressCountry": "FR"
+      },
+      "telephone": "+33603946424"
+    },
+    "areaServed": ["Combloux", "Megève", "Chamonix", "Sallanches"]
+  }
+  </script>
 
-<script>
-  // Définir BASE_PATH en premier pour tous les scripts
-  const BASE_PATH = '/car-style74';
-</script>
+  <script>
+    const BASE_PATH = '/car-style74';
+  </script>
 
-<script src="/car-style74/assets/js/translations.js"></script>
-  
+  <script src="/car-style74/assets/js/translations.js"></script>
+  
 </head>
 
 <body>
-  
-    <div id="header-placeholder"></div>
-  
-    <section class="hero-section">
-    <div class="hero-background" style="background-image: url('/car-style74/assets/images/protection-ceramique-hero.jpg');"></div>
-    <div class="hero-overlay"></div>
-    
-    <div class="hero-content">
-      <h1 class="hero-title" data-translate="protection-hero-title">
-        Protection Cire & Céramique
-      </h1>
-      
-      <p class="hero-subtitle" data-translate="protection-hero-subtitle">
-        Protection longue durée contre les agressions extérieures. Effet hydrophobe, brillance intense et facilité d'entretien. Choisissez entre la cire traditionnelle (6 mois) ou la céramique haute performance (jusqu'à 5 ans).
-      </p>
-      
-      <div class="hero-cta-group">
-        <a href="tel:+33603946424" class="btn btn-primary btn-large">
-          <i class="fas fa-phone"></i> 
-          <span data-translate="protection-cta-call">Appeler maintenant</span>
-        </a>
-        <a href="/car-style74/contact/" class="btn btn-outline btn-large" data-translate="protection-cta-quote">
-          Demander un devis gratuit
-        </a>
-      </div>
-    </div>
-  </section>
-  
-    <section class="pricing-section">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-translate="protection-comparison-title">Cire ou Céramique : Quelle Protection Choisir ?</h2>
-        <p class="section-subtitle" data-translate="protection-comparison-subtitle">
-          Deux solutions adaptées à vos besoins et votre budget
-        </p>
-      </div>
-      
-      <div class="pricing-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 1000px; margin: 0 auto;">
-        
-                <div class="pricing-card" style="display: flex; flex-direction: column;">
-          <h3 data-translate="protection-wax-name">Protection Cire</h3>
-          <div class="pricing-price" data-translate="protection-price-quote">
-            Sur devis
-          </div>
-          <div style="background: rgba(74, 144, 226, 0.1); padding: 0.75rem 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; border-left: 3px solid var(--color-blue-primary);">
-            <p style="margin: 0; color: var(--color-gray-light); font-size: 0.95rem;">
-              <i class="fas fa-shield-alt" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
-              <strong style="color: var(--color-white);" data-translate="protection-duration-label">Durée :</strong> <span data-translate="protection-wax-duration">6 mois</span>
-            </p>
-          </div>
-          
-          <p style="color: var(--color-gray-light); margin-bottom: 1.5rem; line-height: 1.6;" data-translate="protection-wax-description">
-            Protection traditionnelle offrant une brillance intense et une protection intermédiaire. Idéale pour un budget maîtrisé avec renouvellement régulier. Application après polissage 40% ou 90%.
-          </p>
-          
-          <h4 style="color: var(--color-white); font-size: 1rem; margin-bottom: 1rem;">
-            <i class="fas fa-check-circle" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
-            <span data-translate="protection-prerequisites-title">Prérequis obligatoires :</span>
-          </h4>
-          
-          <ul class="pricing-features" style="margin-bottom: 1.5rem;">
-            <li><i class="fas fa-arrow-right"></i> <span data-translate="protection-prerequisite-decontamination">Décontamination mécanique</span></li>
-            <li><i class="fas fa-arrow-right"></i> <span data-translate="protection-prerequisite-polishing-wax">Polissage 40% OU 90%</span></li>
-          </ul>
-          
-          <h4 style="color: var(--color-white); font-size: 1rem; margin-bottom: 1rem;">
-            <i class="fas fa-star" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
-            <span data-translate="protection-advantages-title">Avantages :</span>
-          </h4>
-          
-          <ul class="pricing-features" style="flex-grow: 1;">
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-1">Brillance intense immédiate</span></li>
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-2">Protection contre UV et contaminants</span></li>
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-3">Budget accessible</span></li>
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-4">Facilite l'entretien courant</span></li>
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-5">Idéal pour entretien bi-annuel</span></li>
-          </ul>
-          
-          <div style="background: rgba(74, 144, 226, 0.05); padding: 1rem; border-radius: var(--radius-md); margin-top: 1rem;">
-            <p style="margin: 0; color: var(--color-gray-light); font-size: 0.9rem; text-align: center;">
-              <i class="fas fa-info-circle" style="color: var(--color-blue-primary);"></i>
-              <span data-translate="protection-wax-note">Parfait pour un premier niveau de protection</span>
-            </p>
-          </div>
-          
-          <a href="/car-style74/contact/" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">
-            <i class="fas fa-envelope"></i> <span data-translate="protection-cta-contact">Demander un devis</span>
-          </a>
-        </div>
-        
-                <div class="pricing-card featured" style="display: flex; flex-direction: column;">
-          <h3 data-translate="protection-ceramic-name">Protection Céramique</h3>
-          <div class="pricing-price" data-translate="protection-price-quote">
-            Sur devis
-          </div>
-          <div style="background: rgba(74, 144, 226, 0.1); padding: 0.75rem 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; border-left: 3px solid var(--color-blue-primary);">
-            <p style="margin: 0; color: var(--color-gray-light); font-size: 0.95rem;">
-              <i class="fas fa-shield-alt" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
-              <strong style="color: var(--color-white);" data-translate="protection-duration-label">Durée :</strong> <span data-translate="protection-ceramic-duration">2 ans / 3 ans / 4 ans / 5 ans</span>
-            </p>
-          </div>
-          
-          <p style="color: var(--color-gray-light); margin-bottom: 1.5rem; line-height: 1.6;" data-translate="protection-ceramic-description">
-            Protection haute performance avec effet hydrophobe exceptionnel. Durabilité jusqu'à 5 ans pour les véhicules premium. Résistance maximale aux agressions chimiques et UV. Polissage 90% obligatoire.
-          </p>
-          
-          <h4 style="color: var(--color-white); font-size: 1rem; margin-bottom: 1rem;">
-            <i class="fas fa-exclamation-triangle" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
-            <span data-translate="protection-prerequisites-title">Prérequis obligatoires :</span>
-          </h4>
-          
-          <ul class="pricing-features" style="margin-bottom: 1.5rem;">
-            <li><i class="fas fa-arrow-right"></i> <span data-translate="protection-prerequisite-decontamination">Décontamination mécanique</span></li>
-            <li><i class="fas fa-arrow-right"></i> <span data-translate="protection-prerequisite-polishing-ceramic">Polissage 90% OBLIGATOIRE</span></li>
-          </ul>
-          
-          <h4 style="color: var(--color-white); font-size: 1rem; margin-bottom: 1rem;">
-            <i class="fas fa-star" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
-            <span data-translate="protection-advantages-title">Avantages :</span>
-          </h4>
-          
-          <ul class="pricing-features" style="flex-grow: 1;">
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-1">Protection maximale jusqu'à 5 ans</span></li>
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-2">Effet hydrophobe permanent</span></li>
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-3">Résistance chimique extrême</span></li>
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-4">Brillance profonde durable</span></li>
-            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-5">Pour les clients les plus exigeants</span></li>
-          </ul>
-          
-          <div style="background: rgba(74, 144, 226, 0.05); padding: 1rem; border-radius: var(--radius-md); margin-top: 1rem;">
-            <p style="margin: 0; color: var(--color-gray-light); font-size: 0.9rem; text-align: center;">
-              <i class="fas fa-crown" style="color: var(--color-blue-primary);"></i>
-              <span data-translate="protection-ceramic-note">La protection ultime pour votre véhicule</span>
-            </p>
-          </div>
-          
-          <a href="/car-style74/contact/" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
-            <i class="fas fa-envelope"></i> <span data-translate="protection-cta-contact">Demander un devis</span>
-          </a>
-        </div>
-        
-      </div>
-      
-      <style>
-        @media (max-width: 768px) {
-          .pricing-grid {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      </style>
-    </div>
-  </section>
-  
-    <section class="section-light desktop-only-grid">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-translate="protection-extras-title">Protections Céramiques sur Éléments (à la carte)</h2>
-        <p class="section-subtitle" data-translate="protection-extras-subtitle">
-          Complétez votre protection avec des traitements spécifiques sur les zones sensibles de votre véhicule - tarifs sur devis
-        </p>
-      </div>
-      
-      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr);">
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-circle-notch"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-wheels-name">Jantes</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-wheels-desc">
-            Protection céramique contre la poussière de frein, le sel et les projections. Nettoyage simplifié.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-border-all"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-glass-name">Vitrages</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-glass-desc">
-            Traitement hydrophobe pour pare-brise et vitres. Visibilité optimale sous la pluie, eau qui glisse.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-couch"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-leather-name">Cuirs</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-leather-desc">
-            Entretien et protection des sièges et garnitures cuir. Anti-taches, assouplissement et maintien.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-car-side"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-plastics-name">Plastiques extérieurs</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-plastics-desc">
-            Rénovation et protection des plastiques (pare-chocs, bas de caisse). Anti-blanchiment durable.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-th"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-fabric-name">Tissus & Moquettes</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-fabric-desc">
-            Protection imperméabilisante pour sièges tissu et moquettes. Anti-taches liquides et solides.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-umbrella"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-convertible-name">Capotes cabriolet</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-convertible-desc">
-            Imperméabilisation et protection UV des capotes toile. Prévient les infiltrations et la décoloration.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-lightbulb"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-headlights-name">Phares</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-headlights-desc">
-            Rénovation et protection des optiques jaunies ou opaques. Retrouvez une visibilité parfaite.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-chair"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-upholstery-name">Sellerie complète</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-upholstery-desc">
-            Protection intégrale de tous les éléments intérieurs : sièges, panneaux de porte, ciel de toit.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.75rem;">
-          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
-            <i class="fas fa-shield"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-alloygator-name">Jantes Alloygator</h3>
-          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-alloygator-desc">
-            Protection mécanique anti-rayures des jantes. Film de protection sur les rebords contre les trottoirs.
-          </p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  
-    <section class="section-light mobile-only-accordion">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-translate="protection-extras-mobile-title">Protections sur Éléments</h2>
-        <p class="section-subtitle" data-translate="protection-extras-mobile-subtitle">
-          Complétez votre protection avec des traitements spécifiques
-        </p>
-      </div>
-      
-      <div class="service-accordion-container">
-        
-                <div class="accordion-item active">
-          <button class="accordion-header">
-            <div class="accordion-header-content">
-              <i class="fas fa-car"></i>
-              <span data-translate="protection-category-exterior">Extérieur</span>
-            </div>
-            <i class="fas fa-chevron-down accordion-icon"></i>
-          </button>
-          <div class="accordion-content">
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-circle-notch"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-wheels-name">Jantes</h4>
-                  <p data-translate="protection-extra-wheels-desc-short">Protection céramique contre la poussière de frein et le sel</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-shield"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-alloygator-name">Jantes Alloygator</h4>
-                  <p data-translate="protection-extra-alloygator-desc-short">Protection mécanique anti-rayures des rebords</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
-                <div class="accordion-item active">
-          <button class="accordion-header">
-            <div class="accordion-header-content">
-              <i class="fas fa-couch"></i>
-              <span data-translate="protection-category-interior">Intérieur</span>
-            </div>
-            <i class="fas fa-chevron-down accordion-icon"></i>
-          </button>
-          <div class="accordion-content">
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-couch"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-leather-name">Cuirs</h4>
-                  <p data-translate="protection-extra-leather-desc-short">Entretien et protection anti-taches des sièges cuir</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-th"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-fabric-name">Tissus & Moquettes</h4>
-                  <p data-translate="protection-extra-fabric-desc-short">Protection imperméabilisante anti-taches</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-chair"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-upholstery-name">Sellerie complète</h4>
-                  <p data-translate="protection-extra-upholstery-desc-short">Protection intégrale de tous les éléments intérieurs</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
-                <div class="accordion-item active">
-          <button class="accordion-header">
-            <div class="accordion-header-content">
-              <i class="fas fa-umbrella"></i>
-              <span data-translate="protection-category-convertible">Cabriolet</span>
-            </div>
-            <i class="fas fa-chevron-down accordion-icon"></i>
-          </button>
-          <div class="accordion-content">
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-umbrella"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-convertible-name">Capotes toile</h4>
-                  <p data-translate="protection-extra-convertible-desc-short">Imperméabilisation et protection UV</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-border-all"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-glass-name">Vitrages</h4>
-                  <p data-translate="protection-extra-glass-desc-short">Traitement hydrophobe pour visibilité optimale</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-car-side"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-plastics-name">Plastiques extérieurs</h4>
-                  <p data-translate="protection-extra-plastics-desc-short">Rénovation et protection anti-blanchiment</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="accordion-service-item">
-              <div class="accordion-service-header">
-                <div class="accordion-service-icon">
-                  <i class="fas fa-lightbulb"></i>
-                </div>
-                <div class="accordion-service-info">
-                  <h4 data-translate="protection-extra-headlights-name">Phares</h4>
-                  <p data-translate="protection-extra-headlights-desc-short">Rénovation et protection des optiques</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
+  
+  <div id="header-placeholder"></div>
+  
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section">
+    <div class="hero-background" style="background-image: url('/car-style74/assets/images/protection-ceramique-hero.jpg');"></div>
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <h1 class="hero-title" data-translate="protection-hero-title">
+        Protection Cire & Céramique
+      </h1>
+      
+      <p class="hero-subtitle" data-translate="protection-hero-subtitle">
+        Protection longue durée contre les agressions extérieures. Effet hydrophobe, brillance intense et facilité d'entretien. Choisissez entre la cire traditionnelle (6 mois) ou la céramique haute performance (jusqu'à 5 ans).
+      </p>
+      
+      <div class="hero-cta-group">
+        <a href="tel:+33603946424" class="btn btn-primary btn-large">
+          <i class="fas fa-phone"></i> 
+          <span data-translate="protection-cta-call">Appeler maintenant</span>
+        </a>
+        <a href="/car-style74/contact/" class="btn btn-outline btn-large" data-translate="protection-cta-quote">
+          Demander un devis gratuit
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== COMPARAISON CIRE / CÉRAMIQUE ===== -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-translate="protection-comparison-title">Cire ou Céramique : Quelle Protection Choisir ?</h2>
+        <p class="section-subtitle" data-translate="protection-comparison-subtitle">
+          Deux solutions adaptées à vos besoins et votre budget
+        </p>
+      </div>
+      
+      <div class="pricing-grid-2col">
+        
+        <!-- Protection Cire -->
+        <div class="pricing-card" style="display: flex; flex-direction: column;">
+          <h3 data-translate="protection-wax-name">Protection Cire</h3>
+          <div class="pricing-price" data-translate="protection-price-quote">
+            Sur devis
+          </div>
+          <div style="background: rgba(74, 144, 226, 0.1); padding: 0.75rem 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; border-left: 3px solid var(--color-blue-primary);">
+            <p style="margin: 0; color: var(--color-gray-light); font-size: 0.95rem;">
+              <i class="fas fa-shield-alt" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
+              <strong style="color: var(--color-white);" data-translate="protection-duration-label">Durée :</strong> <span data-translate="protection-wax-duration">6 mois</span>
+            </p>
+          </div>
+          
+          <p style="color: var(--color-gray-light); margin-bottom: 1.5rem; line-height: 1.6;" data-translate="protection-wax-description">
+            Protection traditionnelle offrant une brillance intense et une protection intermédiaire. Idéale pour un budget maîtrisé avec renouvellement régulier. Application après polissage 40% ou 90%.
+          </p>
+          
+          <h4 style="color: var(--color-white); font-size: 1rem; margin-bottom: 1rem;">
+            <i class="fas fa-check-circle" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
+            <span data-translate="protection-prerequisites-title">Prérequis obligatoires :</span>
+          </h4>
+          
+          <ul class="pricing-features" style="margin-bottom: 1.5rem;">
+            <li><i class="fas fa-arrow-right"></i> <span data-translate="protection-prerequisite-decontamination">Décontamination mécanique</span></li>
+            <li><i class="fas fa-arrow-right"></i> <span data-translate="protection-prerequisite-polishing-wax">Polissage 40% OU 90%</span></li>
+          </ul>
+          
+          <h4 style="color: var(--color-white); font-size: 1rem; margin-bottom: 1rem;">
+            <i class="fas fa-star" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
+            <span data-translate="protection-advantages-title">Avantages :</span>
+          </h4>
+          
+          <ul class="pricing-features" style="flex-grow: 1;">
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-1">Brillance intense immédiate</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-2">Protection contre UV et contaminants</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-3">Budget accessible</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-4">Facilite l'entretien courant</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-wax-advantage-5">Idéal pour entretien bi-annuel</span></li>
+          </ul>
+          
+          <div style="background: rgba(74, 144, 226, 0.05); padding: 1rem; border-radius: var(--radius-md); margin-top: 1rem;">
+            <p style="margin: 0; color: var(--color-gray-light); font-size: 0.9rem; text-align: center;">
+              <i class="fas fa-info-circle" style="color: var(--color-blue-primary);"></i>
+              <span data-translate="protection-wax-note">Parfait pour un premier niveau de protection</span>
+            </p>
+          </div>
+          
+          <a href="/car-style74/contact/" class="btn btn-outline" style="width: 100%; margin-top: 1.5rem;">
+            <i class="fas fa-envelope"></i> <span data-translate="protection-cta-contact">Demander un devis</span>
+          </a>
+        </div>
+        
+        <!-- Protection Céramique -->
+        <div class="pricing-card featured" style="display: flex; flex-direction: column;">
+          <h3 data-translate="protection-ceramic-name">Protection Céramique</h3>
+          <div class="pricing-price" data-translate="protection-price-quote">
+            Sur devis
+          </div>
+          <div style="background: rgba(74, 144, 226, 0.1); padding: 0.75rem 1rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; border-left: 3px solid var(--color-blue-primary);">
+            <p style="margin: 0; color: var(--color-gray-light); font-size: 0.95rem;">
+              <i class="fas fa-shield-alt" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
+              <strong style="color: var(--color-white);" data-translate="protection-duration-label">Durée :</strong> <span data-translate="protection-ceramic-duration">2 ans / 3 ans / 4 ans / 5 ans</span>
+            </p>
+          </div>
+          
+          <p style="color: var(--color-gray-light); margin-bottom: 1.5rem; line-height: 1.6;" data-translate="protection-ceramic-description">
+            Protection haute performance avec effet hydrophobe exceptionnel. Durabilité jusqu'à 5 ans pour les véhicules premium. Résistance maximale aux agressions chimiques et UV. Polissage 90% obligatoire.
+          </p>
+          
+          <h4 style="color: var(--color-white); font-size: 1rem; margin-bottom: 1rem;">
+            <i class="fas fa-exclamation-triangle" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
+            <span data-translate="protection-prerequisites-title">Prérequis obligatoires :</span>
+          </h4>
+          
+          <ul class="pricing-features" style="margin-bottom: 1.5rem;">
+            <li><i class="fas fa-arrow-right"></i> <span data-translate="protection-prerequisite-decontamination">Décontamination mécanique</span></li>
+            <li><i class="fas fa-arrow-right"></i> <span data-translate="protection-prerequisite-polishing-ceramic">Polissage 90% OBLIGATOIRE</span></li>
+          </ul>
+          
+          <h4 style="color: var(--color-white); font-size: 1rem; margin-bottom: 1rem;">
+            <i class="fas fa-star" style="color: var(--color-blue-primary); margin-right: 0.5rem;"></i>
+            <span data-translate="protection-advantages-title">Avantages :</span>
+          </h4>
+          
+          <ul class="pricing-features" style="flex-grow: 1;">
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-1">Protection maximale jusqu'à 5 ans</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-2">Effet hydrophobe permanent</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-3">Résistance chimique extrême</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-4">Brillance profonde durable</span></li>
+            <li><i class="fas fa-check-circle"></i> <span data-translate="protection-ceramic-advantage-5">Pour les clients les plus exigeants</span></li>
+          </ul>
+          
+          <div style="background: rgba(74, 144, 226, 0.05); padding: 1rem; border-radius: var(--radius-md); margin-top: 1rem;">
+            <p style="margin: 0; color: var(--color-gray-light); font-size: 0.9rem; text-align: center;">
+              <i class="fas fa-crown" style="color: var(--color-blue-primary);"></i>
+              <span data-translate="protection-ceramic-note">La protection ultime pour votre véhicule</span>
+            </p>
+          </div>
+          
+          <a href="/car-style74/contact/" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">
+            <i class="fas fa-envelope"></i> <span data-translate="protection-cta-contact">Demander un devis</span>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== PROTECTIONS SUR ÉLÉMENTS (DESKTOP) ===== -->
+  <section class="section-light desktop-only-grid">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-translate="protection-extras-title">Protections Céramiques sur Éléments (à la carte)</h2>
+        <p class="section-subtitle" data-translate="protection-extras-subtitle">
+          Complétez votre protection avec des traitements spécifiques sur les zones sensibles de votre véhicule - tarifs sur devis
+        </p>
+      </div>
+      
+      <div class="services-grid-3col">
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-circle-notch"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-wheels-name">Jantes</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-wheels-desc">
+            Protection céramique contre la poussière de frein, le sel et les projections. Nettoyage simplifié.
+          </p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-border-all"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-glass-name">Vitrages</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-glass-desc">
+            Traitement hydrophobe pour pare-brise et vitres. Visibilité optimale sous la pluie, eau qui glisse.
+          </p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-couch"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-leather-name">Cuirs</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-leather-desc">
+            Entretien et protection des sièges et garnitures cuir. Anti-taches, assouplissement et maintien.
+          </p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-car-side"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-plastics-name">Plastiques extérieurs</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-plastics-desc">
+            Rénovation et protection des plastiques (pare-chocs, bas de caisse). Anti-blanchiment durable.
+          </p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-th"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-fabric-name">Tissus & Moquettes</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-fabric-desc">
+            Protection imperméabilisante pour sièges tissu et moquettes. Anti-taches liquides et solides.
+          </p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-umbrella"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-convertible-name">Capotes cabriolet</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-convertible-desc">
+            Imperméabilisation et protection UV des capotes toile. Prévient les infiltrations et la décoloration.
+          </p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-headlights-name">Phares</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-headlights-desc">
+            Rénovation et protection des optiques jaunies ou opaques. Retrouvez une visibilité parfaite.
+          </p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-chair"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-upholstery-name">Sellerie complète</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-upholstery-desc">
+            Protection intégrale de tous les éléments intérieurs : sièges, panneaux de porte, ciel de toit.
+          </p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.75rem;">
+          <div class="service-icon" style="width: 60px; height: 60px; margin-bottom: 1rem;">
+            <i class="fas fa-shield"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.5rem;" data-translate="protection-extra-alloygator-name">Jantes Alloygator</h3>
+          <p style="font-size: 0.9rem; margin: 0; color: var(--color-gray-light);" data-translate="protection-extra-alloygator-desc">
+            Protection mécanique anti-rayures des jantes. Film de protection sur les rebords contre les trottoirs.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== PROTECTIONS SUR ÉLÉMENTS (MOBILE ACCORDÉON) ===== -->
+  <section class="section-light mobile-only-accordion">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-translate="protection-extras-mobile-title">Protections sur Éléments</h2>
+        <p class="section-subtitle" data-translate="protection-extras-mobile-subtitle">
+          Complétez votre protection avec des traitements spécifiques
+        </p>
+      </div>
+      
+      <div class="service-accordion-container">
+        
+        <!-- Catégorie Extérieur -->
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            <div class="accordion-header-content">
+              <i class="fas fa-car"></i>
+              <span data-translate="protection-category-exterior">Extérieur</span>
+            </div>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-circle-notch"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-wheels-name">Jantes</h4>
+                  <p data-translate="protection-extra-wheels-desc-short">Protection céramique contre la poussière de frein et le sel</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-shield"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-alloygator-name">Jantes Alloygator</h4>
+                  <p data-translate="protection-extra-alloygator-desc-short">Protection mécanique anti-rayures des rebords</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Catégorie Intérieur -->
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            <div class="accordion-header-content">
+              <i class="fas fa-couch"></i>
+              <span data-translate="protection-category-interior">Intérieur</span>
+            </div>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-couch"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-leather-name">Cuirs</h4>
+                  <p data-translate="protection-extra-leather-desc-short">Entretien et protection anti-taches des sièges cuir</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-th"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-fabric-name">Tissus & Moquettes</h4>
+                  <p data-translate="protection-extra-fabric-desc-short">Protection imperméabilisante anti-taches</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-chair"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-upholstery-name">Sellerie complète</h4>
+                  <p data-translate="protection-extra-upholstery-desc-short">Protection intégrale de tous les éléments intérieurs</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Catégorie Cabriolet -->
+        <div class="accordion-item active">
+          <button class="accordion-header">
+            <div class="accordion-header-content">
+              <i class="fas fa-umbrella"></i>
+              <span data-translate="protection-category-convertible">Cabriolet</span>
+            </div>
+            <i class="fas fa-chevron-down accordion-icon"></i>
+          </button>
+          <div class="accordion-content">
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-umbrella"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-convertible-name">Capotes toile</h4>
+                  <p data-translate="protection-extra-convertible-desc-short">Imperméabilisation et protection UV</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-border-all"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-glass-name">Vitrages</h4>
+                  <p data-translate="protection-extra-glass-desc-short">Traitement hydrophobe pour visibilité optimale</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-car-side"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-plastics-name">Plastiques extérieurs</h4>
+                  <p data-translate="protection-extra-plastics-desc-short">Rénovation et protection anti-blanchiment</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-service-item">
+              <div class="accordion-service-header">
+                <div class="accordion-service-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="accordion-service-info">
+                  <h4 data-translate="protection-extra-headlights-name">Phares</h4>
+                  <p data-translate="protection-extra-headlights-desc-short">Rénovation et protection des optiques</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
-  <section class="pricing-section">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-translate="protection-process-title">Processus d'Application Céramique</h2>
-        <p class="section-subtitle" data-translate="protection-process-subtitle">
-          Une méthode rigoureuse en 4 étapes pour une protection optimale et durable
-        </p>
-      </div>
-      
-      <div class="services-grid" style="grid-template-columns: repeat(4, 1fr);">
-        
-                <div class="service-card" style="padding: 2rem; position: relative; overflow: visible;">
-          <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--color-blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.5rem; border: 4px solid #f9fafb;">
-            1
-          </div>
-          <div class="service-icon" style="width: 60px; height: 60px; margin: 2rem auto 1rem;">
-            <i class="fas fa-atom"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;" data-translate="protection-step-1-title">Décontamination</h3>
-          <p style="font-size: 0.9rem; margin: 0;" data-translate="protection-step-1-desc">
-            Élimination complète de tous les contaminants : goudron, résine, pollution métallique.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 2rem; position: relative; overflow: visible;">
-          <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--color-blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.5rem; border: 4px solid #f9fafb;">
-            2
-          </div>
-          <div class="service-icon" style="width: 60px; height: 60px; margin: 2rem auto 1rem;">
-            <i class="fas fa-gem"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;" data-translate="protection-step-2-title">Polissage</h3>
-          <p style="font-size: 0.9rem; margin: 0;" data-translate="protection-step-2-desc">
-            Correction profonde 90% pour obtenir une surface parfaitement lisse et sans défaut.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 2rem; position: relative; overflow: visible;">
-          <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--color-blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.5rem; border: 4px solid #f9fafb;">
-            3
-          </div>
-          <div class="service-icon" style="width: 60px; height: 60px; margin: 2rem auto 1rem;">
-            <i class="fas fa-layer-group"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;" data-translate="protection-step-3-title">Application</h3>
-          <p style="font-size: 0.9rem; margin: 0;" data-translate="protection-step-3-desc">
-            Application en plusieurs couches du revêtement céramique selon la formule choisie.
-          </p>
-        </div>
-        
-                <div class="service-card" style="padding: 2rem; position: relative; overflow: visible;">
-          <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--color-blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.5rem; border: 4px solid #f9fafb;">
-            4
-          </div>
-          <div class="service-icon" style="width: 60px; height: 60px; margin: 2rem auto 1rem;">
-            <i class="fas fa-clock"></i>
-          </div>
-          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;" data-translate="protection-step-4-title">Durcissement</h3>
-          <p style="font-size: 0.9rem; margin: 0;" data-translate="protection-step-4-desc">
-            Séchage et polymérisation complète. Attendre 7 jours avant le premier lavage.
-          </p>
-        </div>
-        
-      </div>
-      
-      <style>
-        @media (max-width: 1024px) {
-          .services-grid {
-            grid-template-columns: repeat(2, 1fr) !important;
-          }
-        }
-        @media (max-width: 640px) {
-          .services-grid {
-            grid-template-columns: 1fr !important;
-          }
-        }
-      </style>
-    </div>
-  </section>
+  <!-- ===== PROCESSUS D'APPLICATION ===== -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-translate="protection-process-title">Processus d'Application Céramique</h2>
+        <p class="section-subtitle" data-translate="protection-process-subtitle">
+          Une méthode rigoureuse en 4 étapes pour une protection optimale et durable
+        </p>
+      </div>
+      
+      <div class="services-grid-4col">
+        
+        <!-- Étape 1 -->
+        <div class="service-card" style="padding: 2rem; position: relative; overflow: visible;">
+          <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--color-blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.5rem; border: 4px solid #f9fafb;">
+            <span data-translate="protection-step-1-number">1</span>
+          </div>
+          <div class="service-icon" style="width: 60px; height: 60px; margin: 2rem auto 1rem;">
+            <i class="fas fa-atom"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;" data-translate="protection-step-1-title">Décontamination</h3>
+          <p style="font-size: 0.9rem; margin: 0;" data-translate="protection-step-1-desc">
+            Élimination complète de tous les contaminants : goudron, résine, pollution métallique.
+          </p>
+        </div>
+        
+        <!-- Étape 2 -->
+        <div class="service-card" style="padding: 2rem; position: relative; overflow: visible;">
+          <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--color-blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.5rem; border: 4px solid #f9fafb;">
+            <span data-translate="protection-step-2-number">2</span>
+          </div>
+          <div class="service-icon" style="width: 60px; height: 60px; margin: 2rem auto 1rem;">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;" data-translate="protection-step-2-title">Polissage</h3>
+          <p style="font-size: 0.9rem; margin: 0;" data-translate="protection-step-2-desc">
+            Correction profonde 90% pour obtenir une surface parfaitement lisse et sans défaut.
+          </p>
+        </div>
+        
+        <!-- Étape 3 -->
+        <div class="service-card" style="padding: 2rem; position: relative; overflow: visible;">
+          <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--color-blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.5rem; border: 4px solid #f9fafb;">
+            <span data-translate="protection-step-3-number">3</span>
+          </div>
+          <div class="service-icon" style="width: 60px; height: 60px; margin: 2rem auto 1rem;">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;" data-translate="protection-step-3-title">Application</h3>
+          <p style="font-size: 0.9rem; margin: 0;" data-translate="protection-step-3-desc">
+            Application en plusieurs couches du revêtement céramique selon la formule choisie.
+          </p>
+        </div>
+        
+        <!-- Étape 4 -->
+        <div class="service-card" style="padding: 2rem; position: relative; overflow: visible;">
+          <div style="position: absolute; top: -25px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: var(--color-blue-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.5rem; border: 4px solid #f9fafb;">
+            <span data-translate="protection-step-4-number">4</span>
+          </div>
+          <div class="service-icon" style="width: 60px; height: 60px; margin: 2rem auto 1rem;">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 style="font-size: 1.125rem; margin-bottom: 0.75rem;" data-translate="protection-step-4-title">Durcissement</h3>
+          <p style="font-size: 0.9rem; margin: 0;" data-translate="protection-step-4-desc">
+            Séchage et polymérisation complète. Attendre 7 jours avant le premier lavage.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
 
-    <section class="section-light">
-    <div class="container">
-      <div class="section-title">
-        <h2 data-translate="protection-intro-title">Pourquoi protéger votre carrosserie ?</h2>
-        <p class="section-subtitle" data-translate="protection-intro-text">
-          La peinture de votre véhicule est constamment exposée aux UV, à la pollution, aux pluies acides, aux fientes d'oiseaux et aux micro-rayures liées au lavage. Sans protection adéquate, elle se ternit, s'oxyde et perd de sa valeur. Nos traitements cire et céramique créent une barrière physique sacrificielle pour préserver l'état neuf de votre peinture.
-        </p>
-      </div>
-      
-      <div class="services-grid" style="grid-template-columns: repeat(3, 1fr); max-width: 1000px; margin: 2rem auto 0; gap: 2rem;">
-                <div class="service-card" style="padding: 1.5rem; text-align: center;">
-          <div class="service-icon" style="width: 50px; height: 50px; margin: 0 auto 1rem;"><i class="fas fa-hand-holding-usd"></i></div>
-          <h4 data-translate="protection-benefit-1-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Maintien de la Valeur</h4>
-          <p data-translate="protection-benefit-1-desc" style="font-size: 0.85rem; color: var(--color-gray-light); margin: 0;">Un véhicule protégé conserve son aspect neuf, facilitant la revente à un meilleur prix.</p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.5rem; text-align: center;">
-          <div class="service-icon" style="width: 50px; height: 50px; margin: 0 auto 1rem;"><i class="fas fa-soap"></i></div>
-          <h4 data-translate="protection-benefit-2-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Facilité d'Entretien</h4>
-          <p data-translate="protection-benefit-2-desc" style="font-size: 0.85rem; color: var(--color-gray-light); margin: 0;">L'effet hydrophobe repousse l'eau et les saletés, le lavage est plus rapide et moins fréquent.</p>
-        </div>
-        
-                <div class="service-card" style="padding: 1.5rem; text-align: center;">
-          <div class="service-icon" style="width: 50px; height: 50px; margin: 0 auto 1rem;"><i class="fas fa-layer-group"></i></div>
-          <h4 data-translate="protection-benefit-3-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Barrière Anti-UV</h4>
-          <p data-translate="protection-benefit-3-desc" style="font-size: 0.85rem; color: var(--color-gray-light); margin: 0;">La protection filtre les rayons UV nocifs qui sont la cause principale du vieillissement de la peinture.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
+  <!-- ===== POURQUOI PROTÉGER ===== -->
+  <section class="section-light">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-translate="protection-intro-title">Pourquoi protéger votre carrosserie ?</h2>
+        <p class="section-subtitle" data-translate="protection-intro-text">
+          La peinture de votre véhicule est constamment exposée aux UV, à la pollution, aux pluies acides, aux fientes d'oiseaux et aux micro-rayures liées au lavage. Sans protection adéquate, elle se ternit, s'oxyde et perd de sa valeur. Nos traitements cire et céramique créent une barrière physique sacrificielle pour préserver l'état neuf de votre peinture.
+        </p>
+      </div>
+      
+      <div class="services-grid-3col" style="max-width: 1000px; margin: 2rem auto 0;">
+        
+        <div class="service-card" style="padding: 1.5rem; text-align: center;">
+          <div class="service-icon" style="width: 50px; height: 50px; margin: 0 auto 1rem;">
+            <i class="fas fa-hand-holding-usd"></i>
+          </div>
+          <h4 data-translate="protection-benefit-1-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Maintien de la Valeur</h4>
+          <p data-translate="protection-benefit-1-desc" style="font-size: 0.85rem; color: var(--color-gray-light); margin: 0;">Un véhicule protégé conserve son aspect neuf, facilitant la revente à un meilleur prix.</p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.5rem; text-align: center;">
+          <div class="service-icon" style="width: 50px; height: 50px; margin: 0 auto 1rem;">
+            <i class="fas fa-soap"></i>
+          </div>
+          <h4 data-translate="protection-benefit-2-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Facilité d'Entretien</h4>
+          <p data-translate="protection-benefit-2-desc" style="font-size: 0.85rem; color: var(--color-gray-light); margin: 0;">L'effet hydrophobe repousse l'eau et les saletés, le lavage est plus rapide et moins fréquent.</p>
+        </div>
+        
+        <div class="service-card" style="padding: 1.5rem; text-align: center;">
+          <div class="service-icon" style="width: 50px; height: 50px; margin: 0 auto 1rem;">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h4 data-translate="protection-benefit-3-title" style="font-size: 1rem; margin-bottom: 0.5rem;">Barrière Anti-UV</h4>
+          <p data-translate="protection-benefit-3-desc" style="font-size: 0.85rem; color: var(--color-gray-light); margin: 0;">La protection filtre les rayons UV nocifs qui sont la cause principale du vieillissement de la peinture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- ===== CTA FINALE ===== -->
+  <section class="pricing-section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-translate="protection-final-cta-title">Prêt à protéger votre véhicule ?</h2>
+        <p class="section-subtitle" data-translate="protection-final-cta-text">
+          Contactez-nous pour un diagnostic personnalisé et découvrir quelle protection convient le mieux à votre véhicule et vos besoins.
+        </p>
+      </div>
+      
+      <div style="text-align: center; margin-top: 2rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:+33603946424" class="btn btn-primary btn-large">
+          <i class="fas fa-phone"></i> <span data-translate="protection-cta-call-now">06 03 94 64 24</span>
+        </a>
+        <a href="/car-style74/contact/" class="btn btn-outline btn-large">
+          <i class="fas fa-envelope"></i> <span data-translate="protection-cta-quote-form">Demander un devis</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer dynamique -->
+  <div id="footer-placeholder"></div>
+  
+  <!-- JavaScript Principal -->
+  <script src="/car-style74/assets/js/main.js"></script>
+  
 </body>
 </html>
