@@ -1,0 +1,83 @@
+{
+  "delivery-title": "Livraison Confort Plus",
+  "delivery-text": "Récupération et livraison de votre véhicule à domicile ou au travail",
+  
+  "nav-home": "Accueil",
+  "nav-cleaning": "Nettoyage",
+  "nav-renovation": "Rénovation & Protection",
+  "nav-polishing": "Lustrage et polissage",
+  "nav-ceramic": "Protection cire & céramique",
+  "nav-aesthetic": "Services esthétiques",
+  "nav-covering": "Covering & vitres teintées",
+  "nav-accessories": "Installation d'accessoires",
+  "nav-starlight": "Ciel étoilé / LED d'ambiance",
+  "nav-gallery": "Galerie",
+  "nav-quote": "Demander un devis",
+  
+  "hero-title": "Votre expert esthétique auto",
+  "hero-subtitle": "Spécialistes du detailing haut de gamme à Combloux. Polissage, protection céramique, covering, ciel étoilé et bien plus encore.",
+  "cta-quote": "Demander un devis gratuit",
+  "cta-call": "Appeler maintenant",
+  "reviews-count": "67 avis • Note 5/5",
+  
+  "services-title": "Nos Services Esthétiques Auto",
+  "services-subtitle": "Des prestations haut de gamme pour sublimer et protéger votre véhicule",
+  
+  "service-1-title": "Nettoyage intérieur / extérieur & Décontamination",
+  "service-1-desc": "Nettoyage approfondi intérieur/extérieur et décontamination mécanique pour éliminer toutes les impuretés.",
+  "service-1-cta": "En savoir plus",
+  
+  "service-2-title": "Lustrage, Polissage & Protection Céramique",
+  "service-2-desc": "Correction des défauts jusqu'à 90% et protection céramique longue durée pour une carrosserie éclatante.",
+  "service-2-cta": "En savoir plus",
+  
+  "service-3-title": "Covering, Déchromage & Vitres Teintées",
+  "service-3-desc": "Changement de couleur, protection de peinture et personnalisation complète de votre véhicule.",
+  "service-3-cta": "En savoir plus",
+  
+  "service-4-title": "Ciel Étoilé, LED d'Ambiance & Accessoires",
+  "service-4-desc": "Installation de ciel étoilé, LED d'ambiance, dashcam et tous accessoires pour personnaliser l'habitacle.",
+  "service-4-cta": "En savoir plus",
+  
+  "reels-title": "Nos Réalisations en Vidéo",
+  "reels-subtitle": "Découvrez nos transformations sur Instagram",
+  "reels-cta": "Suivez-nous sur Instagram",
+  
+  "testimonials-title": "Ce que disent nos clients",
+  "testimonials-rating": "sur 5 • 67 avis",
+  "testimonials-cta": "Voir tous les avis Google",
+  
+  "gallery-title": "Galerie de nos réalisations",
+  "gallery-subtitle": "Quelques exemples de nos transformations",
+  "gallery-cta": "Voir toute la galerie",
+  
+  "contact-title": "Demandez votre devis gratuit",
+  "contact-subtitle": "Remplissez le formulaire ou contactez-nous directement",
+  "contact-name": "Nom, Prénom",
+  "contact-phone": "Téléphone",
+  "contact-email": "E-mail",
+  "contact-vehicle": "Modèle du véhicule",
+  "contact-vehicle-placeholder": "Ex: BMW X5",
+  "contact-seats": "Nombre de places dans le véhicule",
+  "contact-service": "Prestation souhaitée",
+  "contact-service-select": "Sélectionnez une prestation",
+  "contact-message": "Votre message (optionnel)",
+  "contact-submit": "Envoyer la demande",
+  "contact-sending": "Envoi en cours...",
+  "contact-success": "Message envoyé avec succès ! Nous vous répondrons rapidement.",
+  "contact-error": "Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.",
+  
+  "contact-info-title": "Coordonnées",
+  "contact-info-phone": "Téléphone",
+  "contact-info-email": "Email",
+  "contact-info-address": "Adresse",
+  "contact-info-hours": "Horaires",
+  "contact-info-hours-text": "Lundi - Vendredi : 9h - 18h<br>Sur rendez-vous",
+  
+  "footer-about-title": "À propos",
+  "footer-about-text": "Car Style 74, spécialistes du detailing automobile haut de gamme à Combloux. Service Livraison Confort Plus disponible sur Megève, Chamonix et Sallanches.",
+  "footer-services-title": "Services",
+  "footer-legal-title": "Informations légales",
+  "footer-contact-title": "Contact",
+  "footer-copyright": "© 2024 Car Style 74. Tous droits réservés."
+}
