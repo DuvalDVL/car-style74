@@ -2,8 +2,6 @@
    CAR STYLE 74 - SYSTÈME DE TRADUCTION
    ================================================ */
 
-const BASE_PATH = '/car-style74';
-
 // Langue par défaut
 let currentLanguage = localStorage.getItem('car-style74-lang') || 'fr';
 let translations = {};
