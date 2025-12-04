@@ -180,16 +180,13 @@ function initStickyLanguageButton() {
   });
 }
 
-// ===== CHANGEMENT DE LANGUE =====
+// ===== CHANGEMENT DE LANGUE (MODIFIÉ) =====
 function changeLanguage(lang) {
-  console.log(`Changement de langue vers: ${lang}`);
-  // TODO: Implémenter le système de traduction
-  // Pour l'instant, juste un log pour confirmer que ça fonctionne
-  
-  // Exemple d'implémentation future:
-  // - Charger un fichier JSON avec les traductions
-  // - Parcourir tous les éléments [data-translate]
-  // - Remplacer le texte par la traduction correspondante
+  if (window.TranslationSystem) {
+    window.TranslationSystem.change(lang);
+  } else {
+    console.error('❌ Système de traduction non chargé');
+  }
 }
 
 // ===== MENU MOBILE =====
