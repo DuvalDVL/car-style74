@@ -582,8 +582,8 @@ section {
 
 /* Menu déroulant 3 éléments */
 .dropdown-triple {
-  min-width: 400px;
-  max-width: 420px;
+  min-width: 420px;
+  max-width: 440px;
 }
 
 .nav-item:hover .dropdown-menu,
