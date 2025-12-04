@@ -1,13 +1,13 @@
 /* ================================================
-   CAR STYLE 74 - JAVASCRIPT (CORRIGÉ)
-   Fonctionnalités : Header/Footer dynamiques, Menu,
-   Lightbox, Reels, Formulaire, Animations, Langue, FAQ
+   CAR STYLE 74 - JAVASCRIPT (CORRIGÉ ET FINALISÉ)
    ================================================ */
 
-// ===== CONFIGURATION =====
+// ===== CONFIGURATION CLÉS =====
 const BASE_PATH = '/car-style74';
-// 💡 CORRECTION #1 : Le chemin vers les includes est généralement dans 'assets'
-const INCLUDES_PATH = `${BASE_PATH}/includes`; 
+
+// Chemin corrigé pour la structure où 'includes' est à la racine de 'car-style74'
+// RÉSULTAT : /car-style74/includes
+const INCLUDES_PATH = `${BASE_PATH}/includes`;
 
 // ===== CHARGEMENT HEADER & FOOTER + INITIALISATION GLOBALE =====
 document.addEventListener('DOMContentLoaded', async function() {
@@ -18,15 +18,14 @@ document.addEventListener('DOMContentLoaded', async function() {
     const headerHtml = await headerResponse.text();
     document.getElementById('header-placeholder').innerHTML = headerHtml;
    
-    // 💡 CORRECTION #2 : Initialiser le Système de Traduction EN PREMIER
-    // Il doit être prêt avant que les sélecteurs de langue ne soient initialisés
+    // Initialiser le Système de Traduction EN PREMIER
     if (window.TranslationSystem) {
       await window.TranslationSystem.init();
     } else {
       console.error("Le script translations.js n'a pas exposé TranslationSystem. Vérifiez l'ordre de chargement dans l'HTML.");
     }
 
-    // Initialiser les fonctionnalités du header (incluant les sélecteurs de langue qui appellent changeLanguage)
+    // Initialiser les fonctionnalités du header
     initHeader();
     initLanguageSelector();
     initStickyLanguageButton();
@@ -53,13 +52,11 @@ document.addEventListener('DOMContentLoaded', async function() {
   initLazyLoading();
   initAnimationsOnScroll();
   initReels();
-  initFAQ(); 
-  initServicesAccordion(); 
+  initFAQ(); 
+  initServicesAccordion(); 
 });
 
-// 💡 CORRECTION #3 : Globaliser la fonction changeLanguage pour qu'elle soit accessible
-// par les EventListeners créés dans initLanguageSelector/initStickyLanguageButton.
-// (Même si elle est déclarée globalement ici, l'attacher explicitement à window rend le code plus clair.)
+// ===== FONCTION GLOBALE DE CHANGEMENT DE LANGUE (ACCESSIBLE DEPUIS L'HTML) =====
 window.changeLanguage = async function(lang) {
   if (window.TranslationSystem) {
     await window.TranslationSystem.change(lang);
