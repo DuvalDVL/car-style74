@@ -84,13 +84,6 @@
   "contact-info-address": "Adresse",
   "contact-info-hours": "Horaires",
   "contact-info-hours-text": "Lundi - Vendredi : 9h - 18h<br>Sur rendez-vous",
-  
-  "footer-about-title": "À propos",
-  "footer-about-text": "Car Style 74, spécialistes du detailing automobile haut de gamme à Combloux. Service Livraison Confort Plus disponible sur Megève, Chamonix et Sallanches.",
-  "footer-services-title": "Services",
-  "footer-legal-title": "Informations légales",
-  "footer-contact-title": "Contact",
-  "footer-copyright": "© 2024 Car Style 74. Tous droits réservés."
 
   "cleaning-hero-title": "Nettoyage Automobile Professionnel",
   "cleaning-hero-subtitle": "Formules complètes pour redonner éclat et propreté à votre véhicule. Lavage intérieur/extérieur, décontamination et finitions premium à Combloux.",
@@ -215,4 +208,11 @@
   
   "faq-q9": "Que faire si mon véhicule est très sale ou négligé ?",
   "faq-a9": "Aucun problème ! Nous sommes spécialisés dans la rénovation de véhicules très encrassés. Nous vous recommandons la Formule Detailing avec éventuellement des prestations complémentaires (supplément poils de chien, traitement des taches tenaces, polissage par élément, rénovation des phares...). Envoyez-nous des photos pour un devis précis."
+
+  "footer-about-title": "À propos",
+  "footer-about-text": "Car Style 74, spécialistes du detailing automobile haut de gamme à Combloux. Service Livraison Confort Plus disponible sur Megève, Chamonix et Sallanches.",
+  "footer-services-title": "Services",
+  "footer-legal-title": "Informations légales",
+  "footer-contact-title": "Contact",
+  "footer-copyright": "© 2024 Car Style 74. Tous droits réservés."
 }
