@@ -66,6 +66,18 @@
   "contact-sending": "Sending...",
   "contact-success": "Message sent successfully! We will respond quickly.",
   "contact-error": "An error occurred. Please try again or contact us by phone.",
+
+  "contact-service-cleaning": "Cleaning",
+  "contact-service-decontamination": "Mechanical decontamination",
+  "contact-service-buffing": "Buffing",
+  "contact-service-polishing": "Polishing, 40% and 90%",
+  "contact-service-ceramic": "Ceramic protection",
+  "contact-service-wheels": "Wheel protection",
+  "contact-service-wrapping": "Wrapping",
+  "contact-service-windows": "Tinted windows",
+  "contact-service-starlight": "Starlight ceiling, ambient LED",
+  "contact-service-steering": "Steering wheel installation",
+  "contact-service-other": "Other service"
   
   "contact-info-title": "Contact Information",
   "contact-info-phone": "Phone",
