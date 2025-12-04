@@ -209,10 +209,71 @@
   "faq-q9": "Que faire si mon véhicule est très sale ou négligé ?",
   "faq-a9": "Aucun problème ! Nous sommes spécialisés dans la rénovation de véhicules très encrassés. Nous vous recommandons la Formule Detailing avec éventuellement des prestations complémentaires (supplément poils de chien, traitement des taches tenaces, polissage par élément, rénovation des phares...). Envoyez-nous des photos pour un devis précis.",
 
+  "renovation-hero-title": "Rénovation & Protection de Carrosserie",
+  "renovation-hero-subtitle": "Redonnez éclat et brillance à votre véhicule avec nos services de lustrage, polissage et protection céramique professionnels. Préservez la valeur et l'esthétique de votre carrosserie durablement.",
+  "renovation-cta-call": "Appeler maintenant",
+  "renovation-cta-quote": "Demander un devis gratuit",
+  
+  "renovation-services-title": "Nos Services de Rénovation & Protection",
+  "renovation-services-subtitle": "Deux expertises complémentaires pour sublimer et protéger votre véhicule",
+  
+  "renovation-service-1-name": "Lustrage & Polissage",
+  "renovation-service-1-desc": "Correction des micro-rayures et défauts de peinture pour restaurer l'éclat d'origine de votre carrosserie. Deux niveaux de polissage disponibles selon l'état de votre véhicule.",
+  "renovation-service-1-cta": "En savoir plus",
+  
+  "renovation-service-2-name": "Protection Cire & Céramique",
+  "renovation-service-2-desc": "Protection longue durée contre les agressions extérieures. Choisissez entre la cire traditionnelle (6 mois) ou la céramique haute performance (jusqu'à 5 ans).",
+  "renovation-service-2-cta": "En savoir plus",
+  
+  "renovation-feature-1-1": "Polissage 40% - Correction légère (400-500€)",
+  "renovation-feature-1-2": "Polissage 90% - Correction profonde (700-800€)",
+  "renovation-feature-1-3": "Lustrage pour brillance et protection (3 mois)",
+  "renovation-feature-1-4": "Décontamination incluse",
+  
+  "renovation-feature-2-1": "Protection cire - Durée 6 mois",
+  "renovation-feature-2-2": "Protection céramique - 2, 3, 4 ou 5 ans",
+  "renovation-feature-2-3": "Protection éléments (jantes, vitres, cuir...)",
+  "renovation-feature-2-4": "Effet hydrophobe et brillance intense",
+  
+  "renovation-intro-title": "Pourquoi rénover et protéger votre carrosserie ?",
+  "renovation-intro-text": "La carrosserie de votre véhicule subit quotidiennement les agressions extérieures : UV, pollution, insectes, micro-rayures. Nos traitements professionnels restaurent l'éclat d'origine et protègent durablement votre investissement.",
+  
+  "renovation-benefit-1-title": "Préserve la valeur",
+  "renovation-benefit-1-text": "Une carrosserie bien entretenue maintient la valeur de revente de votre véhicule et témoigne d'un entretien soigné.",
+  
+  "renovation-benefit-2-title": "Protection durable",
+  "renovation-benefit-2-text": "Nos traitements céramiques protègent votre peinture contre les UV, l'oxydation et les contaminants jusqu'à 5 ans.",
+  
+  "renovation-benefit-3-title": "Éclat comme neuf",
+  "renovation-benefit-3-text": "Le polissage élimine jusqu'à 90% des micro-rayures et redonne une brillance incomparable à votre carrosserie.",
+  
+  "renovation-process-title": "Notre Processus en 3 Étapes",
+  "renovation-process-subtitle": "Une méthode rigoureuse pour des résultats professionnels et durables",
+  
+  "renovation-step-1-title": "Décontamination",
+  "renovation-step-1-text": "Élimination en profondeur de tous les contaminants incrustés : goudron, résine, pollution industrielle.",
+  
+  "renovation-step-2-title": "Polissage",
+  "renovation-step-2-text": "Correction des micro-rayures et défauts de peinture avec nos polisseuses professionnelles de précision.",
+  
+  "renovation-step-3-title": "Protection",
+  "renovation-step-3-text": "Application de la protection choisie (cire ou céramique) pour une durabilité et une brillance optimales.",
+  
+  "renovation-testimonial-1": "Polissage 90% sur ma BMW, résultat spectaculaire ! La carrosserie brille comme au premier jour. Travail méticuleux et professionnel. Je recommande vivement.",
+  "renovation-testimonial-2": "Protection céramique 3 ans posée il y a 6 mois, ma voiture reste impeccable sans effort. L'eau glisse, plus de traces, un entretien ultra-simplifié. Investissement rentabilisé !",
+  "renovation-testimonial-3": "Service impeccable du début à la fin. Conseils avisés sur le choix entre cire et céramique. Mon Audi a retrouvé tout son éclat après le polissage. Très professionnel.",
+  
+  "testimonials-rating-google": "sur Google",
+  
+  "renovation-final-cta-title": "Prêt à sublimer votre véhicule ?",
+  "renovation-final-cta-text": "Contactez-nous pour un diagnostic personnalisé et un devis sur mesure adapté à l'état et aux besoins de votre véhicule.",
+  "renovation-cta-call-now": "06 03 94 64 24",
+  "renovation-cta-quote-form": "Demander un devis",
+  
   "footer-about-title": "À propos",
   "footer-about-text": "Car Style 74, spécialistes du detailing automobile haut de gamme à Combloux. Service Livraison Confort Plus disponible sur Megève, Chamonix et Sallanches.",
   "footer-services-title": "Services",
   "footer-legal-title": "Informations légales",
   "footer-contact-title": "Contact",
-  "footer-copyright": "© 2024 Car Style 74. Tous droits réservés.",
+  "footer-copyright": "© 2024 Car Style 74. Tous droits réservés."
 }
