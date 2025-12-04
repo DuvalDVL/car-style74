@@ -91,4 +91,128 @@
   "footer-legal-title": "Legal Information",
   "footer-contact-title": "Contact",
   "footer-copyright": "© 2024 Car Style 74. All rights reserved."
+
+  "cleaning-hero-title": "Professional Car Cleaning",
+  "cleaning-hero-subtitle": "Complete packages to restore shine and cleanliness to your vehicle. Interior/exterior washing, decontamination and premium finishes in Combloux.",
+  "cleaning-cta-call": "Call now",
+  "cleaning-cta-quote": "Request a free quote",
+  
+  "cleaning-formulas-title": "Our Cleaning Packages",
+  "cleaning-formulas-subtitle": "Choose the package suited to your needs and vehicle type",
+  
+  "cleaning-formula-detailing-name": "Detailing Package",
+  "cleaning-formula-premium-name": "Premium Package",
+  "cleaning-price-sedan": "/ 5 seats",
+  "cleaning-price-suv": "/ 7 seats",
+  
+  "cleaning-detailing-1": "Detailed exterior wash - Engine bay + fuel cap + door jambs",
+  "cleaning-detailing-2": "Chemical decontamination of bodywork",
+  "cleaning-detailing-3": "Wax application on bodywork + tire shine",
+  "cleaning-detailing-4": "Interior and trunk vacuuming",
+  "cleaning-detailing-5": "Steam cleaning of air vents + air freshener",
+  "cleaning-detailing-6": "Degreasing and restoration of plastics",
+  "cleaning-detailing-7": "Leather degreasing + treatment",
+  "cleaning-detailing-8": "Fabric seat shampooing (if needed)",
+  "cleaning-detailing-9": "Floor mat + carpet shampooing",
+  "cleaning-detailing-10": "Window cleaning",
+  "cleaning-detailing-11": "Interior fragrance + air freshener",
+  
+  "cleaning-premium-1": "Exterior wash + door jambs + fuel cap",
+  "cleaning-premium-2": "Interior wash",
+  "cleaning-premium-3": "Interior dusting",
+  "cleaning-premium-4": "Interior and trunk vacuuming",
+  "cleaning-premium-5": "Floor mat shampooing",
+  "cleaning-premium-6": "Plastic degreasing",
+  "cleaning-premium-7": "Window cleaning",
+  "cleaning-premium-8": "Interior fragrance + air freshener",
+  
+  "cleaning-cta-reserve": "Call now",
+  
+  "cleaning-decontamination-title": "Complete Mechanical Decontamination - €100",
+  "cleaning-decontamination-text": "Deeply remove contaminants embedded in your bodywork: tar, rust spots, salt, resin, road and industrial pollution. This service uses a clay bar and professional chemical products to mechanically extract all impurities that classic washing cannot remove.",
+  "cleaning-decontamination-cta": "Request a quote",
+  
+  "cleaning-alacarte-title": "À la Carte Services",
+  "cleaning-alacarte-subtitle": "Customize your service by choosing only what you need",
+  
+  "alacarte-1-name": "Detailing exterior wash",
+  "alacarte-1-desc": "Meticulous bodywork washing with professional products and careful drying.",
+  
+  "alacarte-2-name": "Fabric seat shampooing",
+  "alacarte-2-desc": "Deep cleaning of fabric seats with extraction of embedded dirt.",
+  
+  "alacarte-3-name": "Leather seat washing + treatment",
+  "alacarte-3-desc": "Cleaning and nourishing of leather to preserve its suppleness and shine.",
+  
+  "alacarte-4-name": "Pet hair supplement (dog, cat...)",
+  "alacarte-4-desc": "Complete removal of pet hair embedded in fabrics and carpets.",
+  
+  "alacarte-5-name": "Steam engine bay cleaning",
+  "alacarte-5-desc": "Complete engine bay degreasing with steam, safe for electronics.",
+  
+  "alacarte-6-name": "Carpet shampooing (vomit etc...)",
+  "alacarte-6-desc": "Treatment of difficult stains and elimination of stubborn odors.",
+  
+  "alacarte-7-name": "Headliner cleaning",
+  "alacarte-7-desc": "Roof lining shampooing to remove stains and restore original appearance.",
+  
+  "alacarte-8-name": "Foggy headlight restoration",
+  "alacarte-8-desc": "Polishing and protection of lenses to restore transparency and safety.",
+  
+  "alacarte-9-name": "Polishing per panel",
+  "alacarte-9-desc": "Defect correction on a specific element (hood, door, fender...).",
+  
+  "alacarte-per-seat": "(per seat)",
+  "alacarte-from": "(from)",
+  
+  "cleaning-delivery-title": "Comfort Plus Delivery Service",
+  "cleaning-delivery-text": "We pick up your vehicle at home or at your workplace, perform the cleaning at our facility, then deliver it perfectly clean. Available in Combloux, Megève, Chamonix, Sallanches and throughout Haute-Savoie.",
+  "cleaning-delivery-cta": "Call now",
+  
+  "cleaning-final-cta-title": "Ready to restore your vehicle's shine?",
+  "cleaning-final-cta-text": "Contact us now for a personalized quote or to book your time slot - Please empty your vehicle before any service",
+  "cleaning-cta-call-now": "Call now",
+  "cleaning-cta-quote-form": "Quote form",
+  
+  "cleaning-intro-title": "Why choose our cleaning services?",
+  "cleaning-intro-text": "Professional cleaning preserves your vehicle's value, protects your health and improves your driving comfort. Our expert techniques eliminate dirt, bacteria and bad odors in depth.",
+  
+  "cleaning-benefit-1-title": "Long-lasting protection",
+  "cleaning-benefit-1-text": "Preserves your bodywork and interiors against wear and external aggressions.",
+  
+  "cleaning-benefit-2-title": "Like-new result",
+  "cleaning-benefit-2-text": "Our professional techniques guarantee deep cleaning without residue.",
+  
+  "cleaning-benefit-3-title": "Time-saving",
+  "cleaning-benefit-3-text": "Comfort Plus Delivery Service: we pick up and deliver your vehicle wherever you want.",
+  
+  "faq-title": "Frequently asked questions about car cleaning",
+  "faq-subtitle": "Find answers to the most common questions from our customers",
+  
+  "faq-q1": "Should I empty my vehicle before dropping it off?",
+  "faq-a1": "We ask our customers to empty their vehicle before bringing it to us. This is to avoid any suspicion or risk of damage. Additional fees may apply if the vehicle is not emptied.",
+  
+  "faq-q2": "What is the difference between the Detailing and Premium Package?",
+  "faq-a2": "The Detailing Package is our most complete service: it includes chemical decontamination of the bodywork, engine bay cleaning, protective wax application and complete leather treatment. The Premium Package is a more standard service, ideal for regular maintenance with interior/exterior washing and careful finishes.",
+  
+  "faq-q3": "How long does a complete cleaning service take?",
+  "faq-a3": "A Premium Package takes about 3 hours. The Detailing Package requires about 6 hours depending on the vehicle's condition and size. We take the necessary time to guarantee an impeccable result without rushing.",
+  
+  "faq-q4": "Is the Comfort Plus Delivery service included in the price?",
+  "faq-a4": "The vehicle pick-up and delivery service is available upon quote according to your location. It is included for Combloux and may incur an additional charge for more distant municipalities. Contact us to know the exact rate according to your address.",
+  
+  "faq-q5": "Do I need to book in advance?",
+  "faq-a5": "Yes, we work by appointment only to guarantee quality service and respected deadlines. We recommend booking one week in advance preferably, especially during high-demand periods (school holidays, winter season in Megève/Chamonix).",
+  
+  "faq-q6": "Do you use eco-friendly products?",
+  "faq-a6": "We use high-end professional products that respect the environment and your vehicle. Our shampoos and detergents are biodegradable and our techniques limit water consumption thanks to the use of low-consumption Karcher (50L of water per vehicle versus more than 150L for roller washing).",
+  
+  "faq-q7": "Can I combine several à la carte services?",
+  "faq-a7": "Absolutely! Our à la carte services are designed to be combined according to your needs. Contact us to create a personalized quote: we can for example combine a detailing exterior wash + foggy headlight restoration + leather seat shampooing.",
+  
+  "faq-q8": "Do you work on all types of vehicles?",
+  "faq-a8": "Yes, we work on all types of vehicles: sedans, SUVs, sports cars, commercial vehicles, motorcycles, trucks. Our rates are adapted according to the size and type of vehicle. The prices indicated are for standard sedans/SUVs, a personalized quote will be established for specific vehicles.",
+  
+  "faq-q9": "What if my vehicle is very dirty or neglected?",
+  "faq-a9": "No problem! We specialize in the restoration of very dirty vehicles. We recommend the Detailing Package with possibly additional services (pet hair supplement, stubborn stain treatment, polishing per panel, foggy headlight restoration...). Send us photos for an accurate quote."
 }
