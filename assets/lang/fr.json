@@ -45,6 +45,7 @@
   
   "testimonials-title": "Ce que disent nos clients",
   "testimonials-rating": "sur 5 • 67 avis",
+  "testimonials-rating-google": "sur Google",
   "testimonials-cta": "Voir tous les avis Google",
   
   "gallery-title": "Galerie de nos réalisations",
@@ -55,7 +56,7 @@
   "contact-subtitle": "Remplissez le formulaire ou contactez-nous directement",
   "contact-name": "Nom, Prénom",
   "contact-phone": "Téléphone",
-  "contact-email": "E-mail",
+  "contact-email": "Email",
   "contact-vehicle": "Modèle du véhicule",
   "contact-vehicle-placeholder": "Ex: BMW X5",
   "contact-seats": "Nombre de places dans le véhicule",
@@ -179,7 +180,7 @@
   "cleaning-benefit-3-title": "Gain de temps",
   "cleaning-benefit-3-text": "Service Livraison Confort Plus : on récupère et livre votre véhicule où vous voulez.",
   
-  "faq-title": "Questions fréquentes sur le nettoyage automobile",
+  "faq-title": "Questions fréquentes",
   "faq-subtitle": "Retrouvez les réponses aux questions les plus posées par nos clients",
   
   "faq-q1": "Dois-je vider mon véhicule avant de le déposer ?",
@@ -209,67 +210,94 @@
   "faq-q9": "Que faire si mon véhicule est très sale ou négligé ?",
   "faq-a9": "Aucun problème ! Nous sommes spécialisés dans la rénovation de véhicules très encrassés. Nous vous recommandons la Formule Detailing avec éventuellement des prestations complémentaires (supplément poils de chien, traitement des taches tenaces, polissage par élément, rénovation des phares...). Envoyez-nous des photos pour un devis précis.",
 
-  "renovation-hero-title": "Rénovation & Protection de Carrosserie",
-  "renovation-hero-subtitle": "Redonnez éclat et brillance à votre véhicule avec nos services de lustrage, polissage et protection céramique professionnels. Préservez la valeur et l'esthétique de votre carrosserie durablement.",
-  "renovation-cta-call": "Appeler maintenant",
-  "renovation-cta-quote": "Demander un devis gratuit",
+  "polishing-hero-title": "Lustrage & Polissage Professionnel",
+  "polishing-hero-subtitle": "Correction des défauts de peinture et restauration de l'éclat d'origine de votre carrosserie. Élimination jusqu'à 90% des micro-rayures avec nos techniques professionnelles de detailing.",
+  "polishing-cta-call": "Appeler maintenant",
+  "polishing-cta-quote": "Demander un devis gratuit",
   
-  "renovation-services-title": "Nos Services de Rénovation & Protection",
-  "renovation-services-subtitle": "Deux expertises complémentaires pour sublimer et protéger votre véhicule",
+  "polishing-formulas-title": "Nos Formules de Polissage",
+  "polishing-formulas-subtitle": "Choisissez le niveau de correction adapté à l'état de votre carrosserie",
   
-  "renovation-service-1-name": "Lustrage & Polissage",
-  "renovation-service-1-desc": "Correction des micro-rayures et défauts de peinture pour restaurer l'éclat d'origine de votre carrosserie. Deux niveaux de polissage disponibles selon l'état de votre véhicule.",
-  "renovation-service-1-cta": "En savoir plus",
+  "polishing-formula-40-name": "Polissage 40%",
+  "polishing-formula-90-name": "Polissage 90%",
   
-  "renovation-service-2-name": "Protection Cire & Céramique",
-  "renovation-service-2-desc": "Protection longue durée contre les agressions extérieures. Choisissez entre la cire traditionnelle (6 mois) ou la céramique haute performance (jusqu'à 5 ans).",
-  "renovation-service-2-cta": "En savoir plus",
+  "polishing-price-40": "à partir de 400€",
+  "polishing-price-90": "à partir de 700€",
   
-  "renovation-feature-1-1": "Polissage 40% - Correction légère (400-500€)",
-  "renovation-feature-1-2": "Polissage 90% - Correction profonde (700-800€)",
-  "renovation-feature-1-3": "Lustrage pour brillance et protection (3 mois)",
-  "renovation-feature-1-4": "Décontamination incluse",
+  "polishing-duration-label": "Durée :",
+  "polishing-duration-40": "1 journée",
+  "polishing-duration-90": "2 journées",
   
-  "renovation-feature-2-1": "Protection cire - Durée 6 mois",
-  "renovation-feature-2-2": "Protection céramique - 2, 3, 4 ou 5 ans",
-  "renovation-feature-2-3": "Protection éléments (jantes, vitres, cuir...)",
-  "renovation-feature-2-4": "Effet hydrophobe et brillance intense",
+  "polishing-40-description": "Correction légère à modérée des défauts de surface. Idéal pour les véhicules récents ou régulièrement entretenus présentant des micro-rayures superficielles et un léger ternissement de la peinture.",
+  "polishing-90-description": "Correction profonde et intensive des défauts de peinture. Recommandé pour les véhicules anciens, négligés ou présentant de nombreuses rayures, hologrammes et une peinture fortement oxydée.",
   
-  "renovation-intro-title": "Pourquoi rénover et protéger votre carrosserie ?",
-  "renovation-intro-text": "La carrosserie de votre véhicule subit quotidiennement les agressions extérieures : UV, pollution, insectes, micro-rayures. Nos traitements professionnels restaurent l'éclat d'origine et protègent durablement votre investissement.",
+  "polishing-includes-label": "Cette formule comprend :",
   
-  "renovation-benefit-1-title": "Préserve la valeur",
-  "renovation-benefit-1-text": "Une carrosserie bien entretenue maintient la valeur de revente de votre véhicule et témoigne d'un entretien soigné.",
+  "polishing-40-feature-1": "Décontamination mécanique obligatoire",
+  "polishing-40-feature-2": "Élimination jusqu'à 40% des micro-rayures",
+  "polishing-40-feature-3": "Polissage en 1 à 2 étape(s) (correction légère)",
+  "polishing-40-feature-4": "Finition brillante et lisse au toucher",
+  "polishing-40-feature-5": "Idéal avant application d'une cire",
   
-  "renovation-benefit-2-title": "Protection durable",
-  "renovation-benefit-2-text": "Nos traitements céramiques protègent votre peinture contre les UV, l'oxydation et les contaminants jusqu'à 5 ans.",
+  "polishing-90-feature-1": "Décontamination mécanique obligatoire",
+  "polishing-90-feature-2": "Élimination jusqu'à 90% des micro-rayures",
+  "polishing-90-feature-3": "Polissage en 3 à 4 étapes (correction + finition)",
+  "polishing-90-feature-4": "Correction des défauts profonds et hologrammes",
+  "polishing-90-feature-5": "Finition miroir avec brillance exceptionnelle",
+  "polishing-90-feature-6": "Obligatoire avant protection céramique",
   
-  "renovation-benefit-3-title": "Éclat comme neuf",
-  "renovation-benefit-3-text": "Le polissage élimine jusqu'à 90% des micro-rayures et redonne une brillance incomparable à votre carrosserie.",
+  "polishing-40-recommendation": "Recommandé avant une vente ou après un achat",
+  "polishing-90-recommendation": "Recommandé avec une protection supplémentaire (cire ou céramique)",
   
-  "renovation-process-title": "Notre Processus en 3 Étapes",
-  "renovation-process-subtitle": "Une méthode rigoureuse pour des résultats professionnels et durables",
+  "polishing-cta-contact": "Nous contacter",
   
-  "renovation-step-1-title": "Décontamination",
-  "renovation-step-1-text": "Élimination en profondeur de tous les contaminants incrustés : goudron, résine, pollution industrielle.",
+  "polishing-intro-title": "Qu'est-ce que le polissage automobile ?",
+  "polishing-intro-text": "Le polissage est un processus de correction de la peinture qui élimine les micro-rayures, les hologrammes, les traces d'oxydation et les défauts superficiels. Grâce à des machines rotatives ou orbitales et des produits abrasifs spécifiques, nous retirons une fine couche de vernis pour révéler une surface parfaitement lisse et brillante.",
   
-  "renovation-step-2-title": "Polissage",
-  "renovation-step-2-text": "Correction des micro-rayures et défauts de peinture avec nos polisseuses professionnelles de précision.",
+  "polishing-benefit-1-title": "Élimine les défauts",
+  "polishing-benefit-1-text": "Correction des micro-rayures, traces de lavage automatique, hologrammes et voiles de peinture.",
   
-  "renovation-step-3-title": "Protection",
-  "renovation-step-3-text": "Application de la protection choisie (cire ou céramique) pour une durabilité et une brillance optimales.",
+  "polishing-benefit-2-title": "Restaure la brillance",
+  "polishing-benefit-2-text": "Redonne une brillance miroir et une profondeur de couleur incomparables à votre carrosserie.",
   
-  "renovation-testimonial-1": "Polissage 90% sur ma BMW, résultat spectaculaire ! La carrosserie brille comme au premier jour. Travail méticuleux et professionnel. Je recommande vivement.",
-  "renovation-testimonial-2": "Protection céramique 3 ans posée il y a 6 mois, ma voiture reste impeccable sans effort. L'eau glisse, plus de traces, un entretien ultra-simplifié. Investissement rentabilisé !",
-  "renovation-testimonial-3": "Service impeccable du début à la fin. Conseils avisés sur le choix entre cire et céramique. Mon Audi a retrouvé tout son éclat après le polissage. Très professionnel.",
+  "polishing-benefit-3-title": "Prépare la protection",
+  "polishing-benefit-3-text": "Surface parfaitement lisse indispensable avant l'application d'une cire ou d'une protection céramique.",
   
-  "testimonials-rating-google": "sur Google",
+  "polishing-lustrage-title": "Le Lustrage : Protection et Brillance",
+  "polishing-lustrage-text": "Le lustrage est un traitement complémentaire qui suit le polissage. Il consiste à appliquer un produit de finition qui nourrit la peinture, intensifie la brillance et offre une protection temporaire contre les agressions extérieures. Le lustrage facilite également l'entretien en rendant la carrosserie moins poreuse.",
+  "polishing-lustrage-duration": "~3 mois",
+  "polishing-lustrage-duration-label": "Durabilité moyenne",
+  "polishing-lustrage-shine": "+50%",
+  "polishing-lustrage-shine-label": "Brillance accrue",
+  "polishing-lustrage-difference": "Différence polissage / lustrage : Le polissage corrige les défauts, le lustrage protège et sublime le résultat obtenu.",
   
-  "renovation-final-cta-title": "Prêt à sublimer votre véhicule ?",
-  "renovation-final-cta-text": "Contactez-nous pour un diagnostic personnalisé et un devis sur mesure adapté à l'état et aux besoins de votre véhicule.",
-  "renovation-cta-call-now": "06 03 94 64 24",
-  "renovation-cta-quote-form": "Demander un devis",
+  "polishing-testimonial-1": "Polissage 90% sur ma Porsche 911. Résultat absolument bluffant, la peinture brille comme jamais ! Travail minutieux et professionnel. Un vrai passionné qui prend son temps.",
+  "polishing-testimonial-2": "Mon Audi avait beaucoup de micro-rayures dues aux lavages automatiques. Le polissage 40% a suffi à redonner un aspect neuf. Je recommande cette prestation !",
+  "polishing-testimonial-3": "Excellent rapport qualité/prix pour le polissage. Conseils précis sur la formule adaptée à mon véhicule. Résultat à la hauteur de mes attentes, carrosserie miroir !",
   
+  "faq-polishing-q1": "Quelle différence entre polissage 40% et 90% ?",
+  "faq-polishing-a1": "Le pourcentage indique le taux de correction des défauts. Le polissage 40% élimine les micro-rayures superficielles et convient aux véhicules récents. Le polissage 90% est une correction profonde qui traite les rayures importantes, l'oxydation et les défauts marqués. Il nécessite plus de temps (2 jours vs 1 jour) et est obligatoire avant une protection céramique.",
+  
+  "faq-polishing-q2": "Le polissage abîme-t-il la peinture ?",
+  "faq-polishing-a2": "Non, si réalisé correctement par un professionnel. Le polissage retire une fine couche de vernis (quelques microns) pour éliminer les défauts en surface. Nos machines et nos techniques garantissent un polissage contrôlé et sécuritaire. Un véhicule peut être poli 4 à 6 fois dans sa vie sans risque.",
+  
+  "faq-polishing-q3": "Combien de temps dure le résultat du polissage ?",
+  "faq-polishing-a3": "Le polissage en lui-même est permanent : les défauts corrigés ne reviennent pas. Cependant, la brillance et la protection diminuent avec le temps sans entretien. C'est pourquoi nous recommandons d'appliquer une cire (6 mois) ou une céramique (2 à 5 ans) après le polissage pour protéger durablement le résultat.",
+  
+  "faq-polishing-q4": "La décontamination est-elle vraiment obligatoire ?",
+  "faq-polishing-a4": "Oui, absolument. La décontamination élimine les contaminants incrustés (goudron, résine, pollution métallique) qui ne partent pas au lavage classique. Sans cette étape, le polissage risque d'incruster ces particules encore plus profondément et de rayer la peinture. C'est une étape indispensable pour un résultat optimal et sécuritaire.",
+  
+  "faq-polishing-q5": "Puis-je faire polir une voiture noire/foncée ?",
+  "faq-polishing-a5": "Oui ! Les peintures foncées (noir, bleu marine, gris anthracite) révèlent davantage les défauts mais bénéficient aussi d'un résultat spectaculaire après polissage. La profondeur de couleur et la brillance miroir sont particulièrement impressionnantes sur les teintes sombres. Nous avons l'expertise pour traiter tous types de peintures.",
+  
+  "faq-polishing-q6": "Quel entretien après un polissage ?",
+  "faq-polishing-a6": "Après un polissage, privilégiez les lavages manuels avec des produits pH neutre et des microfibre douces. Évitez les lavages automatiques à brosses qui créent des micro-rayures. Appliquez régulièrement un spray détaillant pour entretenir la brillance. Idéalement, complétez avec une protection (cire ou céramique) pour préserver le résultat.",
+  
+  "polishing-final-cta-title": "Prêt à redonner éclat à votre carrosserie ?",
+  "polishing-final-cta-text": "Contactez-nous pour un diagnostic gratuit et des conseils personnalisés sur la formule de polissage adaptée à votre véhicule.",
+  "polishing-cta-call-now": "06 03 94 64 24",
+  "polishing-cta-quote-form": "Demander un devis",
+
   "footer-about-title": "À propos",
   "footer-about-text": "Car Style 74, spécialistes du detailing automobile haut de gamme à Combloux. Service Livraison Confort Plus disponible sur Megève, Chamonix et Sallanches.",
   "footer-services-title": "Services",
