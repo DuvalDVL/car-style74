@@ -9,6 +9,8 @@ const BASE_PATH = '/car-style74';
 
 // ===== CHARGEMENT HEADER & FOOTER =====
 document.addEventListener('DOMContentLoaded', async function() {
+
+  
   
   // Charger le header
   try {
@@ -31,6 +33,10 @@ document.addEventListener('DOMContentLoaded', async function() {
     document.getElementById('footer-placeholder').innerHTML = footerHtml;
   } catch (error) {
     console.error('Erreur chargement footer:', error);
+  }
+
+  if (window.TranslationSystem) {
+    await window.TranslationSystem.init();
   }
   
   // Initialiser toutes les fonctionnalités
