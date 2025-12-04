@@ -7,7 +7,7 @@
 // ===== CONFIGURATION =====
 const BASE_PATH = '/car-style74';
 // 💡 CORRECTION #1 : Le chemin vers les includes est généralement dans 'assets'
-const INCLUDES_PATH = `${BASE_PATH}includes`; 
+const INCLUDES_PATH = `${BASE_PATH}/includes`; 
 
 // ===== CHARGEMENT HEADER & FOOTER + INITIALISATION GLOBALE =====
 document.addEventListener('DOMContentLoaded', async function() {
