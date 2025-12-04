@@ -2,9 +2,6 @@
    CAR STYLE 74 - JAVASCRIPT (CORRIGÉ ET FINALISÉ)
    ================================================ */
 
-// ===== CONFIGURATION CLÉS =====
-const BASE_PATH = '/car-style74';
-
 // Chemin corrigé pour la structure où 'includes' est à la racine de 'car-style74'
 // RÉSULTAT : /car-style74/includes
 const INCLUDES_PATH = `${BASE_PATH}/includes`;
