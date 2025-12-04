@@ -6,56 +6,44 @@
 
 // ===== CONFIGURATION =====
 const BASE_PATH = '/car-style74';
+// 💡 CORRECTION #1 : Le chemin vers les includes est généralement dans 'assets'
+const INCLUDES_PATH = `${BASE_PATH}/assets/includes`; 
 
-// ===== CHARGEMENT HEADER & FOOTER =====
+// ===== CHARGEMENT HEADER & FOOTER + INITIALISATION GLOBALE =====
 document.addEventListener('DOMContentLoaded', async function() {
 
-  // Charger le header
+  // --- 1. Charger et Initialiser le Header (Priorité) ---
   try {
-    const headerResponse = await fetch(`${BASE_PATH}/includes/header.html`);
+    const headerResponse = await fetch(`${INCLUDES_PATH}/header.html`);
     const headerHtml = await headerResponse.text();
     document.getElementById('header-placeholder').innerHTML = headerHtml;
    
-    // 💡 CORRECTION #1 : Initialiser le Système de Traduction EN PREMIER
-    // Cela garantit que window.TranslationSystem est prêt avant que les event listeners
-    // des sélecteurs de langue ne soient mis en place.
+    // 💡 CORRECTION #2 : Initialiser le Système de Traduction EN PREMIER
+    // Il doit être prêt avant que les sélecteurs de langue ne soient initialisés
     if (window.TranslationSystem) {
       await window.TranslationSystem.init();
     } else {
-      console.error("Le script translations.js n'a pas exposé TranslationSystem.");
+      console.error("Le script translations.js n'a pas exposé TranslationSystem. Vérifiez l'ordre de chargement dans l'HTML.");
     }
 
-    // Initialiser les fonctionnalités du header après chargement
+    // Initialiser les fonctionnalités du header (incluant les sélecteurs de langue qui appellent changeLanguage)
     initHeader();
     initLanguageSelector();
     initStickyLanguageButton();
   } catch (error) {
-    console.error('Erreur chargement header:', error);
+    console.error('Erreur chargement header ou initialisation:', error);
   }
  
-  // Charger le footer
+  // --- 2. Charger le Footer ---
   try {
-    const footerResponse = await fetch(`${BASE_PATH}/includes/footer.html`);
+    const footerResponse = await fetch(`${INCLUDES_PATH}/footer.html`);
     const footerHtml = await footerResponse.text();
     document.getElementById('footer-placeholder').innerHTML = footerHtml;
   } catch (error) {
     console.error('Erreur chargement footer:', error);
   }
-
-  /* ❌ Bloc supprimé car l'initialisation a été déplacée plus haut
-  if (window.TranslationSystem) {
-    await window.TranslationSystem.init();
-  }
-  */
-
-  /* La fonction setupLanguageSwitching était une suggestion externe.
-     Puisque vous avez déjà initLanguageSelector et initStickyLanguageButton,
-     nous allons les conserver et nous concentrer sur la correction de changeLanguage.
-     
-    function setupLanguageSwitching() { ... }
-  */
  
-  // Initialiser toutes les fonctionnalités
+  // --- 3. Initialiser toutes les autres fonctionnalités ---
   initMobileMenu();
   initDropdownMenus();
   initSmoothScroll();
@@ -65,9 +53,21 @@ document.addEventListener('DOMContentLoaded', async function() {
   initLazyLoading();
   initAnimationsOnScroll();
   initReels();
-  initFAQ(); // ⬅️ AJOUTÉ
-  initServicesAccordion(); // ⬅️ AJOUTER CETTE LIGNE
+  initFAQ(); 
+  initServicesAccordion(); 
 });
+
+// 💡 CORRECTION #3 : Globaliser la fonction changeLanguage pour qu'elle soit accessible
+// par les EventListeners créés dans initLanguageSelector/initStickyLanguageButton.
+// (Même si elle est déclarée globalement ici, l'attacher explicitement à window rend le code plus clair.)
+window.changeLanguage = async function(lang) {
+  if (window.TranslationSystem) {
+    await window.TranslationSystem.change(lang);
+  } else {
+    console.error('❌ Système de traduction non chargé - changeLanguage échoue.');
+  }
+}
+
 
 // ===== INITIALISATION HEADER =====
 function initHeader() {
@@ -135,8 +135,8 @@ function initLanguageSelector() {
       selector.classList.remove('active');
       toggle.classList.remove('active');
      
-      // Changer la langue (fonction à implémenter)
-      changeLanguage(lang);
+      // Changer la langue (appelle la fonction globale)
+      window.changeLanguage(lang);
     });
   });
  
@@ -184,7 +184,7 @@ function initStickyLanguageButton() {
       stickyButton.classList.remove('active');
      
       // Changer la langue
-      changeLanguage(lang);
+      window.changeLanguage(lang);
     });
   });
  
@@ -196,15 +196,6 @@ function initStickyLanguageButton() {
   });
 }
 
-// ===== CHANGEMENT DE LANGUE (MODIFIÉ) =====
-// 💡 CORRECTION #2 : Ajouter 'async' et 'await' car TranslationSystem.change fait des opérations asynchrones (fetch)
-async function changeLanguage(lang) {
-  if (window.TranslationSystem) {
-    await window.TranslationSystem.change(lang);
-  } else {
-    console.error('❌ Système de traduction non chargé');
-  }
-}
 
 // ===== MENU MOBILE =====
 function initMobileMenu() {
@@ -306,16 +297,13 @@ function initDropdownMenus() {
       });
     }
    
-    // Le lien principal reste cliquable et navigue normalement
-    // (pas besoin de JavaScript supplémentaire, le comportement par défaut fonctionne)
+    // Gérer le responsive
+    window.addEventListener('resize', debounce(() => {
+      if (window.innerWidth > 1024) {
+        navItems.forEach(item => item.classList.remove('active'));
+      }
+    }, 250));
   });
- 
-  // Gérer le responsive
-  window.addEventListener('resize', debounce(() => {
-    if (window.innerWidth > 1024) {
-      navItems.forEach(item => item.classList.remove('active'));
-    }
-  }, 250));
 }
 
 // ===== SMOOTH SCROLL =====
@@ -407,8 +395,6 @@ function initFormspree() {
     e.preventDefault();
    
     const submitBtn = form.querySelector('.form-submit');
-    // 💡 NOTE : Utiliser le texte de la traduction pour le placeholder de chargement
-    // Il serait idéal de récupérer la traduction pour 'contact-sending' ici.
     const originalText = submitBtn.textContent;
    
     // Désactiver le bouton pendant l'envoi
@@ -426,7 +412,6 @@ function initFormspree() {
         }
       });
      
-      // 💡 NOTE : Les messages de succès/erreur devraient aussi utiliser les traductions
       if (response.ok) {
         // Succès
         showFormMessage('success', 'Message envoyé avec succès ! Nous vous répondrons rapidement.');
