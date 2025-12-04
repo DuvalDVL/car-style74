@@ -10,8 +10,6 @@ const BASE_PATH = '/car-style74';
 // ===== CHARGEMENT HEADER & FOOTER =====
 document.addEventListener('DOMContentLoaded', async function() {
 
-  
-  
   // Charger le header
   try {
     const headerResponse = await fetch(`${BASE_PATH}/includes/header.html`);
@@ -38,7 +36,41 @@ document.addEventListener('DOMContentLoaded', async function() {
   if (window.TranslationSystem) {
     await window.TranslationSystem.init();
   }
-  
+
+   function setupLanguageSwitching() {
+    // Sélectionnez toutes les options de langue pour le bureau ET le mobile
+    const langOptions = document.querySelectorAll(
+        '.language-option[data-lang], .sticky-lang-option[data-lang]'
+    );
+
+    langOptions.forEach(option => {
+        option.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            // Vérifiez que la fonction changeLanguage est disponible
+            if (window.TranslationSystem && window.TranslationSystem.change) {
+                window.TranslationSystem.change(lang);
+            } else {
+                console.error("TranslationSystem non disponible.");
+            }
+        });
+    });
+
+    // Optionnel : Gérer l'affichage/masquage des dropdowns (Desktop et Sticky Mobile)
+    const desktopToggle = document.querySelector('.language-selector .language-toggle');
+    if (desktopToggle) {
+        desktopToggle.addEventListener('click', function() {
+            this.closest('.language-selector').classList.toggle('open');
+        });
+    }
+
+    const stickyToggle = document.querySelector('.sticky-language-button .sticky-lang-toggle');
+    if (stickyToggle) {
+        stickyToggle.addEventListener('click', function() {
+            this.closest('.sticky-language-button').classList.toggle('open');
+        });
+    }
+}
+   
   // Initialiser toutes les fonctionnalités
   initMobileMenu();
   initDropdownMenus();
