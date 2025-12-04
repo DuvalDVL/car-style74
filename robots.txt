@@ -1,0 +1,14 @@
+# robots.txt
+
+# Règle générale pour tous les robots
+User-agent: *
+
+# Autoriser l'exploration de toutes les pages et de tous les fichiers nécessaires
+Allow: /
+
+# Vous pouvez exclure certaines pages si nécessaire, mais dans ce cas, nous n'en avons pas besoin.
+# Disallow: /admin/
+# Disallow: /cgi-bin/
+
+# Spécifiez l'emplacement de votre sitemap
+Sitemap: https://www.car-style74.com/sitemap.xml
