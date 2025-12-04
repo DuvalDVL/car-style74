@@ -1,0 +1,83 @@
+{
+  "delivery-title": "Comfort Plus Delivery",
+  "delivery-text": "Pick-up and delivery of your vehicle at home or at work",
+  
+  "nav-home": "Home",
+  "nav-cleaning": "Cleaning",
+  "nav-renovation": "Renovation & Protection",
+  "nav-polishing": "Buffing and polishing",
+  "nav-ceramic": "Wax & ceramic protection",
+  "nav-aesthetic": "Aesthetic services",
+  "nav-covering": "Wrapping & tinted windows",
+  "nav-accessories": "Accessories installation",
+  "nav-starlight": "Starlight ceiling / Ambient LED",
+  "nav-gallery": "Gallery",
+  "nav-quote": "Request a quote",
+  
+  "hero-title": "Your automotive aesthetics expert",
+  "hero-subtitle": "Premium car detailing specialists in Combloux. Polishing, ceramic coating, wrapping, starlight ceiling and much more.",
+  "cta-quote": "Request a free quote",
+  "cta-call": "Call now",
+  "reviews-count": "67 reviews • 5/5 rating",
+  
+  "services-title": "Our Automotive Aesthetic Services",
+  "services-subtitle": "Premium services to enhance and protect your vehicle",
+  
+  "service-1-title": "Interior / Exterior Cleaning & Decontamination",
+  "service-1-desc": "Deep interior/exterior cleaning and mechanical decontamination to remove all impurities.",
+  "service-1-cta": "Learn more",
+  
+  "service-2-title": "Buffing, Polishing & Ceramic Protection",
+  "service-2-desc": "Up to 90% defect correction and long-lasting ceramic protection for a gleaming bodywork.",
+  "service-2-cta": "Learn more",
+  
+  "service-3-title": "Wrapping, De-chroming & Tinted Windows",
+  "service-3-desc": "Color change, paint protection and complete customization of your vehicle.",
+  "service-3-cta": "Learn more",
+  
+  "service-4-title": "Starlight Ceiling, Ambient LED & Accessories",
+  "service-4-desc": "Installation of starlight ceiling, ambient LED, dashcam and all accessories to customize the interior.",
+  "service-4-cta": "Learn more",
+  
+  "reels-title": "Our Video Showcases",
+  "reels-subtitle": "Discover our transformations on Instagram",
+  "reels-cta": "Follow us on Instagram",
+  
+  "testimonials-title": "What our customers say",
+  "testimonials-rating": "out of 5 • 67 reviews",
+  "testimonials-cta": "See all Google reviews",
+  
+  "gallery-title": "Gallery of our achievements",
+  "gallery-subtitle": "Some examples of our transformations",
+  "gallery-cta": "See full gallery",
+  
+  "contact-title": "Request your free quote",
+  "contact-subtitle": "Fill out the form or contact us directly",
+  "contact-name": "First & Last Name",
+  "contact-phone": "Phone",
+  "contact-email": "Email",
+  "contact-vehicle": "Vehicle model",
+  "contact-vehicle-placeholder": "Ex: BMW X5",
+  "contact-seats": "Number of seats in vehicle",
+  "contact-service": "Desired service",
+  "contact-service-select": "Select a service",
+  "contact-message": "Your message (optional)",
+  "contact-submit": "Send request",
+  "contact-sending": "Sending...",
+  "contact-success": "Message sent successfully! We will respond quickly.",
+  "contact-error": "An error occurred. Please try again or contact us by phone.",
+  
+  "contact-info-title": "Contact Information",
+  "contact-info-phone": "Phone",
+  "contact-info-email": "Email",
+  "contact-info-address": "Address",
+  "contact-info-hours": "Hours",
+  "contact-info-hours-text": "Monday - Friday: 9am - 6pm<br>By appointment",
+  
+  "footer-about-title": "About",
+  "footer-about-text": "Car Style 74, premium automotive detailing specialists in Combloux. Comfort Plus Delivery service available in Megève, Chamonix and Sallanches.",
+  "footer-services-title": "Services",
+  "footer-legal-title": "Legal Information",
+  "footer-contact-title": "Contact",
+  "footer-copyright": "© 2024 Car Style 74. All rights reserved."
+}
