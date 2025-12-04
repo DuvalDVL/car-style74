@@ -91,4 +91,128 @@
   "footer-legal-title": "Informations légales",
   "footer-contact-title": "Contact",
   "footer-copyright": "© 2024 Car Style 74. Tous droits réservés."
+
+  "cleaning-hero-title": "Nettoyage Automobile Professionnel",
+  "cleaning-hero-subtitle": "Formules complètes pour redonner éclat et propreté à votre véhicule. Lavage intérieur/extérieur, décontamination et finitions premium à Combloux.",
+  "cleaning-cta-call": "Appeler maintenant",
+  "cleaning-cta-quote": "Demander un devis gratuit",
+  
+  "cleaning-formulas-title": "Nos Formules de Nettoyage",
+  "cleaning-formulas-subtitle": "Choisissez la formule adaptée à vos besoins et au type de votre véhicule",
+  
+  "cleaning-formula-detailing-name": "Formule Detailing",
+  "cleaning-formula-premium-name": "Formule Premium",
+  "cleaning-price-sedan": "/ 5 places",
+  "cleaning-price-suv": "/ 7 places",
+  
+  "cleaning-detailing-1": "Lavage extérieur en détails - Compartiment moteur + trappe à essence + contour de portes",
+  "cleaning-detailing-2": "Décontamination chimique carrosserie",
+  "cleaning-detailing-3": "Application d'une cire sur la carrosserie + brillant pneu",
+  "cleaning-detailing-4": "Aspiration habitacle et coffre",
+  "cleaning-detailing-5": "Nettoyage des sorties d'air à la vapeur + air fraîcheur",
+  "cleaning-detailing-6": "Dégraissage et rénovation des plastiques",
+  "cleaning-detailing-7": "Dégraissage des cuirs + traitement",
+  "cleaning-detailing-8": "Shampoing des sièges tissu (si besoin)",
+  "cleaning-detailing-9": "Shampoing des tapis + moquette",
+  "cleaning-detailing-10": "Nettoyage des vitres",
+  "cleaning-detailing-11": "Parfum habitacle + arbre magique",
+  
+  "cleaning-premium-1": "Lavage extérieur + contour des portes + trappe à essence",
+  "cleaning-premium-2": "Lavage intérieur",
+  "cleaning-premium-3": "Dépoussiérage habitacle",
+  "cleaning-premium-4": "Aspiration habitacle et coffre",
+  "cleaning-premium-5": "Shampoing des tapis",
+  "cleaning-premium-6": "Dégraissage des plastiques",
+  "cleaning-premium-7": "Nettoyage des vitres",
+  "cleaning-premium-8": "Parfum habitacle + arbre magique",
+  
+  "cleaning-cta-reserve": "Appeler maintenant",
+  
+  "cleaning-decontamination-title": "Décontamination mécanique complète - 100€",
+  "cleaning-decontamination-text": "Éliminez en profondeur les contaminants incrustés dans votre carrosserie : goudron, points de rouille, sel, résine, pollution routière et industrielle. Cette prestation utilise une clay bar (barre d'argile) et des produits chimiques professionnels pour extraire mécaniquement toutes les impuretés que le lavage classique ne peut pas enlever.",
+  "cleaning-decontamination-cta": "Demander un devis",
+  
+  "cleaning-alacarte-title": "Suppléments à la Carte",
+  "cleaning-alacarte-subtitle": "Personnalisez votre prestation en choisissant uniquement ce dont vous avez besoin",
+  
+  "alacarte-1-name": "Lavage extérieur detailing",
+  "alacarte-1-desc": "Lavage minutieux de la carrosserie avec produits professionnels et séchage soigné.",
+  
+  "alacarte-2-name": "Shampoing des sièges tissu",
+  "alacarte-2-desc": "Nettoyage en profondeur des sièges en tissu avec extraction des saletés incrustées.",
+  
+  "alacarte-3-name": "Lavage sièges cuir + traitement",
+  "alacarte-3-desc": "Nettoyage et nourrissage du cuir pour préserver sa souplesse et son éclat.",
+  
+  "alacarte-4-name": "Supplément poils (chien, chat...)",
+  "alacarte-4-desc": "Élimination complète des poils d'animaux incrustés dans les tissus et moquettes.",
+  
+  "alacarte-5-name": "Nettoyage vapeur compartiment moteur",
+  "alacarte-5-desc": "Dégraissage complet du compartiment moteur à la vapeur sans risque pour l'électronique.",
+  
+  "alacarte-6-name": "Shampoing moquette (vomi etc...)",
+  "alacarte-6-desc": "Traitement des taches difficiles et élimination des odeurs tenaces.",
+  
+  "alacarte-7-name": "Nettoyage plafonnier",
+  "alacarte-7-desc": "Shampoing du ciel de toit pour éliminer les traces et redonner son aspect d'origine.",
+  
+  "alacarte-8-name": "Rénovation des phares ternis",
+  "alacarte-8-desc": "Polissage et protection des optiques pour retrouver transparence et sécurité.",
+  
+  "alacarte-9-name": "Polissage par élément",
+  "alacarte-9-desc": "Correction des défauts sur un élément spécifique (capot, portière, aile...).",
+  
+  "alacarte-per-seat": "(par place)",
+  "alacarte-from": "(à partir de)",
+  
+  "cleaning-delivery-title": "Service Livraison Confort Plus",
+  "cleaning-delivery-text": "Nous récupérons votre véhicule à domicile ou sur votre lieu de travail, effectuons le nettoyage dans nos locaux, puis vous le livrons parfaitement propre. Disponible sur Combloux, Megève, Chamonix, Sallanches et toute la Haute-Savoie.",
+  "cleaning-delivery-cta": "Appeler maintenant",
+  
+  "cleaning-final-cta-title": "Prêt à redonner éclat à votre véhicule ?",
+  "cleaning-final-cta-text": "Contactez-nous dès maintenant pour un devis personnalisé ou pour réserver votre créneau - Merci de vider votre véhicule avant toute prestation",
+  "cleaning-cta-call-now": "Appeler maintenant",
+  "cleaning-cta-quote-form": "Formulaire de devis",
+  
+  "cleaning-intro-title": "Pourquoi choisir nos services de nettoyage ?",
+  "cleaning-intro-text": "Un nettoyage professionnel préserve la valeur de votre véhicule, protège votre santé et améliore votre confort de conduite. Nos techniques expertes éliminent saletés, bactéries et mauvaises odeurs en profondeur.",
+  
+  "cleaning-benefit-1-title": "Protection longue durée",
+  "cleaning-benefit-1-text": "Préserve votre carrosserie et vos intérieurs contre l'usure et les agressions extérieures.",
+  
+  "cleaning-benefit-2-title": "Résultat comme neuf",
+  "cleaning-benefit-2-text": "Nos techniques professionnelles garantissent un nettoyage en profondeur, sans résidus.",
+  
+  "cleaning-benefit-3-title": "Gain de temps",
+  "cleaning-benefit-3-text": "Service Livraison Confort Plus : on récupère et livre votre véhicule où vous voulez.",
+  
+  "faq-title": "Questions fréquentes sur le nettoyage automobile",
+  "faq-subtitle": "Retrouvez les réponses aux questions les plus posées par nos clients",
+  
+  "faq-q1": "Dois-je vider mon véhicule avant de le déposer ?",
+  "faq-a1": "Nous demandons à nos clients de vider leur véhicule avant de nous l'apporter. Ceci afin d'éviter tout soupçon ou risque de détérioration. Des frais supplémentaires peuvent s'appliquer si le véhicule n'est pas vidé.",
+  
+  "faq-q2": "Quelle est la différence entre la Formule Detailing et Premium ?",
+  "faq-a2": "La Formule Detailing est notre prestation la plus complète : elle inclut la décontamination chimique de la carrosserie, le nettoyage du compartiment moteur, l'application de cire protectrice et le traitement complet des cuirs. La Formule Premium est une prestation plus standard, idéale pour un entretien régulier avec lavage intérieur/extérieur et finitions soignées.",
+  
+  "faq-q3": "Combien de temps dure une prestation de nettoyage complet ?",
+  "faq-a3": "Une Formule Premium prend environ 3 heures. La Formule Detailing nécessite environ 6 heures selon l'état du véhicule et sa taille. Nous prenons le temps nécessaire pour garantir un résultat impeccable sans précipitation.",
+  
+  "faq-q4": "Le service Livraison Confort Plus est-il inclus dans le prix ?",
+  "faq-a4": "Le service de récupération et livraison de votre véhicule est disponible sur devis selon votre localisation. Il est inclus pour Combloux et peut engendrer un supplément pour les communes plus éloignées. Contactez-nous pour connaître le tarif exact selon votre adresse.",
+  
+  "faq-q5": "Faut-il réserver à l'avance ?",
+  "faq-a5": "Oui, nous travaillons uniquement sur rendez-vous pour vous garantir un service de qualité et des délais respectés. Nous vous conseillons de réserver une semaine à l'avance de préférence, surtout en période de forte affluence (vacances scolaires, saison hivernale à Megève/Chamonix).",
+  
+  "faq-q6": "Utilisez-vous des produits écologiques ?",
+  "faq-a6": "Nous utilisons des produits professionnels haut de gamme, respectueux de l'environnement et de votre véhicule. Nos shampoings et détergents sont biodégradables et nos techniques limitent la consommation d'eau grâce à l'utilisation de Karcher basse consommation (50L d'eau par véhicule contre plus de 150L pour lavage sur rouleaux).",
+  
+  "faq-q7": "Puis-je combiner plusieurs prestations à la carte ?",
+  "faq-a7": "Absolument ! Nos prestations à la carte sont conçues pour être combinées selon vos besoins. Contactez-nous pour créer un devis personnalisé : nous pouvons par exemple associer un lavage extérieur detailing + rénovation des phares + shampoing des sièges cuir.",
+  
+  "faq-q8": "Intervenez-vous sur tous types de véhicules ?",
+  "faq-a8": "Oui, nous intervenons sur tous types de véhicules : berlines, SUV, sportives, utilitaires, motos, poids lourds. Nos tarifs sont adaptés selon la taille et le type de véhicule. Les prix indiqués sont pour des berlines/SUV standards, un devis personnalisé sera établi pour les véhicules spécifiques.",
+  
+  "faq-q9": "Que faire si mon véhicule est très sale ou négligé ?",
+  "faq-a9": "Aucun problème ! Nous sommes spécialisés dans la rénovation de véhicules très encrassés. Nous vous recommandons la Formule Detailing avec éventuellement des prestations complémentaires (supplément poils de chien, traitement des taches tenaces, polissage par élément, rénovation des phares...). Envoyez-nous des photos pour un devis précis."
 }
