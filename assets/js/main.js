@@ -9,48 +9,46 @@ const INCLUDES_PATH = `${BASE_PATH}/includes`;
 // ===== CHARGEMENT HEADER & FOOTER + INITIALISATION GLOBALE =====
 document.addEventListener('DOMContentLoaded', async function() {
 
-  // --- 1. Charger et Initialiser le Header (Priorité) ---
-  try {
-    const headerResponse = await fetch(`${INCLUDES_PATH}/header.html`);
-    const headerHtml = await headerResponse.text();
-    document.getElementById('header-placeholder').innerHTML = headerHtml;
-   
-    // Initialiser le Système de Traduction EN PREMIER
-    if (window.TranslationSystem) {
-      await window.TranslationSystem.init();
-    } else {
-      console.error("Le script translations.js n'a pas exposé TranslationSystem. Vérifiez l'ordre de chargement dans l'HTML.");
-    }
+  // --- 1. Charger Header ET Footer AVANT la traduction ---
+  try {
+    // Charger le header
+    const headerResponse = await fetch(`${INCLUDES_PATH}/header.html`);
+    const headerHtml = await headerResponse.text();
+    document.getElementById('header-placeholder').innerHTML = headerHtml;
+    
+    // Charger le footer
+    const footerResponse = await fetch(`${INCLUDES_PATH}/footer.html`);
+    const footerHtml = await footerResponse.text();
+    document.getElementById('footer-placeholder').innerHTML = footerHtml;
+   
+    // MAINTENANT initialiser les traductions (après que tout le HTML est chargé)
+    if (window.TranslationSystem) {
+      await window.TranslationSystem.init();
+    } else {
+      console.error("Le script translations.js n'a pas exposé TranslationSystem.");
+    }
 
-    // Initialiser les fonctionnalités du header
-    initHeader();
-    initLanguageSelector();
-    initStickyLanguageButton();
-  } catch (error) {
-    console.error('Erreur chargement header ou initialisation:', error);
-  }
- 
-  // --- 2. Charger le Footer ---
-  try {
-    const footerResponse = await fetch(`${INCLUDES_PATH}/footer.html`);
-    const footerHtml = await footerResponse.text();
-    document.getElementById('footer-placeholder').innerHTML = footerHtml;
-  } catch (error) {
-    console.error('Erreur chargement footer:', error);
-  }
- 
-  // --- 3. Initialiser toutes les autres fonctionnalités ---
-  initMobileMenu();
-  initDropdownMenus();
-  initSmoothScroll();
-  initScrollEffects();
-  initLightbox();
-  initFormspree();
-  initLazyLoading();
-  initAnimationsOnScroll();
-  initReels();
-  initFAQ(); 
-  initServicesAccordion(); 
+    // Initialiser les fonctionnalités du header
+    initHeader();
+    initLanguageSelector();
+    initStickyLanguageButton();
+    
+  } catch (error) {
+    console.error('Erreur chargement ou initialisation:', error);
+  }
+ 
+  // --- 2. Initialiser toutes les autres fonctionnalités ---
+  initMobileMenu();
+  initDropdownMenus();
+  initSmoothScroll();
+  initScrollEffects();
+  initLightbox();
+  initFormspree();
+  initLazyLoading();
+  initAnimationsOnScroll();
+  initReels();
+  initFAQ(); 
+  initServicesAccordion(); 
 });
 
 // ===== FONCTION GLOBALE DE CHANGEMENT DE LANGUE (ACCESSIBLE DEPUIS L'HTML) =====
