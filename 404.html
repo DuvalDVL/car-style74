@@ -1,308 +1,317 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex, nofollow">
-  <title data-translate="404-title">Page Introuvable - Car Style 74</title>
-  
-    <link rel="icon" type="image/png" href="/car-style74/assets/images/favicon.png">
-  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-    <link rel="stylesheet" href="/car-style74/assets/css/styles.css">
-  
-  <style>
-    /* Styles spécifiques page 404 */
-    .error-404-section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-      position: relative;
-      overflow: hidden;
-      padding: 2rem 0;
-    }
-    
-    /* Effet de fond animé */
-    .error-404-section::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
-      animation: rotate 20s linear infinite;
-    }
-    
-    @keyframes rotate {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    
-    .error-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-      max-width: 700px;
-      padding: 0 var(--container-padding);
-    }
-    
-    .error-code {
-      font-size: clamp(8rem, 20vw, 15rem);
-      font-weight: 800;
-      font-family: var(--font-heading);
-      background: linear-gradient(135deg, var(--color-blue-light), var(--color-blue-primary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      line-height: 1;
-      margin-bottom: 1rem;
-      animation: glitch 3s infinite;
-      position: relative;
-    }
-    
-    @keyframes glitch {
-      0%, 100% {
-        transform: translate(0);
-      }
-      20% {
-        transform: translate(-2px, 2px);
-      }
-      40% {
-        transform: translate(-2px, -2px);
-      }
-      60% {
-        transform: translate(2px, 2px);
-      }
-      80% {
-        transform: translate(2px, -2px);
-      }
-    }
-    
-    .error-icon {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 2rem;
-      background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(74, 144, 226, 0.05));
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 3px solid rgba(74, 144, 226, 0.3);
-      animation: pulse-icon 2s infinite;
-    }
-    
-    .error-icon i {
-      font-size: 4rem;
-      color: var(--color-blue-primary);
-    }
-    
-    @keyframes pulse-icon {
-      0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7);
-      }
-      50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 20px rgba(74, 144, 226, 0);
-      }
-    }
-    
-    .error-title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      color: var(--color-white);
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-    }
-    
-    .error-description {
-      font-size: 1.25rem;
-      color: var(--color-gray-light);
-      margin-bottom: 3rem;
-      line-height: 1.6;
-    }
-    
-    .error-actions {
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 3rem;
-    }
-    
-    .error-actions .btn {
-      min-width: 200px;
-    }
-    
-    .error-suggestions {
-      margin-top: 4rem;
-      padding-top: 3rem;
-      border-top: 1px solid rgba(74, 144, 226, 0.2);
-    }
-    
-    .error-suggestions h3 {
-      color: var(--color-white);
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
-    }
-    
-    .suggestions-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-    }
-    
-    .suggestion-card {
-      background: rgba(74, 144, 226, 0.05);
-      border: 1px solid rgba(74, 144, 226, 0.2);
-      border-radius: var(--radius-lg);
-      padding: 1.5rem;
-      transition: all var(--transition-medium);
-      text-decoration: none;
-      display: block;
-    }
-    
-    .suggestion-card:hover {
-      background: rgba(74, 144, 226, 0.1);
-      border-color: var(--color-blue-primary);
-      transform: translateY(-5px);
-    }
-    
-    .suggestion-card i {
-      font-size: 2rem;
-      color: var(--color-blue-primary);
-      margin-bottom: 1rem;
-    }
-    
-    .suggestion-card h4 {
-      color: var(--color-white);
-      font-size: 1.125rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    .suggestion-card p {
-      color: var(--color-gray-light);
-      font-size: 0.9rem;
-      margin: 0;
-    }
-    
-    @media (max-width: 768px) {
-      .error-code {
-        font-size: 10rem;
-      }
-      
-      .error-actions {
-        flex-direction: column;
-      }
-      
-      .error-actions .btn {
-        width: 100%;
-      }
-      
-      .suggestions-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Page Introuvable - Car Style 74</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/car-style74/assets/images/favicon.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="/car-style74/assets/css/styles.css">
+  
+  <style>
+    /* Styles spécifiques page 404 */
+    .error-404-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 2rem 0;
+    }
+    
+    /* Effet de fond animé */
+    .error-404-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
+      animation: rotate 20s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    .error-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 700px;
+      padding: 0 var(--container-padding);
+    }
+    
+    .error-code {
+      font-size: clamp(8rem, 20vw, 15rem);
+      font-weight: 800;
+      font-family: var(--font-heading);
+      background: linear-gradient(135deg, var(--color-blue-light), var(--color-blue-primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: 1rem;
+      animation: glitch 3s infinite;
+      position: relative;
+    }
+    
+    @keyframes glitch {
+      0%, 100% {
+        transform: translate(0);
+      }
+      20% {
+        transform: translate(-2px, 2px);
+      }
+      40% {
+        transform: translate(-2px, -2px);
+      }
+      60% {
+        transform: translate(2px, 2px);
+      }
+      80% {
+        transform: translate(2px, -2px);
+      }
+    }
+    
+    .error-icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 2rem;
+      background: linear-gradient(135deg, rgba(74, 144, 226, 0.2), rgba(74, 144, 226, 0.05));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid rgba(74, 144, 226, 0.3);
+      animation: pulse-icon 2s infinite;
+    }
+    
+    .error-icon i {
+      font-size: 4rem;
+      color: var(--color-blue-primary);
+    }
+    
+    @keyframes pulse-icon {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(74, 144, 226, 0);
+      }
+    }
+    
+    .error-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--color-white);
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    
+    .error-description {
+      font-size: 1.25rem;
+      color: var(--color-gray-light);
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+    
+    .error-actions {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    
+    .error-actions .btn {
+      min-width: 200px;
+    }
+    
+    .error-suggestions {
+      margin-top: 4rem;
+      padding-top: 3rem;
+      border-top: 1px solid rgba(74, 144, 226, 0.2);
+    }
+    
+    .error-suggestions h3 {
+      color: var(--color-white);
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    
+    .suggestions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .suggestion-card {
+      background: rgba(74, 144, 226, 0.05);
+      border: 1px solid rgba(74, 144, 226, 0.2);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      transition: all var(--transition-medium);
+      text-decoration: none;
+      display: block;
+    }
+    
+    .suggestion-card:hover {
+      background: rgba(74, 144, 226, 0.1);
+      border-color: var(--color-blue-primary);
+      transform: translateY(-5px);
+    }
+    
+    .suggestion-card i {
+      font-size: 2rem;
+      color: var(--color-blue-primary);
+      margin-bottom: 1rem;
+    }
+    
+    .suggestion-card h4 {
+      color: var(--color-white);
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .suggestion-card p {
+      color: var(--color-gray-light);
+      font-size: 0.9rem;
+      margin: 0;
+    }
+    
+    @media (max-width: 768px) {
+      .error-code {
+        font-size: 10rem;
+      }
+      
+      .error-actions {
+        flex-direction: column;
+      }
+      
+      .error-actions .btn {
+        width: 100%;
+      }
+      
+      .suggestions-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 
-<script>
-  // Définir BASE_PATH en premier pour tous les scripts
-  const BASE_PATH = '/car-style74';
-</script>
+  <script>
+  // Définir BASE_PATH en premier pour tous les scripts
+  const BASE_PATH = '/car-style74';
+  </script>
 
-<script src="/car-style74/assets/js/translations.js"></script>
-  
+  <script src="/car-style74/assets/js/translations.js"></script>
+  
 </head>
 
 <body>
-  
-    <div id="header-placeholder"></div>
-  
-    <section class="error-404-section">
-    <div class="error-content">
-      
-      <div class="error-icon">
-        <i class="fas fa-car-crash"></i>
-      </div>
-      
-      <div class="error-code">404</div>
-      
-      <h1 class="error-title" data-translate="404-main-title">Oups ! Cette page a disparu</h1>
-      
-      <p class="error-description" data-translate="404-description">
-        Désolé, la page que vous recherchez n'existe pas ou a été déplacée. 
-        Mais ne vous inquiétez pas, nous pouvons vous aider à retrouver votre chemin !
-      </p>
-      
-      <div class="error-actions">
-        <a href="/car-style74/" class="btn btn-primary btn-large">
-          <i class="fas fa-home"></i> <span data-translate="404-cta-home">Retour à l'accueil</span>
-        </a>
-        <a href="/car-style74/contact/" class="btn btn-outline btn-large">
-          <i class="fas fa-envelope"></i> <span data-translate="404-cta-contact">Nous contacter</span>
-        </a>
-      </div>
-      
-            <div class="error-suggestions">
-        <h3 data-translate="404-popular-pages-title">Pages populaires</h3>
-        
-        <div class="suggestions-grid">
-          
-          <a href="/car-style74/nettoyage/" class="suggestion-card">
-            <i class="fas fa-spray-can"></i>
-            <h4 data-translate="404-suggest-cleaning-title">Nettoyage</h4>
-            <p data-translate="404-suggest-cleaning-text">Intérieur & extérieur</p>
-          </a>
-          
-          <a href="/car-style74/renovation-protection/" class="suggestion-card">
-            <i class="fas fa-gem"></i>
-            <h4 data-translate="404-suggest-polishing-title">Polissage</h4>
-            <p data-translate="404-suggest-polishing-text">Protection céramique</p>
-          </a>
-          
-          <a href="/car-style74/esthetiques/covering-vitres/" class="suggestion-card">
-            <i class="fas fa-palette"></i>
-            <h4 data-translate="404-suggest-covering-title">Covering</h4>
-            <p data-translate="404-suggest-covering-text">Vitres teintées</p>
-          </a>
-          
-          <a href="/car-style74/esthetiques/ciel-etoile-led/" class="suggestion-card">
-            <i class="fas fa-star"></i>
-            <h4 data-translate="404-suggest-starlight-title">Ciel étoilé</h4>
-            <p data-translate="404-suggest-starlight-text">LED d'ambiance</p>
-          </a>
-          
-        </div>
-      </div>
-      
-    </div>
-  </section>
-  
-    <div id="footer-placeholder"></div>
-  
-    <script src="/car-style74/assets/js/main.js"></script>
-  
-  <script>
-    // Animation au chargement
-    document.addEventListener('DOMContentLoaded', function() {
-      const errorContent = document.querySelector('.error-content');
-      errorContent.style.opacity = '0';
-      errorContent.style.transform = 'translateY(30px)';
-      
-      setTimeout(() => {
-        errorContent.style.transition = 'all 0.8s ease';
-        errorContent.style.opacity = '1';
-        errorContent.style.transform = 'translateY(0)';
-      }, 100);
-    });
-  </script>
-  
+  
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  
+  <!-- 404 Section -->
+  <section class="error-404-section">
+    <div class="error-content">
+      
+      <div class="error-icon">
+        <i class="fas fa-car-crash"></i>
+      </div>
+      
+      <div class="error-code">404</div>
+      
+      <h1 class="error-title" data-translate="404-main-title">Oups ! Cette page a disparu</h1>
+      
+      <p class="error-description" data-translate="404-description">
+        Désolé, la page que vous recherchez n'existe pas ou a été déplacée. 
+        Mais ne vous inquiétez pas, nous pouvons vous aider à retrouver votre chemin !
+      </p>
+      
+      <div class="error-actions">
+        <a href="/car-style74/" class="btn btn-primary btn-large">
+          <i class="fas fa-home"></i> <span data-translate="404-cta-home">Retour à l'accueil</span>
+        </a>
+        <a href="/car-style74/contact/" class="btn btn-outline btn-large">
+          <i class="fas fa-envelope"></i> <span data-translate="404-cta-contact">Nous contacter</span>
+        </a>
+      </div>
+      
+      <!-- Suggestions -->
+      <div class="error-suggestions">
+        <h3 data-translate="404-popular-pages-title">Pages populaires</h3>
+        
+        <div class="suggestions-grid">
+          
+          <a href="/car-style74/nettoyage/" class="suggestion-card">
+            <i class="fas fa-spray-can"></i>
+            <h4 data-translate="404-suggest-cleaning-title">Nettoyage</h4>
+            <p data-translate="404-suggest-cleaning-text">Intérieur & extérieur</p>
+          </a>
+          
+          <a href="/car-style74/renovation-protection/" class="suggestion-card">
+            <i class="fas fa-gem"></i>
+            <h4 data-translate="404-suggest-polishing-title">Polissage</h4>
+            <p data-translate="404-suggest-polishing-text">Protection céramique</p>
+          </a>
+          
+          <a href="/car-style74/esthetiques/covering-vitres/" class="suggestion-card">
+            <i class="fas fa-palette"></i>
+            <h4 data-translate="404-suggest-covering-title">Covering</h4>
+            <p data-translate="404-suggest-covering-text">Vitres teintées</p>
+          </a>
+          
+          <a href="/car-style74/esthetiques/ciel-etoile-led/" class="suggestion-card">
+            <i class="fas fa-star"></i>
+            <h4 data-translate="404-suggest-starlight-title">Ciel étoilé</h4>
+            <p data-translate="404-suggest-starlight-text">LED d'ambiance</p>
+          </a>
+          
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  
+  <!-- Scripts -->
+  <script src="/car-style74/assets/js/main.js"></script>
+  
+  <script>
+    // Animation au chargement
+    document.addEventListener('DOMContentLoaded', function() {
+      const errorContent = document.querySelector('.error-content');
+      errorContent.style.opacity = '0';
+      errorContent.style.transform = 'translateY(30px)';
+      
+      setTimeout(() => {
+        errorContent.style.transition = 'all 0.8s ease';
+        errorContent.style.opacity = '1';
+        errorContent.style.transform = 'translateY(0)';
+      }, 100);
+    });
+  </script>
+  
 </body>
 </html>
