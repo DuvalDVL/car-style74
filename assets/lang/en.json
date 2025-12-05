@@ -1,366 +1,1015 @@
 {
-  "delivery-title": "Comfort Plus Delivery",
-  "delivery-text": "Pick-up and delivery of your vehicle at home or at work",
-  
-  "nav-home": "Home",
-  "nav-cleaning": "Cleaning",
-  "nav-renovation": "Renovation & Protection",
-  "nav-polishing": "Buffing and polishing",
-  "nav-ceramic": "Wax & ceramic protection",
-  "nav-aesthetic": "Aesthetic services",
-  "nav-covering": "Wrapping & tinted windows",
-  "nav-accessories": "Accessories installation",
-  "nav-starlight": "Starlight ceiling / Ambient LED",
-  "nav-gallery": "Gallery",
-  "nav-quote": "Request a quote",
-  
-  "hero-title": "Your automotive aesthetics expert",
-  "hero-subtitle": "Premium car detailing specialists in Combloux. Polishing, ceramic coating, wrapping, starlight ceiling and much more.",
-  "cta-quote": "Request a free quote",
-  "cta-call": "Call now",
-  "reviews-count": "67 reviews • 5/5 rating",
-  
-  "services-title": "Our Automotive Aesthetic Services",
-  "services-subtitle": "Premium services to enhance and protect your vehicle",
-  
-  "service-1-title": "Interior / Exterior Cleaning & Decontamination",
-  "service-1-desc": "Deep interior/exterior cleaning and mechanical decontamination to remove all impurities.",
-  "service-1-cta": "Learn more",
-  
-  "service-2-title": "Buffing, Polishing & Ceramic Protection",
-  "service-2-desc": "Up to 90% defect correction and long-lasting ceramic protection for a gleaming bodywork.",
-  "service-2-cta": "Learn more",
-  
-  "service-3-title": "Wrapping, De-chroming & Tinted Windows",
-  "service-3-desc": "Color change, paint protection and complete customization of your vehicle.",
-  "service-3-cta": "Learn more",
-  
-  "service-4-title": "Starlight Ceiling, Ambient LED & Accessories",
-  "service-4-desc": "Installation of starlight ceiling, ambient LED, dashcam and all accessories to customize the interior.",
-  "service-4-cta": "Learn more",
-  
-  "reels-title": "Our Video Showcases",
-  "reels-subtitle": "Discover our transformations on Instagram",
-  "reels-cta": "Follow us on Instagram",
-  
-  "testimonials-title": "What our customers say",
-  "testimonials-rating": "out of 5 • 67 reviews",
-  "testimonials-cta": "See all Google reviews",
-  
-  "gallery-title": "Gallery of our achievements",
-  "gallery-subtitle": "Some examples of our transformations",
-  "gallery-cta": "See full gallery",
-  
-  "contact-title": "Request your free quote",
-  "contact-subtitle": "Fill out the form or contact us directly",
-  "contact-name": "First & Last Name",
-  "contact-phone": "Phone",
-  "contact-email": "Email",
-  "contact-vehicle": "Vehicle model",
-  "contact-vehicle-placeholder": "Ex: BMW X5",
-  "contact-seats": "Number of seats in vehicle",
-  "contact-service": "Desired service",
-  "contact-service-select": "Select a service",
-  "contact-service-cleaning": "Cleaning",
-  "contact-service-decontamination": "Mechanical decontamination",
-  "contact-service-buffing": "Buffing",
-  "contact-service-polishing": "Polishing, 40% and 90%",
-  "contact-service-ceramic": "Ceramic protection",
-  "contact-service-wheels": "Wheel protection",
-  "contact-service-wrapping": "Wrapping",
-  "contact-service-windows": "Tinted windows",
-  "contact-service-starlight": "Starlight ceiling, ambient LED",
-  "contact-service-steering": "Steering wheel installation",
-  "contact-service-other": "Other service",
-  "contact-message": "Your message (optional)",
-  "contact-submit": "Send request",
-  "contact-sending": "Sending...",
-  "contact-success": "Message sent successfully! We will respond quickly.",
-  "contact-error": "An error occurred. Please try again or contact us by phone.",
-  
-  "contact-info-title": "Contact Information",
-  "contact-info-phone": "Phone",
-  "contact-info-email": "Email",
-  "contact-info-address": "Address",
-  "contact-info-hours": "Hours",
-  "contact-info-hours-text": "Monday - Friday: 9am - 6pm<br>By appointment",
+  "site": {
+    "name": "Car Style 74",
+    "tagline": "Professional car detailing in Combloux"
+  },
 
-  "cleaning-hero-title": "Professional Car Cleaning",
-  "cleaning-hero-subtitle": "Complete packages to restore shine and cleanliness to your vehicle. Interior/exterior washing, decontamination and premium finishes in Combloux.",
-  "cleaning-cta-call": "Call now",
-  "cleaning-cta-quote": "Request a free quote",
-  
-  "cleaning-formulas-title": "Our Cleaning Packages",
-  "cleaning-formulas-subtitle": "Choose the package suited to your needs and vehicle type",
-  
-  "cleaning-formula-detailing-name": "Detailing Package",
-  "cleaning-formula-premium-name": "Premium Package",
-  "cleaning-price-sedan": "/ 5 seats",
-  "cleaning-price-suv": "/ 7 seats",
-  
-  "cleaning-detailing-1": "Detailed exterior wash - Engine bay + fuel cap + door jambs",
-  "cleaning-detailing-2": "Chemical decontamination of bodywork",
-  "cleaning-detailing-3": "Wax application on bodywork + tire shine",
-  "cleaning-detailing-4": "Interior and trunk vacuuming",
-  "cleaning-detailing-5": "Steam cleaning of air vents + air freshener",
-  "cleaning-detailing-6": "Degreasing and restoration of plastics",
-  "cleaning-detailing-7": "Leather degreasing + treatment",
-  "cleaning-detailing-8": "Fabric seat shampooing (if needed)",
-  "cleaning-detailing-9": "Floor mat + carpet shampooing",
-  "cleaning-detailing-10": "Window cleaning",
-  "cleaning-detailing-11": "Interior fragrance + air freshener",
-  
-  "cleaning-premium-1": "Exterior wash + door jambs + fuel cap",
-  "cleaning-premium-2": "Interior wash",
-  "cleaning-premium-3": "Interior dusting",
-  "cleaning-premium-4": "Interior and trunk vacuuming",
-  "cleaning-premium-5": "Floor mat shampooing",
-  "cleaning-premium-6": "Plastic degreasing",
-  "cleaning-premium-7": "Window cleaning",
-  "cleaning-premium-8": "Interior fragrance + air freshener",
-  
-  "cleaning-cta-reserve": "Call now",
-  
-  "cleaning-decontamination-title": "Complete Mechanical Decontamination - €100",
-  "cleaning-decontamination-text": "Deeply remove contaminants embedded in your bodywork: tar, rust spots, salt, resin, road and industrial pollution. This service uses a clay bar and professional chemical products to mechanically extract all impurities that classic washing cannot remove.",
-  "cleaning-decontamination-cta": "Request a quote",
-  
-  "cleaning-alacarte-title": "À la Carte Services",
-  "cleaning-alacarte-subtitle": "Customize your service by choosing only what you need",
-  
-  "alacarte-1-name": "Detailing exterior wash",
-  "alacarte-1-desc": "Meticulous bodywork washing with professional products and careful drying.",
-  
-  "alacarte-2-name": "Fabric seat shampooing",
-  "alacarte-2-desc": "Deep cleaning of fabric seats with extraction of embedded dirt.",
-  
-  "alacarte-3-name": "Leather seat washing + treatment",
-  "alacarte-3-desc": "Cleaning and nourishing of leather to preserve its suppleness and shine.",
-  
-  "alacarte-4-name": "Pet hair supplement (dog, cat...)",
-  "alacarte-4-desc": "Complete removal of pet hair embedded in fabrics and carpets.",
-  
-  "alacarte-5-name": "Steam engine bay cleaning",
-  "alacarte-5-desc": "Complete engine bay degreasing with steam, safe for electronics.",
-  
-  "alacarte-6-name": "Carpet shampooing (vomit etc...)",
-  "alacarte-6-desc": "Treatment of difficult stains and elimination of stubborn odors.",
-  
-  "alacarte-7-name": "Headliner cleaning",
-  "alacarte-7-desc": "Roof lining shampooing to remove stains and restore original appearance.",
-  
-  "alacarte-8-name": "Foggy headlight restoration",
-  "alacarte-8-desc": "Polishing and protection of lenses to restore transparency and safety.",
-  
-  "alacarte-9-name": "Polishing per panel",
-  "alacarte-9-desc": "Defect correction on a specific element (hood, door, fender...).",
-  
-  "alacarte-per-seat": "(per seat)",
-  "alacarte-from": "(from)",
-  
-  "cleaning-delivery-title": "Comfort Plus Delivery Service",
-  "cleaning-delivery-text": "We pick up your vehicle at home or at your workplace, perform the cleaning at our facility, then deliver it perfectly clean. Available in Combloux, Megève, Chamonix, Sallanches and throughout Haute-Savoie.",
-  "cleaning-delivery-cta": "Call now",
-  
-  "cleaning-final-cta-title": "Ready to restore your vehicle's shine?",
-  "cleaning-final-cta-text": "Contact us now for a personalized quote or to book your time slot - Please empty your vehicle before any service",
-  "cleaning-cta-call-now": "Call now",
-  "cleaning-cta-quote-form": "Quote form",
-  
-  "cleaning-intro-title": "Why choose our cleaning services?",
-  "cleaning-intro-text": "Professional cleaning preserves your vehicle's value, protects your health and improves your driving comfort. Our expert techniques eliminate dirt, bacteria and bad odors in depth.",
-  
-  "cleaning-benefit-1-title": "Long-lasting protection",
-  "cleaning-benefit-1-text": "Preserves your bodywork and interiors against wear and external aggressions.",
-  
-  "cleaning-benefit-2-title": "Like-new result",
-  "cleaning-benefit-2-text": "Our professional techniques guarantee deep cleaning without residue.",
-  
-  "cleaning-benefit-3-title": "Time-saving",
-  "cleaning-benefit-3-text": "Comfort Plus Delivery Service: we pick up and deliver your vehicle wherever you want.",
-  
-  "faq-title": "Frequently asked questions about car cleaning",
-  "faq-subtitle": "Find answers to the most common questions from our customers",
-  
-  "faq-q1": "Should I empty my vehicle before dropping it off?",
-  "faq-a1": "We ask our customers to empty their vehicle before bringing it to us. This is to avoid any suspicion or risk of damage. Additional fees may apply if the vehicle is not emptied.",
-  
-  "faq-q2": "What is the difference between the Detailing and Premium Package?",
-  "faq-a2": "The Detailing Package is our most complete service: it includes chemical decontamination of the bodywork, engine bay cleaning, protective wax application and complete leather treatment. The Premium Package is a more standard service, ideal for regular maintenance with interior/exterior washing and careful finishes.",
-  
-  "faq-q3": "How long does a complete cleaning service take?",
-  "faq-a3": "A Premium Package takes about 3 hours. The Detailing Package requires about 6 hours depending on the vehicle's condition and size. We take the necessary time to guarantee an impeccable result without rushing.",
-  
-  "faq-q4": "Is the Comfort Plus Delivery service included in the price?",
-  "faq-a4": "The vehicle pick-up and delivery service is available upon quote according to your location. It is included for Combloux and may incur an additional charge for more distant municipalities. Contact us to know the exact rate according to your address.",
-  
-  "faq-q5": "Do I need to book in advance?",
-  "faq-a5": "Yes, we work by appointment only to guarantee quality service and respected deadlines. We recommend booking one week in advance preferably, especially during high-demand periods (school holidays, winter season in Megève/Chamonix).",
-  
-  "faq-q6": "Do you use eco-friendly products?",
-  "faq-a6": "We use high-end professional products that respect the environment and your vehicle. Our shampoos and detergents are biodegradable and our techniques limit water consumption thanks to the use of low-consumption Karcher (50L of water per vehicle versus more than 150L for roller washing).",
-  
-  "faq-q7": "Can I combine several à la carte services?",
-  "faq-a7": "Absolutely! Our à la carte services are designed to be combined according to your needs. Contact us to create a personalized quote: we can for example combine a detailing exterior wash + foggy headlight restoration + leather seat shampooing.",
-  
-  "faq-q8": "Do you work on all types of vehicles?",
-  "faq-a8": "Yes, we work on all types of vehicles: sedans, SUVs, sports cars, commercial vehicles, motorcycles, trucks. Our rates are adapted according to the size and type of vehicle. The prices indicated are for standard sedans/SUVs, a personalized quote will be established for specific vehicles.",
+  "delivery": {
+    "title": "Comfort Plus Delivery",
+    "text": "Pick-up and delivery of your vehicle at home or at work"
+  },
 
-  "renovation-hero-title": "Renovation & Car protect",
-  "renovation-hero-subtitle": "Redonnez éclat et brillance à votre véhicule avec nos services de lustrage, polissage et protection céramique professionnels. Préservez la valeur et l'esthétique de votre carrosserie durablement.",
-  "renovation-cta-call": "Appeler maintenant",
-  "renovation-cta-quote": "Demander un devis gratuit",
-  
-  "renovation-services-title": "Nos Services de Rénovation & Protection",
-  "renovation-services-subtitle": "Deux expertises complémentaires pour sublimer et protéger votre véhicule",
-  
-  "renovation-service-1-name": "Lustrage & Polissage",
-  "renovation-service-1-desc": "Correction des micro-rayures et défauts de peinture pour restaurer l'éclat d'origine de votre carrosserie. Deux niveaux de polissage disponibles selon l'état de votre véhicule.",
-  "renovation-service-1-cta": "En savoir plus",
-  
-  "renovation-service-2-name": "Protection Cire & Céramique",
-  "renovation-service-2-desc": "Protection longue durée contre les agressions extérieures. Choisissez entre la cire traditionnelle (6 mois) ou la céramique haute performance (jusqu'à 5 ans).",
-  "renovation-service-2-cta": "En savoir plus",
-  
-  "renovation-feature-1-1": "Polissage 40% - Correction légère (400-500€)",
-  "renovation-feature-1-2": "Polissage 90% - Correction profonde (700-800€)",
-  "renovation-feature-1-3": "Lustrage pour brillance et protection (3 mois)",
-  "renovation-feature-1-4": "Décontamination incluse",
-  
-  "renovation-feature-2-1": "Protection cire - Durée 6 mois",
-  "renovation-feature-2-2": "Protection céramique - 2, 3, 4 ou 5 ans",
-  "renovation-feature-2-3": "Protection éléments (jantes, vitres, cuir...)",
-  "renovation-feature-2-4": "Effet hydrophobe et brillance intense",
-  
-  "renovation-intro-title": "Pourquoi rénover et protéger votre carrosserie ?",
-  "renovation-intro-text": "La carrosserie de votre véhicule subit quotidiennement les agressions extérieures : UV, pollution, insectes, micro-rayures. Nos traitements professionnels restaurent l'éclat d'origine et protègent durablement votre investissement.",
-  
-  "renovation-benefit-1-title": "Préserve la valeur",
-  "renovation-benefit-1-text": "Une carrosserie bien entretenue maintient la valeur de revente de votre véhicule et témoigne d'un entretien soigné.",
-  
-  "renovation-benefit-2-title": "Protection durable",
-  "renovation-benefit-2-text": "Nos traitements céramiques protègent votre peinture contre les UV, l'oxydation et les contaminants jusqu'à 5 ans.",
-  
-  "renovation-benefit-3-title": "Éclat comme neuf",
-  "renovation-benefit-3-text": "Le polissage élimine jusqu'à 90% des micro-rayures et redonne une brillance incomparable à votre carrosserie.",
-  
-  "renovation-process-title": "Notre Processus en 3 Étapes",
-  "renovation-process-subtitle": "Une méthode rigoureuse pour des résultats professionnels et durables",
-  
-  "renovation-step-1-title": "Décontamination",
-  "renovation-step-1-text": "Élimination en profondeur de tous les contaminants incrustés : goudron, résine, pollution industrielle.",
-  
-  "renovation-step-2-title": "Polissage",
-  "renovation-step-2-text": "Correction des micro-rayures et défauts de peinture avec nos polisseuses professionnelles de précision.",
-  
-  "renovation-step-3-title": "Protection",
-  "renovation-step-3-text": "Application de la protection choisie (cire ou céramique) pour une durabilité et une brillance optimales.",
-  
-  "renovation-testimonial-1": "Polissage 90% sur ma BMW, résultat spectaculaire ! La carrosserie brille comme au premier jour. Travail méticuleux et professionnel. Je recommande vivement.",
-  "renovation-testimonial-2": "Protection céramique 3 ans posée il y a 6 mois, ma voiture reste impeccable sans effort. L'eau glisse, plus de traces, un entretien ultra-simplifié. Investissement rentabilisé !",
-  "renovation-testimonial-3": "Service impeccable du début à la fin. Conseils avisés sur le choix entre cire et céramique. Mon Audi a retrouvé tout son éclat après le polissage. Très professionnel.",
-  
-  "testimonials-rating-google": "sur Google",
-  
-  "renovation-final-cta-title": "Prêt à sublimer votre véhicule ?",
-  "renovation-final-cta-text": "Contactez-nous pour un diagnostic personnalisé et un devis sur mesure adapté à l'état et aux besoins de votre véhicule.",
-  "renovation-cta-call-now": "06 03 94 64 24",
-  "renovation-cta-quote-form": "Demander un devis",
+  "nav": {
+    "home": "Home",
+    "cleaning": "Cleaning",
+    "renovation": "Renovation & Protection",
+    "polishing": "Polishing & buffing",
+    "ceramic": "Wax & ceramic protection",
+    "aesthetic": "Aesthetic services",
+    "covering": "Wrapping & tinted windows",
+    "accessories": "Accessories installation",
+    "starlight": "Starlight ceiling / Ambient LED",
+    "gallery": "Gallery",
+    "quote": "Request a quote"
+  },
 
-   "polishing-hero-title": "Lustrage & Polishing Professionnel",
-  "polishing-hero-subtitle": "Correction des défauts de peinture et restauration de l'éclat d'origine de votre carrosserie. Élimination jusqu'à 90% des micro-rayures avec nos techniques professionnelles de detailing.",
-  "polishing-cta-call": "Appeler maintenant",
-  "polishing-cta-quote": "Demander un devis gratuit",
-  
-  "polishing-formulas-title": "Nos Formules de Polissage",
-  "polishing-formulas-subtitle": "Choisissez le niveau de correction adapté à l'état de votre carrosserie",
-  
-  "polishing-formula-40-name": "Polissage 40%",
-  "polishing-formula-90-name": "Polissage 90%",
-  
-  "polishing-price-40": "à partir de 400€",
-  "polishing-price-90": "à partir de 700€",
-  
-  "polishing-duration-label": "Durée :",
-  "polishing-duration-40": "1 journée",
-  "polishing-duration-90": "2 journées",
-  
-  "polishing-40-description": "Correction légère à modérée des défauts de surface. Idéal pour les véhicules récents ou régulièrement entretenus présentant des micro-rayures superficielles et un léger ternissement de la peinture.",
-  "polishing-90-description": "Correction profonde et intensive des défauts de peinture. Recommandé pour les véhicules anciens, négligés ou présentant de nombreuses rayures, hologrammes et une peinture fortement oxydée.",
-  
-  "polishing-includes-label": "Cette formule comprend :",
-  
-  "polishing-40-feature-1": "Décontamination mécanique obligatoire",
-  "polishing-40-feature-2": "Élimination jusqu'à 40% des micro-rayures",
-  "polishing-40-feature-3": "Polissage en 1 à 2 étape(s) (correction légère)",
-  "polishing-40-feature-4": "Finition brillante et lisse au toucher",
-  "polishing-40-feature-5": "Idéal avant application d'une cire",
-  
-  "polishing-90-feature-1": "Décontamination mécanique obligatoire",
-  "polishing-90-feature-2": "Élimination jusqu'à 90% des micro-rayures",
-  "polishing-90-feature-3": "Polissage en 3 à 4 étapes (correction + finition)",
-  "polishing-90-feature-4": "Correction des défauts profonds et hologrammes",
-  "polishing-90-feature-5": "Finition miroir avec brillance exceptionnelle",
-  "polishing-90-feature-6": "Obligatoire avant protection céramique",
-  
-  "polishing-40-recommendation": "Recommandé avant une vente ou après un achat",
-  "polishing-90-recommendation": "Recommandé avec une protection supplémentaire (cire ou céramique)",
-  
-  "polishing-cta-contact": "Nous contacter",
-  
-  "polishing-intro-title": "Qu'est-ce que le polissage automobile ?",
-  "polishing-intro-text": "Le polissage est un processus de correction de la peinture qui élimine les micro-rayures, les hologrammes, les traces d'oxydation et les défauts superficiels. Grâce à des machines rotatives ou orbitales et des produits abrasifs spécifiques, nous retirons une fine couche de vernis pour révéler une surface parfaitement lisse et brillante.",
-  
-  "polishing-benefit-1-title": "Élimine les défauts",
-  "polishing-benefit-1-text": "Correction des micro-rayures, traces de lavage automatique, hologrammes et voiles de peinture.",
-  
-  "polishing-benefit-2-title": "Restaure la brillance",
-  "polishing-benefit-2-text": "Redonne une brillance miroir et une profondeur de couleur incomparables à votre carrosserie.",
-  
-  "polishing-benefit-3-title": "Prépare la protection",
-  "polishing-benefit-3-text": "Surface parfaitement lisse indispensable avant l'application d'une cire ou d'une protection céramique.",
-  
-  "polishing-lustrage-title": "Le Lustrage : Protection et Brillance",
-  "polishing-lustrage-text": "Le lustrage est un traitement complémentaire qui suit le polissage. Il consiste à appliquer un produit de finition qui nourrit la peinture, intensifie la brillance et offre une protection temporaire contre les agressions extérieures. Le lustrage facilite également l'entretien en rendant la carrosserie moins poreuse.",
-  "polishing-lustrage-duration": "~3 mois",
-  "polishing-lustrage-duration-label": "Durabilité moyenne",
-  "polishing-lustrage-shine": "+50%",
-  "polishing-lustrage-shine-label": "Brillance accrue",
-  "polishing-lustrage-difference": "Différence polissage / lustrage : Le polissage corrige les défauts, le lustrage protège et sublime le résultat obtenu.",
-  
-  "polishing-testimonial-1": "Polissage 90% sur ma Porsche 911. Résultat absolument bluffant, la peinture brille comme jamais ! Travail minutieux et professionnel. Un vrai passionné qui prend son temps.",
-  "polishing-testimonial-2": "Mon Audi avait beaucoup de micro-rayures dues aux lavages automatiques. Le polissage 40% a suffi à redonner un aspect neuf. Je recommande cette prestation !",
-  "polishing-testimonial-3": "Excellent rapport qualité/prix pour le polissage. Conseils précis sur la formule adaptée à mon véhicule. Résultat à la hauteur de mes attentes, carrosserie miroir !",
-  
-  "faq-polishing-q1": "Quelle différence entre polissage 40% et 90% ?",
-  "faq-polishing-a1": "Le pourcentage indique le taux de correction des défauts. Le polissage 40% élimine les micro-rayures superficielles et convient aux véhicules récents. Le polissage 90% est une correction profonde qui traite les rayures importantes, l'oxydation et les défauts marqués. Il nécessite plus de temps (2 jours vs 1 jour) et est obligatoire avant une protection céramique.",
-  
-  "faq-polishing-q2": "Le polissage abîme-t-il la peinture ?",
-  "faq-polishing-a2": "Non, si réalisé correctement par un professionnel. Le polissage retire une fine couche de vernis (quelques microns) pour éliminer les défauts en surface. Nos machines et nos techniques garantissent un polissage contrôlé et sécuritaire. Un véhicule peut être poli 4 à 6 fois dans sa vie sans risque.",
-  
-  "faq-polishing-q3": "Combien de temps dure le résultat du polissage ?",
-  "faq-polishing-a3": "Le polissage en lui-même est permanent : les défauts corrigés ne reviennent pas. Cependant, la brillance et la protection diminuent avec le temps sans entretien. C'est pourquoi nous recommandons d'appliquer une cire (6 mois) ou une céramique (2 à 5 ans) après le polissage pour protéger durablement le résultat.",
-  
-  "faq-polishing-q4": "La décontamination est-elle vraiment obligatoire ?",
-  "faq-polishing-a4": "Oui, absolument. La décontamination élimine les contaminants incrustés (goudron, résine, pollution métallique) qui ne partent pas au lavage classique. Sans cette étape, le polissage risque d'incruster ces particules encore plus profondément et de rayer la peinture. C'est une étape indispensable pour un résultat optimal et sécuritaire.",
-  
-  "faq-polishing-q5": "Puis-je faire polir une voiture noire/foncée ?",
-  "faq-polishing-a5": "Oui ! Les peintures foncées (noir, bleu marine, gris anthracite) révèlent davantage les défauts mais bénéficient aussi d'un résultat spectaculaire après polissage. La profondeur de couleur et la brillance miroir sont particulièrement impressionnantes sur les teintes sombres. Nous avons l'expertise pour traiter tous types de peintures.",
-  
-  "faq-polishing-q6": "Quel entretien après un polissage ?",
-  "faq-polishing-a6": "Après un polissage, privilégiez les lavages manuels avec des produits pH neutre et des microfibre douces. Évitez les lavages automatiques à brosses qui créent des micro-rayures. Appliquez régulièrement un spray détaillant pour entretenir la brillance. Idéalement, complétez avec une protection (cire ou céramique) pour préserver le résultat.",
-  
-  "polishing-final-cta-title": "Prêt à redonner éclat à votre carrosserie ?",
-  "polishing-final-cta-text": "Contactez-nous pour un diagnostic gratuit et des conseils personnalisés sur la formule de polissage adaptée à votre véhicule.",
-  "polishing-cta-call-now": "06 03 94 64 24",
-  "polishing-cta-quote-form": "Demander un devis",
-  
-  "faq-q9": "What if my vehicle is very dirty or neglected?",
-  "faq-a9": "No problem! We specialize in the restoration of very dirty vehicles. We recommend the Detailing Package with possibly additional services (pet hair supplement, stubborn stain treatment, polishing per panel, foggy headlight restoration...). Send us photos for an accurate quote.",
-  "footer-about-title": "About",
-  "footer-about-text": "Car Style 74, premium automotive detailing specialists in Combloux. Comfort Plus Delivery service available in Megève, Chamonix and Sallanches.",
-  "footer-services-title": "Services",
-  "footer-legal-title": "Legal Information",
-  "footer-contact-title": "Contact",
-  "footer-copyright": "© 2024 Car Style 74. All rights reserved."
+  "hero": {
+    "title": "Premium Car Detailing in Combloux",
+    "subtitle": "Reveal your vehicle's shine with our high-end services: cleaning, polishing, ceramic protection, wrapping and much more.",
+    "cta-primary": "Discover our services",
+    "cta-secondary": "Request a free quote"
+  },
+
+  "services": {
+    "title": "Our Detailing Services",
+    "subtitle": "Complete services to enhance your vehicle",
+    "cleaning-title": "Cleaning & Decontamination",
+    "cleaning-desc": "Professional interior and exterior cleaning with complete mechanical decontamination.",
+    "polishing-title": "Buffing & Polishing",
+    "polishing-desc": "Correction of micro-scratches and restoration of your bodywork's original shine.",
+    "ceramic-title": "Ceramic Protection",
+    "ceramic-desc": "Long-lasting protection up to 5 years against external aggressions.",
+    "covering-title": "Wrapping & Windows",
+    "covering-desc": "Complete customization: full or partial wrapping, certified tinted windows.",
+    "starlight-title": "Starlight & LED",
+    "starlight-desc": "Installation of fiber optic starlight ceiling and customizable RGB ambient LED.",
+    "accessories-title": "Car Accessories",
+    "accessories-desc": "Heated steering wheel, dashcam, and all automotive accessories installation.",
+    "cta": "Learn more"
+  },
+
+  "advantages": {
+    "title": "Why choose Car Style 74?",
+    "subtitle": "Excellence in car detailing in Haute-Savoie",
+    "expertise-title": "Expertise & Passion",
+    "expertise-text": "Team trained in the most advanced car detailing techniques. Every vehicle is treated with the utmost care.",
+    "products-title": "Premium Products",
+    "products-text": "We exclusively use high-end professional products recognized for their effectiveness and durability.",
+    "delivery-title": "Comfort Plus Delivery",
+    "delivery-text": "Vehicle pick-up and delivery service at home or at your workplace. Free within 20km radius.",
+    "guarantee-title": "Satisfaction Guarantee",
+    "guarantee-text": "We guarantee the quality of our services. Your satisfaction is our absolute priority."
+  },
+
+  "process": {
+    "title": "Our Work Process",
+    "subtitle": "A proven methodology for impeccable results",
+    "step1-title": "Free diagnosis",
+    "step1-text": "Assessment of your vehicle's condition and personalized recommendations",
+    "step2-title": "Detailed quote",
+    "step2-text": "Transparent proposal adapted to your needs and budget",
+    "step3-title": "Execution",
+    "step3-text": "Careful intervention by our experts with premium products",
+    "step4-title": "Quality control",
+    "step4-text": "Thorough verification before returning your vehicle"
+  },
+
+  "reels": {
+    "title": "Our Work in Video",
+    "subtitle": "Discover our services in action on Instagram",
+    "link": "View on Instagram"
+  },
+
+  "testimonials": {
+    "title": "Customer reviews",
+    "title-alt": "What our customers say",
+    "rating-score": "5.0",
+    "rating-text": "on Google",
+    "rating-count": "out of 5 • 67 reviews",
+    "rating-google": "on Google",
+    "cta": "See all Google reviews"
+  },
+
+  "testimonial": {
+    "1-author": "Jean Dupont",
+    "1-text": "Exceptional work on my Porsche. The polishing and ceramic protection transformed the car. Professional and passionate team. Highly recommend!",
+    "2-author": "Sophie Martin",
+    "2-text": "The Comfort Plus Delivery service is great! They picked up my car at home and brought it back spotless. The installed starlight ceiling is magnificent. Thanks Pauline and Osama!",
+    "3-author": "Thomas Bernard",
+    "3-text": "Complete wrapping of my SUV, result beyond my expectations. Perfect finishes, wise advice. Reasonable prices for the quality of work. I'll be back!"
+  },
+
+  "google-rating": {
+    "score": "5.0",
+    "text": "on Google"
+  },
+
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Quickly find answers to your questions",
+    "q1": "How long does a complete detailing take?",
+    "a1": "A complete detailing can take between 4 and 8 hours depending on the vehicle's condition and chosen services. We take the necessary time to guarantee an impeccable result.",
+    "q2": "Do you offer vehicle delivery?",
+    "a2": "Yes! Our Comfort Plus Delivery service allows you to pick up and deliver your vehicle at home or at work, free of charge within a 20km radius around Combloux.",
+    "q3": "What payment methods do you accept?",
+    "a3": "We accept payments by credit card, cash, check and bank transfer. A deposit may be required for certain services.",
+    "q4": "Do I need to make an appointment?",
+    "a4": "Yes, we work by appointment only to guarantee the quality of our services and welcome you in the best conditions. Contact us by phone or via the form.",
+    "q5": "Do you work on all types of vehicles?",
+    "a5": "Yes, we work on all types of vehicles: cars, SUVs, vans, motorcycles, motorhomes, classic vehicles, etc.",
+    "q6": "How much does detailing cost?",
+    "a6": "Prices vary according to services and vehicle condition. Request a free personalized quote via our form or by phone."
+  },
+
+  "cta-final": {
+    "title": "Ready to enhance your vehicle?",
+    "text": "Contact us now for a personalized free quote",
+    "call": "Call now",
+    "contact": "Request a quote"
+  },
+
+  "cleaning": {
+    "hero-title": "Professional Car Cleaning",
+    "hero-subtitle": "Give your vehicle a fresh start with our interior and exterior cleaning formulas. Impeccable results guaranteed.",
+    "cta-call": "Call now",
+    "cta-quote": "Request a quote",
+    "formulas-title": "Our Cleaning Formulas",
+    "formulas-subtitle": "Services adapted to all needs and budgets",
+    "formula-detailing": "Detailing Formula",
+    "formula-premium": "Premium Formula",
+    "price-5seats": "5 seats",
+    "price-7seats": "7 seats",
+    "detailing-feature-1": "Complete interior cleaning",
+    "detailing-feature-2": "Thorough vacuuming",
+    "detailing-feature-3": "Plastics and dashboard cleaning",
+    "detailing-feature-4": "Interior windows cleaning",
+    "detailing-feature-5": "Seats cleaning (fabric or leather)",
+    "detailing-feature-6": "High-pressure exterior washing",
+    "detailing-feature-7": "Wheels cleaning",
+    "detailing-feature-8": "Bodywork drying",
+    "detailing-cta": "Choose this formula",
+    "premium-feature-1": "All Detailing formula features",
+    "premium-feature-2": "Bodywork shampoo",
+    "premium-feature-3": "Wheel arches cleaning",
+    "premium-feature-4": "Door seals cleaning",
+    "premium-feature-5": "Exterior plastics restoration",
+    "premium-feature-6": "Exterior windows cleaning",
+    "premium-feature-7": "Tire protection (dressing)",
+    "premium-feature-8": "Long-lasting shine",
+    "premium-cta": "Choose this formula",
+    "decontamination-title": "Mechanical Decontamination",
+    "decontamination-subtitle": "Remove contaminants embedded in the paint",
+    "decontamination-price": "€80",
+    "decontamination-desc": "Mechanical decontamination with clay bar removes iron particles, tar, resin and pollution embedded in the paint. Essential before polishing or ceramic protection for a perfectly smooth surface.",
+    "decontamination-benefit-1": "Eliminates invisible contaminants",
+    "decontamination-benefit-2": "Perfectly smooth surface to touch",
+    "decontamination-benefit-3": "Prepares bodywork for polishing",
+    "decontamination-call": "Request a quote",
+    "alacarte-title": "À la carte services",
+    "alacarte-subtitle": "Create your custom formula",
+    "alacarte-category-interior": "Interior",
+    "alacarte-category-exterior": "Exterior",
+    "alacarte-per-seat": "per seat",
+    "alacarte-per-seat-short": "/seat",
+    "alacarte-from": "from",
+    "alacarte-from-short": "from",
+    "alacarte-1-name": "Fabric seats cleaning",
+    "alacarte-1-name-short": "Fabric seats",
+    "alacarte-1-price": "€15/seat",
+    "alacarte-2-name": "Leather seats cleaning",
+    "alacarte-2-name-short": "Leather seats",
+    "alacarte-2-price": "€20/seat",
+    "alacarte-3-name": "Carpets and mats cleaning",
+    "alacarte-3-name-short": "Carpets",
+    "alacarte-3-price": "€50",
+    "alacarte-4-name": "Trunk cleaning",
+    "alacarte-4-name-short": "Trunk",
+    "alacarte-4-price": "€30",
+    "alacarte-5-name": "Headliner cleaning",
+    "alacarte-5-name-short": "Headliner",
+    "alacarte-5-price": "€80",
+    "alacarte-6-name": "Windows cleaning (int. + ext.)",
+    "alacarte-6-name-short": "Windows",
+    "alacarte-6-price": "€30",
+    "alacarte-7-name": "Bodywork washing",
+    "alacarte-7-name-short": "Bodywork",
+    "alacarte-7-price": "€40",
+    "alacarte-8-name": "Wheels cleaning (x4)",
+    "alacarte-8-name-short": "Wheels",
+    "alacarte-8-price": "€40",
+    "alacarte-9-name": "Engine cleaning",
+    "alacarte-9-name-short": "Engine",
+    "alacarte-9-price": "€60",
+    "alacarte-note": "Prices may vary according to condition and vehicle size",
+    "intro-title": "Why have your vehicle professionally cleaned?",
+    "intro-text": "Professional cleaning goes far beyond a simple wash. We use specific products and techniques to deeply remove dirt, stains and odors. The result: a healthy interior and a radiant exterior that enhances your vehicle."
+  },
+
+  "renovation": {
+    "hero-title": "Bodywork Renovation & Protection",
+    "hero-subtitle": "Bring your bodywork back to life through buffing, polishing and long-lasting ceramic protection. Spectacular results on all types of vehicles.",
+    "cta-call": "Call now",
+    "cta-quote": "Request a free quote",
+    "services-title": "Our Renovation Services",
+    "services-subtitle": "From simple buffing to 5-year ceramic protection",
+    "lustrage-name": "Bodywork Buffing",
+    "lustrage-price": "€150",
+    "lustrage-desc": "Buffing restores shine to your bodywork dulled by time. Application of a light polish that revives brightness without correcting defects. Ideal for regular maintenance.",
+    "lustrage-feature-1": "Preliminary cleaning and decontamination",
+    "lustrage-feature-2": "Gentle polish application",
+    "lustrage-feature-3": "Shine restoration",
+    "lustrage-feature-4": "Duration: 2-3 hours",
+    "lustrage-cta": "Learn more",
+    "polishing-name": "Correction Polishing",
+    "polishing-price": "On quote",
+    "polishing-desc": "Polishing corrects micro-scratches, wash marks and paint defects. Two levels: 40% correction (light) or 90% (deep). Spectacular result guaranteed.",
+    "polishing-feature-1": "40% or 90% micro-scratches correction",
+    "polishing-feature-2": "Wash marks elimination",
+    "polishing-feature-3": "Original shine restoration",
+    "polishing-feature-4": "Duration: 6-12 hours depending on formula",
+    "polishing-cta": "Learn more",
+    "ceramic-name": "Ceramic Protection",
+    "ceramic-price": "On quote",
+    "ceramic-desc": "Ceramic protection offers a durable barrier against external aggressions. Exceptional hydrophobic effect, facilitates maintenance and protects up to 5 years.",
+    "ceramic-feature-1": "2 to 5 years protection depending on range",
+    "ceramic-feature-2": "Spectacular beading effect",
+    "ceramic-feature-3": "UV, insects, tar resistance",
+    "ceramic-feature-4": "Simplified maintenance",
+    "ceramic-cta": "Learn more",
+    "intro-title": "Why renovate and protect your bodywork?",
+    "intro-text": "The bodywork is constantly exposed to aggressions: UV, pollution, insects, tar. Buffing or polishing restores the original shine, while ceramic protection preserves it durably. Result: a radiant and valued vehicle.",
+    "benefits-title": "The Advantages",
+    "benefit-1-title": "Restored shine",
+    "benefit-1-text": "Deep and lasting brightness like the first day",
+    "benefit-2-title": "Long-lasting protection",
+    "benefit-2-text": "Shield against UV, pollution and bad weather",
+    "benefit-3-title": "Facilitates maintenance",
+    "benefit-3-text": "Beading effect: dirt no longer sticks",
+    "testimonials-title": "Customer reviews"
+  },
+
+  "polishing": {
+    "hero-title": "Car Buffing and Polishing",
+    "hero-subtitle": "Correction of micro-scratches and restoration of your bodywork's original shine. Two polishing levels: 40% (light) or 90% (deep correction).",
+    "cta-call": "Call now",
+    "cta-quote": "Request a free quote",
+    "services-title": "Our Polishing Formulas",
+    "services-subtitle": "Choose the correction level adapted to your vehicle",
+    "polishing-40-name": "40% Polishing",
+    "polishing-40-price": "On quote",
+    "polishing-40-desc": "Light correction of superficial micro-scratches and wash marks. Ideal for recent or well-maintained vehicles. Restores 40% of original shine.",
+    "polishing-40-feature-1": "Clay bar mechanical decontamination",
+    "polishing-40-feature-2": "One-step polishing",
+    "polishing-40-feature-3": "Light micro-scratches correction",
+    "polishing-40-feature-4": "Wash marks elimination",
+    "polishing-40-feature-5": "40% shine restoration",
+    "polishing-40-feature-6": "Buffing finish",
+    "polishing-40-feature-7": "Duration: 6-8 hours",
+    "polishing-40-feature-8": "Ideal for recent vehicles",
+    "polishing-40-cta": "Request a quote",
+    "polishing-90-name": "90% Polishing",
+    "polishing-90-price": "On quote",
+    "polishing-90-desc": "Deep correction of all types of defects: scratches, holograms, oxidation. For old or heavily damaged vehicles. Restores 90% of original shine.",
+    "polishing-90-feature-1": "Clay bar mechanical decontamination",
+    "polishing-90-feature-2": "Two-step polishing",
+    "polishing-90-feature-3": "Deep scratches correction",
+    "polishing-90-feature-4": "Holograms elimination",
+    "polishing-90-feature-5": "90% shine restoration",
+    "polishing-90-feature-6": "Mirror finish (mirror effect)",
+    "polishing-90-feature-7": "Duration: 10-12 hours",
+    "polishing-90-feature-8": "Spectacular result guaranteed",
+    "polishing-90-cta": "Request a quote",
+    "intro-title": "Buffing or Polishing: what's the difference?",
+    "intro-text": "Buffing restores shine without correcting defects. Polishing actively corrects micro-scratches by removing a thin layer of varnish. 40% polishing is light, 90% is deep and corrects almost all defects.",
+    "benefits-title": "Why polish your bodywork?",
+    "benefit-1-title": "Defects correction",
+    "benefit-1-text": "Eliminates micro-scratches, wash marks, holograms",
+    "benefit-2-title": "Original shine restored",
+    "benefit-2-text": "Deep brightness like factory new",
+    "benefit-3-title": "Enhances the vehicle",
+    "benefit-3-text": "Impeccable bodywork that increases value",
+    "testimonials-title": "Customer reviews",
+    "final-cta-title": "Ready to restore your bodywork's shine?",
+    "final-cta-text": "Contact us for a personalized quote according to your vehicle's condition",
+    "cta-call-now": "+33 6 03 94 64 24",
+    "cta-quote-form": "Request a quote"
+  },
+
+  "polishing-testimonial": {
+    "1-name": "Marc Lefebvre",
+    "2-name": "Claire Dubois",
+    "3-name": "Julien Petit"
+  },
+
+  "protection": {
+    "hero-title": "Wax & Ceramic Protection",
+    "hero-subtitle": "Durably protect your bodywork against external aggressions. Natural wax (6 months) or ceramic protection (up to 5 years). Spectacular beading effect and simplified maintenance.",
+    "cta-call": "Call now",
+    "cta-quote": "Request a free quote",
+    "comparison-title": "Wax or Ceramic: which protection to choose?",
+    "comparison-subtitle": "Two solutions adapted to your needs and budget",
+    "wax-name": "Wax Protection",
+    "wax-price": "€100",
+    "wax-duration": "Duration: 6 months",
+    "wax-desc": "Natural wax offers effective protection and warm rendering. Ideal for regular maintenance and controlled budget. To renew every 6 months.",
+    "wax-feature-1": "6 months protection",
+    "wax-feature-2": "Warm shine",
+    "wax-feature-3": "Beading effect",
+    "wax-feature-4": "Facilitates maintenance",
+    "wax-feature-5": "Quick application",
+    "wax-feature-6": "Renewable",
+    "wax-feature-7": "Ideal for daily use",
+    "wax-feature-8": "Excellent value for money",
+    "wax-cta": "Choose wax",
+    "ceramic-name": "Ceramic Protection",
+    "ceramic-price": "On quote",
+    "ceramic-duration": "Duration: 2 to 5 years",
+    "ceramic-desc": "Ceramic protection forms a permanent shield on the bodywork. Maximum resistance to UV, insects, tar. Exceptional beading effect and minimal maintenance. Guaranteed up to 5 years.",
+    "ceramic-feature-1": "2 to 5 years protection depending on range",
+    "ceramic-feature-2": "Exceptional shine",
+    "ceramic-feature-3": "Extreme hydrophobic effect",
+    "ceramic-feature-4": "Maximum UV resistance",
+    "ceramic-feature-5": "Light anti-scratch",
+    "ceramic-feature-6": "Minimal maintenance",
+    "ceramic-feature-7": "Enhances the vehicle",
+    "ceramic-feature-8": "Manufacturer warranty",
+    "ceramic-cta": "Choose ceramic",
+    "elements-title": "Protection on Specific Elements",
+    "elements-subtitle": "Also protect wheels, headlights and plastics",
+    "wheels-name": "Ceramic Wheels Protection",
+    "wheels-price": "€150",
+    "wheels-desc": "Specific ceramic protection for wheels. Greatly facilitates cleaning: brake dust and dirt no longer adhere. Wheels stay clean much longer.",
+    "wheels-cta": "Learn more",
+    "headlights-name": "Headlight Lenses Restoration",
+    "headlights-price": "€120",
+    "headlights-desc": "Polishing and protection of yellowed or tarnished headlight lenses. Restores original transparency and improves lighting. UV protection included to prevent yellowing.",
+    "headlights-cta": "Learn more",
+    "plastics-name": "Exterior Plastics Restoration",
+    "plastics-price": "€80",
+    "plastics-desc": "Treatment of exterior plastics (bumpers, sills) tarnished or whitened by the sun. Restores the original deep black color. Long-lasting anti-UV protection.",
+    "plastics-cta": "Learn more",
+    "intro-title": "Why protect your bodywork?",
+    "intro-text": "The bodywork daily undergoes UV, pollution, insects, tar, acid rain. Wax or ceramic protection creates a barrier that preserves the paint, facilitates maintenance and maintains shine. An investment that enhances your vehicle.",
+    "process-title": "Our Protection Process",
+    "step-1-number": "1",
+    "step-1-title": "Complete cleaning",
+    "step-1-text": "Washing and clay bar mechanical decontamination",
+    "step-2-number": "2",
+    "step-2-title": "Polishing if necessary",
+    "step-2-text": "Micro-scratches correction before protection",
+    "step-3-number": "3",
+    "step-3-title": "Protection application",
+    "step-3-text": "Application of wax or ceramic in several layers",
+    "step-4-number": "4",
+    "step-4-title": "Drying and control",
+    "step-4-text": "Respected drying time and final verification",
+    "final-cta-title": "Ready to durably protect your bodywork?",
+    "final-cta-text": "Contact us for a personalized quote according to your vehicle and needs",
+    "cta-call-now": "+33 6 03 94 64 24",
+    "cta-quote-form": "Request a quote"
+  },
+
+  "protection-testimonial": {
+    "1-name": "Philippe Rousseau",
+    "2-name": "Émilie Garnier",
+    "3-name": "Nicolas Blanc"
+  },
+
+  "aesthetics": {
+    "hero-title": "Aesthetic Services & Equipment",
+    "hero-subtitle": "Customize and equip your vehicle: wrapping, tinted windows, starlight ceiling, ambient LED, heated steering wheel and dashcam. Professional installation guaranteed.",
+    "cta-call": "Call now",
+    "cta-quote": "Request a free quote",
+    "services-title": "Our Customization Services",
+    "services-subtitle": "Give character to your vehicle",
+    "covering-name": "Wrapping & Tinted Windows",
+    "covering-desc": "Change your vehicle's color with full or partial wrapping. Certified tinted windows for comfort and discretion. Protection and style guaranteed.",
+    "covering-cta": "Learn more",
+    "starlight-name": "Starlight Ceiling & Ambient LED",
+    "starlight-desc": "Installation of fiber optic starlight ceiling (Rolls-Royce effect) and customizable RGB ambient LED. Create a unique atmosphere in your interior.",
+    "starlight-cta": "Learn more",
+    "steering-name": "Heated Steering Wheel & Dashcam",
+    "steering-desc": "Heated steering wheel installation for winter comfort and HD dashcam to secure your journeys. Compatible with all brands, invisible installation.",
+    "steering-cta": "Learn more",
+    "intro-title": "Why customize your vehicle?",
+    "intro-text": "Customization reflects your style and adds comfort. Wrapping protects the original paint and allows selling without penalty. Equipment like starlight ceiling or heated steering wheel increase driving pleasure and vehicle value.",
+    "benefits-title": "The Advantages",
+    "benefit-1-title": "Unique style",
+    "benefit-1-text": "Vehicle in your image, different from all others",
+    "benefit-2-title": "Improved comfort",
+    "benefit-2-text": "Equipment that makes every trip more pleasant",
+    "benefit-3-title": "Enhancement",
+    "benefit-3-text": "Professional installations that increase value",
+    "testimonials-title": "Customer reviews"
+  },
+
+  "aesthetics-testimonial": {
+    "1-name": "Alexandre Moreau",
+    "1": "Matte wrapping on my Golf GTI, incredible result! The rendering is perfect, impeccable finishes. Pauline gave very good advice on color choice.",
+    "2-name": "Laura Fontaine",
+    "2": "800 fiber starlight ceiling installed in my S-Class. The effect is magical, like being in a Rolls! All my passengers are impressed. 100% recommend.",
+    "3-name": "Maxime Vincent",
+    "3": "Certified tinted windows + heated steering wheel installed. Careful work, deadlines respected. Daily comfort is incomparable, especially in winter in the mountains!"
+  },
+
+  "covering": {
+    "hero-title": "Wrapping & Tinted Windows",
+    "hero-subtitle": "Customize your vehicle with full or partial wrapping, matte or glossy. Certified tinted windows for comfort and discretion. Protection and style guaranteed.",
+    "cta-call": "Call now",
+    "cta-quote": "Request a free quote",
+    "services-title": "Our Wrapping Services",
+    "services-subtitle": "From partial wrapping to certified tinted windows",
+    "total-name": "Full Wrapping",
+    "total-price": "On quote",
+    "total-desc": "Complete color change with premium vinyl film. Matte, glossy, satin or chrome according to your wishes. Protects original paint and reversible. Lifespan: 5-7 years.",
+    "total-feature-1": "All colors available",
+    "total-feature-2": "Finishes: matte, glossy, satin, chrome",
+    "total-feature-3": "Original paint protection",
+    "total-feature-4": "Reversible (resale without penalty)",
+    "total-feature-5": "Lifespan: 5-7 years",
+    "total-feature-6": "Manufacturer warranty",
+    "total-feature-7": "Professional installation",
+    "total-feature-8": "Deadline: 3-5 days",
+    "total-cta": "Request a quote",
+    "partial-name": "Partial Wrapping",
+    "partial-price": "On quote",
+    "partial-desc": "Wrapping of specific areas: roof, hood, mirrors, wheels. Ideal to customize without covering everything. Trendy two-tone, de-chroming or sporty accents.",
+    "partial-feature-1": "Panoramic roof (black roof)",
+    "partial-feature-2": "Racing hood (stripes, carbon)",
+    "partial-feature-3": "Mirrors",
+    "partial-feature-4": "Wheels (black, color, carbon)",
+    "partial-feature-5": "Complete de-chroming",
+    "partial-feature-6": "Carbon pack",
+    "partial-feature-7": "Custom personalization",
+    "partial-feature-8": "Deadline: 1-2 days",
+    "partial-cta": "Request a quote",
+    "intro-title": "Why do wrapping?",
+    "intro-text": "Wrapping allows radically changing your vehicle's look without paint. It protects the original bodywork against scratches and UV, and is totally reversible. Upon resale, remove the film and find the original paint: no non-standard color penalty!",
+    "advantages-title": "Wrapping Advantages",
+    "advantage-1-title": "Bodywork protection",
+    "advantage-1-text": "The film protects against scratches, gravel and UV",
+    "advantage-2-title": "Reversible",
+    "advantage-2-text": "Remove the film to find the original paint",
+    "advantage-3-title": "Without paint",
+    "advantage-3-text": "No registration card declaration or resale penalty",
+    "tint-title": "Certified Tinted Windows",
+    "tint-subtitle": "Thermal comfort and guaranteed discretion",
+    "tint-desc": "We apply certified tinted films (minimum 70% transparency at front, 5% possible at rear). Heat reduction, UV protection and discretion. Anti-bubble guarantee.",
+    "tint-benefit-1": "Guaranteed legal certification",
+    "tint-benefit-2": "Heat reduction up to 60%",
+    "tint-benefit-3": "99% UV protection",
+    "tint-benefit-4": "Discretion and privacy",
+    "tint-benefit-5": "Lifetime anti-bubble guarantee",
+    "tint-benefit-6": "Professional installation",
+    "tint-price": "From €200",
+    "tint-cta": "Request a quote",
+    "gallery-title": "Our Wrapping Projects",
+    "gallery-subtitle": "Discover some examples of our work",
+    "testimonials-title": "Customer reviews",
+    "final-cta-title": "Want to transform your vehicle?",
+    "final-cta-text": "Contact us for a personalized quote and advice on finishes",
+    "cta-call-now": "+33 6 03 94 64 24",
+    "cta-quote-form": "Request a quote"
+  },
+
+  "covering-testimonial": {
+    "1-name": "Sébastien Durand",
+    "1": "Matte black full wrapping on my BMW. Exceptional result, perfect finishes even in recesses. The film is premium quality. My car has a second life!",
+    "2-name": "Anaïs Mercier",
+    "2": "Certified tinted windows applied quickly and cleanly. No more stifling heat in summer! No bubbles, impeccable application. Recommend with eyes closed.",
+    "3-name": "Julien Fabre",
+    "3": "Complete de-chroming + black panoramic roof. My SUV's style has completely changed! Careful work, respected deadlines, honest pricing. Excellent provider."
+  },
+
+  "steering": {
+    "hero-title": "Heated Steering Wheel & Dashcam",
+    "hero-subtitle": "Add comfort and safety to your vehicle. Professional installation of heated steering wheel for optimal winter comfort and HD dashcam to protect your journeys. Compatible with all brands, invisible installation and guarantee included.",
+    "cta-call": "Call now",
+    "cta-quote": "Request a free quote",
+    "services-title": "Our Installation Services",
+    "services-subtitle": "Quality equipment and guaranteed professional installation",
+    "service-name": "Heated Steering Wheel",
+    "price-quote": "On quote",
+    "service-desc": "Professional installation of heated steering wheel kit compatible with all brands. Fast temperature rise (30-60 seconds), several adjustable heat levels. Invisible installation with integrated wiring under the steering wheel.",
+    "features-title": "Features:",
+    "feature-1": "Compatible with all brands and models",
+    "feature-2": "Temperature rise: 30-60 seconds",
+    "feature-3": "3 adjustable heat levels",
+    "feature-4": "Invisible installation (hidden wiring)",
+    "feature-5": "Discreet integrated control",
+    "feature-6": "Safety: automatic shutdown",
+    "feature-7": "1 year installation warranty",
+    "feature-8": "Installation duration: 2-3h",
+    "info-note": "Essential for winter comfort in the mountains",
+    "cta-contact": "Request a quote",
+    "intro-title": "Why equip your vehicle?",
+    "intro-text": "Heated steering wheel provides immediate comfort in winter, particularly appreciated in the mountains. Dashcam secures your journeys by continuously recording, providing evidence in case of accident or dispute. Two modern equipment that enhance your vehicle.",
+    "benefit-1-title": "Winter comfort",
+    "benefit-1-text": "Warm steering wheel in seconds. No more frozen hands in winter. Essential in mountains and cold weather.",
+    "benefit-2-title": "Safety and evidence",
+    "benefit-2-text": "Continuous HD/4K recording of your journeys. Video evidence in case of accident, vandalism or insurance dispute.",
+    "benefit-3-title": "Professional installation",
+    "benefit-3-text": "Invisible installation without visible cables. Compatible with all brands. Installation and operation guarantee.",
+    "final-cta-title": "Ready to equip your vehicle?",
+    "final-cta-text": "Contact us for a personalized quote. We advise you on the best equipment adapted to your vehicle and needs. Fast installation and guarantee.",
+    "cta-call-now": "+33 6 03 94 64 24",
+    "cta-quote-form": "Request a quote"
+  },
+
+  "steering-testimonial": {
+    "1-name": "Julien Carrez",
+    "1": "Heated steering wheel installed on my Passat. Ultra-fast heating, invisible installation. Never again frozen hands in the morning in winter! Essential in the mountains. I recommend.",
+    "2-name": "Marie Perrin",
+    "2": "4K front+rear dashcam installed. Exceptional image quality even at night. Clean installation, no visible cables. I feel much safer on the road.",
+    "3-name": "David Moreau",
+    "3": "Double equipment: heated steering wheel + dashcam. Serious and careful work. Both equipment work perfectly. Comfort and safety at the top. Excellent value for money."
+  },
+
+  "dashcam": {
+    "service-name": "Dashcam Installation",
+    "price-quote": "On quote",
+    "service-desc": "Installation of Full HD or 4K onboard camera with night vision, G-sensor and parking mode. Continuous recording on SD card. Invisible wiring powered by battery. Front + rear dashcam option available.",
+    "formulas-title": "Available formulas:",
+    "formula-1": "Front dashcam only (Full HD / 4K)",
+    "formula-2": "Front + rear pack (dual camera)",
+    "formula-3": "Integrated night vision",
+    "formula-4": "G-sensor (impact detection)",
+    "formula-5": "Parking mode (parking surveillance)",
+    "formula-6": "Wide angle 140-170°",
+    "formula-7": "Invisible installation (hidden cables)",
+    "formula-8": "Battery or cigarette lighter power",
+    "info-note": "Secure your journeys and have evidence in case of incident",
+    "cta-contact": "Request a quote"
+  },
+
+  "faq-steering": {
+    "q1": "Is heated steering wheel installation compatible with my airbag?",
+    "a1": "Yes, absolutely. Our heated steering wheel system is specially designed not to interfere with the airbag. Installation is done under the steering wheel cover without touching safety systems. All checks are performed after installation to guarantee proper airbag operation.",
+    "q2": "How long does it take for the steering wheel to heat up?",
+    "a2": "The steering wheel starts heating in 30 to 60 seconds depending on the model. Optimal temperature is reached in 2-3 minutes maximum. You generally have 3 adjustable heat levels to adjust according to your preferences and outside temperature.",
+    "q3": "Does heated steering wheel consume a lot of battery?",
+    "a3": "No, consumption is very low (about 30-50W), equivalent to a rear window defroster. The system automatically stops after 30-45 minutes to avoid overconsumption. No impact on battery or alternator, even with daily use."
+  },
+
+  "faq-dashcam": {
+    "q1": "Does the dashcam record continuously?",
+    "a1": "Yes, the dashcam records in a loop on the SD card. When the card is full, old files are automatically overwritten by new ones. In case of impact (G-sensor), the current recording is automatically protected and will not be overwritten. You always keep the important moments.",
+    "q2": "Does the dashcam work when the vehicle is off?",
+    "a2": "Yes, with parking mode. The dashcam remains on standby and automatically activates in case of motion or impact detection during parking. This mode requires direct battery connection (installation we perform). Ideal for monitoring your vehicle against vandalism or parking accidents.",
+    "q3": "Are recordings accepted by insurance companies?",
+    "a3": "Yes, dashcam videos are increasingly accepted as evidence by insurance companies and courts in France. They allow clearly establishing responsibilities in case of accident. Check with your insurance, some even offer discounts for vehicles equipped with dashcam."
+  },
+
+  "starlight": {
+    "hero-title": "Starlight Ceiling & Ambient LED",
+    "hero-subtitle": "Transform your interior into a unique space with fiber optic starlight ceiling and customizable RGB ambient LED. Custom installation, magical atmosphere and total control of colors and intensities. Create the ambiance of your dreams.",
+    "cta-call": "Call now",
+    "cta-quote": "Request a free quote",
+    "services-title": "Our Lighting Installation Services",
+    "services-subtitle": "Custom solutions for a unique and modern interior",
+    "service-name": "Fiber Optic Starlight Ceiling",
+    "price": "On quote",
+    "service-description": "Installation of custom fiber optic starlight ceiling in the roof liner. Hundreds of light points creating a realistic milky way effect. Several colors and modes available. Custom non-invasive installation.",
+    "features-title": "Features:",
+    "feature-1": "200 to 800 fiber optics depending on project",
+    "feature-2": "Custom complete headliner installation",
+    "feature-3": "Twinkle effect (shooting stars)",
+    "feature-4": "Colors: white, blue, multicolor RGB",
+    "feature-5": "Light intensity adjustment",
+    "feature-6": "Remote control or smartphone",
+    "feature-7": "Non-invasive installation",
+    "feature-8": "Installation duration: 1-2 days",
+    "note": "Replicates the effect of Rolls-Royce and Mercedes Maybach vehicles",
+    "cta-contact": "Request a quote",
+    "intro-title": "Why install starlight ceiling and ambient LED?",
+    "intro-text": "Starlight ceiling creates a unique magical atmosphere, particularly popular in high-end vehicles. RGB ambient LED allow customizing interior lighting according to your desires and mood. Two solutions for a modern, warm and impressive interior.",
+    "benefit-1-title": "Unique atmosphere",
+    "benefit-1-text": "Create a magical and soothing ambiance. Customizable \"milky way\" effect with hundreds of fiber optics.",
+    "benefit-2-title": "Total customization",
+    "benefit-2-text": "RGB LED: millions of colors, adjustable intensity, dynamic modes. Adapt ambiance to your desires via remote control.",
+    "benefit-3-title": "Premium enhancement",
+    "benefit-3-text": "High-end equipment that enhances your vehicle. \"Wow\" effect guaranteed with your passengers.",
+    "final-cta-title": "Ready to create a unique atmosphere?",
+    "final-cta-text": "Contact us for a personalized quote. We study your starlight ceiling and/or ambient LED project to create your dream interior. Guaranteed custom installation.",
+    "cta-call-now": "+33 6 03 94 64 24",
+    "cta-quote-form": "Request a quote"
+  },
+
+  "starlight-testimonial": {
+    "1-name": "Vincent Rousseau",
+    "1": "600 fiber starlight ceiling in my S-Class. Breathtaking result! The effect is identical to a Maybach. My passengers are systematically impressed. Careful and discreet installation.",
+    "2-name": "Isabelle Chevalier",
+    "2": "Complete RGB ambient LED in my Audi. Magical atmosphere in the evening! I love changing colors according to my mood. Invisible installation, no visible cables. 100% recommend.",
+    "3-name": "Thomas Leclerc",
+    "3": "Complete starlight ceiling + ambient LED pack. My interior is completely transformed! The atmosphere is unique, especially at night. Artist's work, perfect finishes. Excellent value for money."
+  },
+
+  "led": {
+    "service-name": "RGB Ambient LED",
+    "price": "On quote",
+    "service-description": "Installation of customizable RGB LED strips in the interior: floor, doors, dashboard, seats. Millions of colors, dynamic modes, music synchronization. Control via remote or smartphone app.",
+    "zones-title": "Available installation zones:",
+    "zone-1": "Front and rear floor",
+    "zone-2": "Doors (4 doors)",
+    "zone-3": "Dashboard",
+    "zone-4": "Door panels and sills",
+    "zone-5": "Seats (contours)",
+    "feature-1": "16 million RGB colors",
+    "feature-2": "Modes: static, gradient, pulsation, music",
+    "feature-3": "Remote control or smartphone app",
+    "note": "Create the perfect ambiance for every moment",
+    "cta-contact": "Request a quote"
+  },
+
+  "faq-starlight": {
+    "q1": "How is the starlight ceiling installed?",
+    "a1": "The roof liner is carefully removed, then we drill tiny holes to insert the fiber optics one by one. The fibers are connected to an LED light generator hidden in the trunk or under a seat. Installation is non-invasive and reversible. The headliner is then replaced without any visible trace.",
+    "q2": "How many fiber optics are needed?",
+    "a2": "It depends on the desired effect: 200-300 fibers for a light and discreet effect, 400-600 fibers for a realistic effect (recommended), 700-1000 fibers for a dense and spectacular \"milky way\" effect. We advise you according to your headliner size and desired rendering.",
+    "q3": "Does starlight ceiling consume a lot of energy?",
+    "a3": "No, consumption is very low (about 5-15W depending on number of fibers), equivalent to an LED interior light. Modern LED system is ultra-economical. No impact on battery, even with prolonged use. You can leave the starlight ceiling on without risk."
+  },
+
+  "faq-led": {
+    "q1": "Can ambient LED be installed on any vehicle?",
+    "a1": "Yes, ambient LED are universal and compatible with all vehicles. Installation adapts to your interior: floor, doors, dashboard, seats. LED strips are thin and flexible, allowing to follow all contours. Wiring is invisible, concealed in existing trims.",
+    "q2": "How do you control ambient LED?",
+    "a2": "Via infrared remote (provided) or smartphone app depending on kit. You can change color, intensity, mode (fixed, gradient, pulsation, music synchronization). Settings are memorized: at startup, LED automatically resume your last settings."
+  },
+
+  "faq-combined": {
+    "q1": "Can starlight ceiling and ambient LED be combined?",
+    "a1": "Absolutely! It's even recommended for a spectacular effect. Starlight ceiling on the roof combined with ambient LED on floor and in doors creates a unique immersive atmosphere. We offer combined packages at advantageous rates. Both systems are independently controllable."
+  },
+
+  "gallery": {
+    "hero-title": "Our Projects Gallery",
+    "hero-subtitle": "Discover our detailing, cleaning, polishing and ceramic protection work on all types of vehicles",
+    "title": "Our Finest Projects",
+    "subtitle": "Each vehicle is treated with the utmost care for an impeccable result",
+    "cta": "View full gallery",
+    "instagram-title": "Follow us on Instagram",
+    "instagram-text": "Discover our projects in real time, our spectacular before/after and behind the scenes of our workshop!",
+    "instagram-cta": "@carstyle74",
+    "cta-title": "Want the same result for your vehicle?",
+    "cta-text": "Contact us now for a personalized free quote",
+    "cta-call": "Call now",
+    "cta-contact": "Request a quote"
+  },
+
+  "gallery-testimonial": {
+    "1-name": "Jean Dupont",
+    "1": "Exceptional work on my Porsche. Polishing and ceramic protection transformed the car. Professional and passionate team. Highly recommend!",
+    "2-name": "Sophie Martin",
+    "2": "The Comfort Plus Delivery service is great! They picked up my car at home and brought it back spotless. The installed starlight ceiling is magnificent. Thanks Pauline and Osama!",
+    "3-name": "Thomas Bernard",
+    "3": "Complete wrapping of my SUV, result beyond my expectations. Perfect finishes, wise advice. Reasonable prices for work quality. I'll be back!"
+  },
+
+  "contact": {
+    "form-title": "Request your free quote",
+    "form-subtitle": "Fill in the form below and we will respond as soon as possible",
+    "info-title": "Contact information",
+    "phone-label": "Phone",
+    "phone-number": "+33 6 03 94 64 24",
+    "email-label": "Email",
+    "email-address": "carstyle740@gmail.com",
+    "address-label": "Address",
+    "address-details": "685 Route de Plan Mouillé<br>74920 Combloux, France",
+    "hours-label": "Hours",
+    "hours-details": "Monday - Friday: 9am - 6pm<br>By appointment only",
+    "map-title": "Car Style 74 Location"
+  },
+
+  "contact-testimonial": {
+    "1-name": "Jean Dupont",
+    "1": "Exceptional work on my Porsche. Polishing and ceramic protection transformed the car. Professional and passionate team. Highly recommend!",
+    "2-name": "Sophie Martin",
+    "2": "The Comfort Plus Delivery service is great! They picked up my car at home and brought it back spotless. The installed starlight ceiling is magnificent. Thanks Pauline and Osama!",
+    "3-name": "Thomas Bernard",
+    "3": "Complete wrapping of my SUV, result beyond my expectations. Perfect finishes, wise advice. Reasonable prices for work quality. I'll be back!"
+  },
+
+  "form": {
+    "name": "Last name, First name *",
+    "name-placeholder": "Your first and last name",
+    "phone": "Phone *",
+    "phone-placeholder": "+33 6 00 00 00 00",
+    "email": "Email *",
+    "email-placeholder": "your.email@example.com",
+    "vehicle": "Vehicle model",
+    "vehicle-placeholder": "Ex: BMW X5",
+    "seats": "Number of seats in vehicle",
+    "seats-placeholder": "Ex: 5",
+    "service": "Desired service *",
+    "service-select": "Select a service",
+    "service-cleaning": "Complete cleaning",
+    "service-decontamination": "Mechanical decontamination",
+    "service-lustrage": "Buffing",
+    "service-polishing": "40% and 90% polishing",
+    "service-ceramic": "Ceramic protection",
+    "service-wheels": "Wheels protection",
+    "service-covering": "Wrapping",
+    "service-tint": "Tinted windows",
+    "service-starlight": "Starlight ceiling / Ambient LED",
+    "service-steering": "Steering wheel installation",
+    "service-other": "Other service",
+    "message": "Your message (optional)",
+    "message-placeholder": "Describe your project or ask us your questions...",
+    "submit": "Send request"
+  },
+
+  "cgu": {
+    "title": "Terms of Use",
+    "subtitle": "Terms of use of the car-style74.com website",
+    "preamble-title": "Preamble",
+    "preamble-text": "These Terms of Use (hereinafter \"TOU\") aim to define the terms and conditions of use of the car-style74.com website (hereinafter the \"Site\"), published by Car Style company. Use of the Site implies full acceptance of these TOU.",
+    "article1-title": "Article 1 - Purpose",
+    "article1-text": "The Site aims to present services offered by Car Style in the field of automotive aesthetics: cleaning, polishing, ceramic protection, wrapping, tinted windows, starlight ceiling and automotive accessories. It also allows users to contact the company and request quotes.",
+    "article2-title": "Article 2 - Site access",
+    "article2-text-1": "The Site is freely accessible to any user with Internet access. All costs incurred by the user to access the service (computer equipment, software, Internet connection, etc.) are their responsibility.",
+    "article2-text-2": "Car Style implements all reasonable means at its disposal to ensure quality access to the Site, but is not obliged to succeed. Car Style cannot be held responsible for any network or server malfunction or any other event beyond reasonable control, which would prevent or degrade access to the Site.",
+    "article3-title": "Article 3 - Use of the site",
+    "article3-text-1": "The user agrees to use the Site in accordance with its purpose and these TOU. They particularly refrain from:",
+    "article3-list-1": "• Using the Site unlawfully or fraudulently",
+    "article3-list-2": "• Attempting to access the Site or its servers in an unauthorized manner",
+    "article3-list-3": "• Transmitting viruses, malware or any malicious code",
+    "article3-list-4": "• Collecting or storing personal data relating to other users",
+    "article3-list-5": "• Reproducing, copying or exploiting Site content without prior written authorization",
+    "article4-title": "Article 4 - Intellectual property",
+    "article4-text-1": "All elements of the Site (structure, texts, images, videos, logos, brands, databases, etc.) are the exclusive property of Car Style or its partners and are protected by French and international intellectual property law.",
+    "article4-text-2": "Any reproduction, representation, modification, publication or adaptation of all or part of the Site's elements, whatever the means or process used, is prohibited without prior written authorization from Car Style. Any unauthorized exploitation of the Site or any of its elements will be considered as constituting counterfeiting and prosecuted in accordance with the provisions of articles L.335-2 and following of the Intellectual Property Code.",
+    "article5-title": "Article 5 - Personal data",
+    "article5-text-1": "Personal data collected via the Site are processed in accordance with our Privacy Policy and the General Data Protection Regulation (GDPR).",
+    "article5-text-2": "Information collected is subject to computer processing exclusively intended to process your contact or quote request. Data recipients are only Car Style teams.",
+    "article5-text-3": "Your data is kept for a period of 2 years from collection.",
+    "article5-text-4": "In accordance with the \"data protection\" law, you have a right of access, rectification, portability and erasure of your data or limitation of processing. You may also, for legitimate reasons, object to the processing of data concerning you. You can exercise these rights by contacting us at: carstyle740@gmail.com",
+    "article6-title": "Article 6 - Cookies",
+    "article6-text-1": "The Site uses cookies, including Google Analytics, to improve user experience and analyze site traffic. These cookies only collect anonymized data.",
+    "article6-text-2": "Users can disable cookies at any time by configuring their browser settings. However, disabling cookies may alter certain Site functionalities.",
+    "article7-title": "Article 7 - Hyperlinks",
+    "article7-text-1": "The Site may contain hyperlinks to other websites (social networks, partners, etc.). Car Style exercises no control over these sites and disclaims all responsibility for their content, availability or privacy policy.",
+    "article7-text-2": "Creating hyperlinks to the Site requires prior written authorization from Car Style.",
+    "article8-title": "Article 8 - Liability",
+    "article8-text-1": "Car Style strives to ensure accuracy and updating of information published on the Site. However, Car Style cannot guarantee the accuracy, precision or completeness of information present on the Site.",
+    "article8-text-2": "Car Style cannot be held responsible for:",
+    "article8-list-1": "• Any direct or indirect damage resulting from use of the Site",
+    "article8-list-2": "• Any interruption or unavailability of the Site",
+    "article8-list-3": "• Any data loss or malicious intrusion",
+    "article8-list-4": "• Any damage resulting from an error or omission in information available on the Site",
+    "article9-title": "Article 9 - Modification of TOU",
+    "article9-text": "Car Style reserves the right to modify these TOU at any time. New TOU will come into force upon their publication on the Site. Users are therefore advised to regularly consult the latest version of TOU available on the Site.",
+    "article10-title": "Article 10 - Applicable law and competent jurisdiction",
+    "article10-text": "These TOU are governed by French law. In case of dispute relating to their interpretation or execution, and failing amicable agreement, French courts will have sole jurisdiction.",
+    "article11-title": "Article 11 - Contact",
+    "article11-text-1": "For any question relating to these TOU, you can contact us:",
+    "article11-email-label": "• By email:",
+    "article11-phone-label": "• By phone:",
+    "article11-address-label": "• By mail:",
+    "article11-address-details": "Car Style, 133 Rue Dominique Cancellieri, 74700 Sallanches",
+    "date-update": "Last update: December 2024",
+    "cta-home": "Back to home"
+  },
+
+  "cgv": {
+    "main-title": "Terms and Conditions of Sale",
+    "main-subtitle": "Conditions applicable to Car Style 74 services",
+    "preamble-title": "Preamble",
+    "preamble-text": "These Terms and Conditions of Sale (hereinafter \"TCS\") govern contractual relationships between Car Style company (hereinafter \"the Provider\") and any natural or legal person wishing to benefit from its services (hereinafter \"the Customer\"). Any service order implies unreserved acceptance of these TCS.",
+    "contact-title": "Contact",
+    "contact-p1": "For any question relating to these TCS:",
+    "contact-email-label": "• Email:",
+    "contact-phone-label": "• Phone:",
+    "contact-address-label": "• Address:",
+    "contact-address-details": "Car Style, 133 Rue Dominique Cancellieri, 74700 Sallanches",
+    "last-update": "Last update: December 2024"
+  },
+
+  "art1": {
+    "title": "Article 1 - Purpose and scope",
+    "p1": "These TCS aim to define the rights and obligations of parties in the context of selling automotive aesthetics services offered by Car Style, including:",
+    "li1": "• Interior and exterior cleaning",
+    "li2": "• Mechanical decontamination",
+    "li3": "• Buffing and polishing",
+    "li4": "• Ceramic protection",
+    "li5": "• Wrapping and de-chroming",
+    "li6": "• Tinted windows",
+    "li7": "• Starlight ceiling and ambient LED installation",
+    "li8": "• Automotive accessories installation"
+  },
+
+  "art2": {
+    "title": "Article 2 - Quote and order",
+    "subtitle-1-label": "2.1 Quote",
+    "p1": "Any quote established by the Provider is free and valid for 30 days from its issue date. The quote details the nature of the service, its estimated duration and its price including tax.",
+    "subtitle-2-label": "2.2 Order",
+    "p2": "The order is only considered final after express acceptance of the quote by the Customer (handwritten, electronic signature or written agreement) and payment of a deposit if required.",
+    "p3": "The Provider reserves the right to refuse any order for a legitimate reason (availability, vehicle condition incompatible with the service, etc.)."
+  },
+
+  "art3": {
+    "title": "Article 3 - Prices",
+    "p1": "Service prices are indicated in euros, all taxes included (ATI). They are firm and final at the time of quote validation, except modification agreed between parties.",
+    "p2": "Prices are subject to revision at any time. However, the applicable price is that in force at the time of order validation.",
+    "p3": "Services are invoiced according to Customer request and may vary according to vehicle type, condition and chosen options."
+  },
+
+  "art4": {
+    "title": "Article 4 - Payment terms",
+    "subtitle-1-label": "4.1 Accepted payment methods",
+    "p1": "The Provider accepts payments by:",
+    "li1": "• Cash",
+    "li2": "• Check",
+    "li3": "• Credit card",
+    "li4": "• Bank transfer",
+    "subtitle-2-label": "4.2 Deposit",
+    "p2": "For certain services (wrapping, starlight ceiling, complex installations), a deposit of 30% to 50% may be requested upon order.",
+    "subtitle-3-label": "4.3 Balance",
+    "p3": "Service balance is payable upon vehicle delivery, except contrary agreement between parties."
+  },
+
+  "art5": {
+    "title": "Article 5 - Execution deadlines",
+    "p1": "Execution deadlines are communicated for information purposes when establishing the quote. The Provider strives to respect these deadlines, but delays may occur due to circumstances beyond its control (unforeseen technical difficulties, weather conditions, etc.).",
+    "p2": "A delay in service execution cannot give rise to order cancellation or payment of damages, except in case of manifestly abusive delay attributable to the Provider."
+  },
+
+  "art6": {
+    "title": "Article 6 - Service execution",
+    "subtitle-1-label": "6.1 Appointment",
+    "p1": "Services are performed by appointment only, in the Provider's workshop located in Combloux or on site if the Customer opts for the \"Comfort Plus Delivery\" service.",
+    "subtitle-2-label": "6.2 Comfort Plus Delivery",
+    "p2": "Home vehicle pick-up and delivery service (Comfort Plus Delivery) is available upon request. This service is paid and its rate varies according to distance from Combloux workshop.",
+    "subtitle-3-label": "6.3 Vehicle condition",
+    "p3": "The Customer agrees to deliver their vehicle in a condition allowing service execution. The Provider reserves the right to refuse or adapt the service if the vehicle condition does not allow its execution under satisfactory conditions."
+  },
+
+  "art7": {
+    "title": "Article 7 - Reception and complaints",
+    "p1": "Upon vehicle delivery, the Customer is invited to verify the conformity of the performed service. Any reservation or complaint must be formulated in writing (email or mail) within 48 hours following delivery.",
+    "p2": "After this deadline, the service will be considered as compliant and accepted by the Customer."
+  },
+
+  "art8": {
+    "title": "Article 8 - Warranties",
+    "p1": "The Provider guarantees that services will be performed according to professional standards and with quality professional products.",
+    "p2": "Specific warranties (ceramic protection duration, wrapping lifespan, etc.) are specified in the quote and depend on Customer compliance with communicated maintenance recommendations.",
+    "p3": "The warranty does not cover damage resulting from abnormal vehicle use, lack of maintenance, unauthorized external intervention or accident."
+  },
+
+  "art9": {
+    "title": "Article 9 - Liability",
+    "p1": "The Provider is insured for its professional activity. Its liability can only be engaged in case of proven fault in service execution.",
+    "p2": "The Provider cannot be held responsible for:",
+    "li1": "• Pre-existing damage not reported by the Customer",
+    "li2": "• Manufacturing defects or normal vehicle wear",
+    "li3": "• Theft or damage to objects left in the vehicle",
+    "li4": "• Damage linked to vehicle maintenance failure after service"
+  },
+
+  "art10": {
+    "title": "Article 10 - Right of withdrawal",
+    "p1": "In accordance with article L221-28 of the Consumer Code, the right of withdrawal does not apply to fully executed services before the end of the withdrawal period and whose execution began with the Customer's express prior agreement."
+  },
+
+  "art11": {
+    "title": "Article 11 - Cancellation and postponement",
+    "subtitle-1-label": "11.1 By the Customer",
+    "p1": "Any cancellation or postponement of an appointment by the Customer must be notified at least 48 hours before the scheduled date. In case of late cancellation or no-show without valid reason, the paid deposit remains acquired by the Provider.",
+    "subtitle-2-label": "11.2 By the Provider",
+    "p2": "In case of impossibility for the Provider to honor the appointment (illness, force majeure), the Customer will be informed as soon as possible and a new appointment will be agreed. If no postponement is possible, any deposit will be fully refunded."
+  },
+
+  "art12": {
+    "title": "Article 12 - Intellectual property",
+    "p1": "The Provider reserves the right to use photographs and videos of vehicles after services for communication purposes (website, social networks, advertising materials), except written opposition from the Customer. No Customer personal data will be disclosed."
+  },
+
+  "art13": {
+    "title": "Article 13 - Personal data",
+    "p1": "Personal data collected in the context of commercial relationship are processed in accordance with GDPR. They are exclusively intended for order management and customer relationship.",
+    "p2": "The Customer has a right of access, rectification, deletion and opposition to their personal data, which they can exercise by contacting: carstyle740@gmail.com"
+  },
+
+  "art14": {
+    "title": "Article 14 - Dispute resolution",
+    "p1": "In case of dispute, the Customer may resort to conventional mediation or any other alternative dispute resolution method.",
+    "p2": "In accordance with article L. 612-1 of the Consumer Code, the Customer may also resort free of charge to the consumer mediator under which the Provider falls.",
+    "p3": "Failing amicable resolution, the dispute will be brought before competent French courts."
+  },
+
+  "art15": {
+    "title": "Article 15 - Modification of TCS",
+    "p1": "The Provider reserves the right to modify these TCS at any time. Applicable TCS are those in force at the time of order."
+  },
+
+  "art16": {
+    "title": "Article 16 - Applicable law",
+    "p1": "These TCS are subject to French law. Any dispute relating to their interpretation or execution falls under the exclusive jurisdiction of French courts."
+  },
+
+  "legal": {
+    "main-title": "Legal Notice",
+    "subtitle": "Legal information relating to the car-style74.com website",
+    "sect1-title": "1. Company identification",
+    "sect1-rs-label": "Company name:",
+    "sect1-rs-value": "Car Style",
+    "sect1-forme-label": "Legal form:",
+    "sect1-forme-value": "SARL (Limited Liability Company)",
+    "sect1-capital-label": "Share capital:",
+    "sect1-capital-value": "€5,000",
+    "sect1-siret-label": "SIRET:",
+    "sect1-rcs-label": "RCS:",
+    "sect1-tva-label": "Intra-community VAT number:",
+    "sect1-ape-label": "APE code:",
+    "sect1-ape-value": "4520A - Maintenance and repair of light motor vehicles",
+    "sect2-title": "2. Registered office",
+    "sect2-addr1": "133 Rue Dominique Cancellieri",
+    "sect2-addr2": "74700 Sallanches, France",
+    "sect3-title": "3. Publication director",
+    "sect3-nom-label": "Name:",
+    "sect3-nom-value": "KHADDAR Osama",
+    "sect3-fonction-label": "Position:",
+    "sect3-fonction-value": "Manager",
+    "sect4-title": "4. Contact",
+    "sect4-tel-label": "Phone:",
+    "sect4-email-label": "Email:",
+    "sect4-site-label": "Website:",
+    "sect5-title": "5. Website host",
+    "sect5-host-label": "Host:",
+    "sect5-host-value": "Hostinger International Ltd.",
+    "sect5-addr-label": "Address:",
+    "sect5-addr-value": "61 Lordou Vironos Street, 6023 Larnaca, Cyprus",
+    "sect5-site-label": "Website:",
+    "sect6-title": "6. Intellectual property",
+    "sect6-p1": "All content present on the car-style74.com website (texts, images, videos, logos, graphics, etc.) are the exclusive property of Car Style or its partners and are protected by French and international copyright law.",
+    "sect6-p2": "Any reproduction, representation, modification, publication or adaptation of all or part of the site's elements, whatever the means or process used, is prohibited without prior written authorization from Car Style.",
+    "sect7-title": "7. Personal data",
+    "sect7-p1": "In accordance with the General Data Protection Regulation (GDPR) and the Data Protection Act, you have a right of access, rectification, deletion and opposition to personal data concerning you.",
+    "sect7-p2": "Information collected via the contact form is used only to process your request and is kept for a period of 2 years.",
+    "sect7-p3": "To exercise your rights, you can contact us at: carstyle740@gmail.com",
+    "sect8-title": "8. Cookies and statistics",
+    "sect8-p1": "The site uses Google Analytics to analyze audience and improve our services. These cookies only collect anonymized data.",
+    "sect8-p2": "You can disable these cookies at any time via your browser settings.",
+    "sect9-title": "9. Limitation of liability",
+    "sect9-p1": "Car Style strives to ensure accuracy and updating of information published on this site. However, Car Style cannot guarantee the accuracy, precision or completeness of information made available on this site.",
+    "sect9-p2": "Consequently, Car Style disclaims all responsibility for any inaccuracy, inaccuracy or omission relating to information available on the site.",
+    "sect10-title": "10. Applicable law",
+    "sect10-p1": "This legal notice is governed by French law. In case of dispute, French courts will have sole jurisdiction.",
+    "last-update": "Last update: December 2024"
+  },
+
+  "404": {
+    "main-title": "Oops! This page has disappeared",
+    "description": "Sorry, the page you are looking for does not exist or has been moved. But don't worry, we can help you find your way!",
+    "cta-home": "Back to home",
+    "cta-contact": "Contact us",
+    "popular-pages-title": "Popular pages",
+    "suggest-cleaning-title": "Cleaning",
+    "suggest-cleaning-text": "Interior & exterior",
+    "suggest-polishing-title": "Polishing",
+    "suggest-polishing-text": "Ceramic protection",
+    "suggest-covering-title": "Wrapping",
+    "suggest-covering-text": "Tinted windows",
+    "suggest-starlight-title": "Starlight ceiling",
+    "suggest-starlight-text": "Ambient LED"
+  },
+
+  "footer": {
+    "about-title": "Car Style 74",
+    "about-text": "High-end car detailing specialists in Combloux. We bring your vehicle back to life with passion and expertise for several years.",
+    "delivery-title": "Comfort Plus Delivery:",
+    "delivery-text": "We pick up and deliver your vehicle directly to your home or workplace.",
+    "services-title": "Our Services",
+    "service-cleaning": "Cleaning & Decontamination",
+    "service-polishing": "Buffing & Polishing",
+    "service-ceramic": "Ceramic protection",
+    "service-covering": "Wrapping & Tinted windows",
+    "service-starlight": "Starlight ceiling & LED",
+    "service-accessories": "Car accessories",
+    "navigation-title": "Navigation",
+    "nav-home": "Home",
+    "nav-gallery": "Gallery",
+    "nav-contact": "Contact",
+    "nav-reviews": "Google reviews",
+    "contact-title": "Contact",
+    "zone-title": "Service area",
+    "zone-cities": "Combloux • Megève • Chamonix • Sallanches<br>Saint-Gervais • Passy • Haute-Savoie",
+    "copyright": "© 2025 Car Style 74 - All rights reserved",
+    "tagline": "Car detailing Combloux, Megève, Chamonix",
+    "legal": "Legal notice",
+    "credits": "Website created and published by Duval DVL"
+  },
+
+  "lightbox": {
+    "close-aria": "Close"
+  },
+
+  "sticky-call": {
+    "aria": "Call Car Style 74"
+  },
+
+  "back-to-home": {
+    "btn": "Back to home"
+  }
 }
