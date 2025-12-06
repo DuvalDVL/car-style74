@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   initReels();
   initFAQ(); 
   initServicesAccordion(); 
+  initCookieBanner();
 });
 
 // ===== FONCTION GLOBALE DE CHANGEMENT DE LANGUE (ACCESSIBLE DEPUIS L'HTML) =====
@@ -649,6 +650,51 @@ function initServicesAccordion() {
       }
     });
   });
+
+  // ===== GESTION BANDEAU RGPD (COOKIES) =====
+function initCookieBanner() {
+  const cookieBanner = document.getElementById('cookie-banner');
+  
+  if (!cookieBanner) {
+    console.log('ℹ️ Pas de bandeau cookies sur cette page');
+    return;
+  }
+  
+  const cookieAccept = document.getElementById('cookie-accept');
+  const cookieDecline = document.getElementById('cookie-decline');
+  
+  // Vérifier si l'utilisateur a déjà fait un choix
+  const cookieConsent = localStorage.getItem('cookieConsent');
+  
+  if (!cookieConsent) {
+    // Afficher le bandeau après 1 seconde
+    setTimeout(() => {
+      cookieBanner.classList.add('show');
+      console.log('🍪 Bandeau cookies affiché');
+    }, 1000);
+  } else {
+    console.log(`ℹ️ Choix cookies déjà enregistré: ${cookieConsent}`);
+  }
+  
+  // Accepter les cookies
+  cookieAccept.addEventListener('click', function() {
+    console.log('✅ Utilisateur a accepté les cookies');
+    localStorage.setItem('cookieConsent', 'accepted');
+    cookieBanner.classList.remove('show');
+    
+    // Charger Google Analytics
+    if (typeof window.loadGoogleAnalytics === 'function') {
+      window.loadGoogleAnalytics();
+    }
+  });
+  
+  // Refuser les cookies
+  cookieDecline.addEventListener('click', function() {
+    console.log('❌ Utilisateur a refusé les cookies');
+    localStorage.setItem('cookieConsent', 'declined');
+    cookieBanner.classList.remove('show');
+  });
+}
  
   // Recalculer les hauteurs au resize (important pour le responsive)
   let resizeTimer;
