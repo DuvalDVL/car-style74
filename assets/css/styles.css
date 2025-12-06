@@ -1957,7 +1957,7 @@ section {
 }
 
 .pricing-price span {
-  font-size: 1.25rem;
+  font-size: 1.0rem;
   color: var(--color-gray-medium);
 }
 
@@ -2312,7 +2312,7 @@ section {
 
   /* Pour les formules de nettoyage spécifiquement */
   .pricing-section .pricing-grid .pricing-card .pricing-price {
-    font-size: 1.75rem !important;
+    font-size: 1.5rem !important;
     margin: 0.75rem 0;
   }
 
