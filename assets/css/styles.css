@@ -2271,130 +2271,53 @@ section {
     padding: 0 1.5rem 1.25rem 1.5rem;
     font-size: 0.95rem;
   }
-   
-/* ===== BANDEAU RGPD (COOKIES) - EN BAS DE PAGE ===== */
-.cookie-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.98), rgba(25, 25, 25, 0.98));
-  backdrop-filter: blur(20px);
-  padding: 1.5rem;
-  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.5);
-  border-top: 2px solid var(--color-blue-primary);
-  z-index: 10000;
-  transform: translateY(100%);
-  transition: transform 0.5s ease;
-}
+/* ===== CORRECTIONS PAGE NETTOYAGE ===== */
 
-.cookie-banner.show {
-  transform: translateY(0);
-}
-
-.cookie-banner-content {
-  max-width: 1280px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.cookie-banner-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.cookie-banner-text p {
-  color: var(--color-gray-light);
-  margin: 0;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.cookie-banner-text strong {
-  color: var(--color-white);
-  font-size: 1.1rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.cookie-link {
-  color: var(--color-blue-primary);
-  text-decoration: underline;
-  margin-left: 0.5rem;
-}
-
-.cookie-link:hover {
-  color: var(--color-blue-light);
-}
-
-.cookie-banner-actions {
-  display: flex;
-  gap: 1rem;
-  flex-shrink: 0;
-}
-
-.cookie-btn {
-  padding: 0.875rem 1.75rem;
-  font-size: 0.95rem;
-  white-space: nowrap;
-  border-radius: var(--radius-md);
-  font-weight: 600;
-  cursor: pointer;
-  transition: all var(--transition-medium);
-  border: 2px solid transparent;
-}
-
-.cookie-btn-accept {
-  background: var(--color-blue-primary);
-  color: var(--color-white);
-  border-color: var(--color-blue-primary);
-}
-
-.cookie-btn-accept:hover {
-  background: var(--color-blue-dark);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(74, 144, 226, 0.4);
-}
-
-.cookie-btn-decline {
-  background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: var(--color-gray-light);
-}
-
-.cookie-btn-decline:hover {
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--color-white);
-  border-color: rgba(255, 255, 255, 0.5);
-  transform: translateY(-2px);
-}
-
+/* 1. CENTRER LES PRIX DANS L'ACCORDÉON MOBILE (Suppléments à la carte) */
 @media (max-width: 768px) {
-  .cookie-banner {
-    padding: 1.25rem;
+  .accordion-service-item {
+    flex-direction: column;
+    align-items: flex-start;
   }
   
-  .cookie-banner-content {
-    flex-direction: column;
+  .accordion-service-header {
+    width: 100%;
+  }
+  
+  .accordion-service-price {
+    width: 100%;
     text-align: center;
-    gap: 1.5rem;
-  }
-  
-  .cookie-banner-text {
+    align-self: center;
+    margin-top: 0.75rem;
+    margin-left: 0 !important;
     min-width: auto;
+    font-size: 1.5rem;
   }
   
-  .cookie-banner-actions {
-    width: 100%;
-    flex-direction: column;
+  .accordion-service-price span {
+    font-size: 0.875rem;
   }
-  
-  .cookie-btn {
-    width: 100%;
+
+  /* 2. RÉDUIRE LA TAILLE DES PRIX DANS LES FORMULES DE NETTOYAGE */
+  .pricing-section .pricing-card .pricing-price {
+    font-size: 1.75rem !important; /* Réduit de 3rem à 1.75rem */
+    font-weight: 700;
+    line-height: 1.2;
   }
-}
+
+  .pricing-section .pricing-card .pricing-price span {
+    font-size: 1rem !important; /* Même taille que le texte après */
+    font-weight: 500;
+  }
+
+  /* Pour les formules de nettoyage spécifiquement */
+  .pricing-section .pricing-grid .pricing-card .pricing-price {
+    font-size: 1.75rem !important;
+    margin: 0.75rem 0;
+  }
+
+  .pricing-section .pricing-grid .pricing-card .pricing-price span {
+    font-size: 1rem !important;
+    color: var(--color-gray-medium);
+  }
 }
