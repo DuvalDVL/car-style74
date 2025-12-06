@@ -1,254 +1,125 @@
-<!-- Bandeau RGPD (Cookies) -->
-<div class="cookie-banner" id="cookie-banner">
-  <div class="cookie-banner-content">
-    <div class="cookie-banner-text">
-      <p>
-        <strong>🍪 Respect de votre vie privée</strong><br>
-        Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic du site via Google Analytics. 
-        En continuant, vous acceptez notre utilisation des cookies.
-        <a href="/car-style74/mentions-legales/" class="cookie-link">En savoir plus</a>
-      </p>
-    </div>
-    <div class="cookie-banner-actions">
-      <button class="btn btn-outline cookie-btn-decline" id="cookie-decline">Refuser</button>
-      <button class="btn btn-primary cookie-btn-accept" id="cookie-accept">Accepter</button>
-    </div>
-  </div>
-</div>
+/* ===== BANDEAU RGPD (COOKIES) - EN BAS DE PAGE ===== */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.98), rgba(25, 25, 25, 0.98));
+  backdrop-filter: blur(20px);
+  padding: 1.5rem;
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid var(--color-blue-primary);
+  z-index: 10000;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
 
-<!-- Bandeau Livraison Confort Plus -->
-<div class="delivery-banner">
-  <div class="container">
-    <span class="delivery-banner-icon">🚗</span>
-    <strong data-translate="delivery-title">Livraison Confort Plus</strong>
-    <span>|</span>
-    <span data-translate="delivery-text">Récupération et livraison de votre véhicule à domicile ou au travail</span>
-  </div>
-</div>
+.cookie-banner.show {
+  transform: translateY(0);
+}
 
-<!-- Top Bar (Contact + Réseaux + Langue) -->
-<div class="top-bar">
-  <div class="container">
-    <div class="top-bar-content">
-      
-      <div class="top-bar-left">
-        <!-- Téléphone -->
-        <a href="tel:+33603946424" class="top-bar-item">
-          <i class="fas fa-phone"></i>
-          <span>+33 6 03 94 64 24</span>
-        </a>
-        
-        <!-- Adresse -->
-        <a href="https://share.google/OK0KN1CwsdazNd3yb" target="_blank" rel="noopener" class="top-bar-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>685 Route de Plan Mouillé, 74920 Combloux</span>
-        </a>
-      </div>
-      
-      <div class="top-bar-right">
-        <!-- Réseaux sociaux -->
-        <div class="social-links">
-          <a href="https://www.instagram.com/car_style74/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100073781564651" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/car-style/posts/?feedView=all" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-        
-        <!-- Sélecteur de langue (Desktop uniquement) -->
-        <div class="language-selector desktop-only">
-          <div class="language-toggle">
-            <i class="fas fa-globe"></i>
-            <span class="current-language">FR</span>
-            <i class="fas fa-chevron-down"></i>
-          </div>
-          <div class="language-dropdown">
-            <div class="language-option active" data-lang="fr">
-              <span class="language-flag">🇫🇷</span>
-              <span>Français</span>
-            </div>
-            <div class="language-option" data-lang="en">
-              <span class="language-flag">🇬🇧</span>
-              <span>English</span>
-            </div>
-            <div class="language-option" data-lang="de">
-              <span class="language-flag">🇩🇪</span>
-              <span>Deutsch</span>
-            </div>
-            <div class="language-option" data-lang="it">
-              <span class="language-flag">🇮🇹</span>
-              <span>Italiano</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
+.cookie-banner-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
 
-<!-- Google tag (gtag.js) - Chargement conditionnel -->
-<script>
-  // Fonction pour charger Google Analytics
-  function loadGoogleAnalytics() {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-SP3WVGWDEQ';
-    document.head.appendChild(script);
-    
-    script.onload = function() {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-SP3WVGWDEQ');
-      console.log('✅ Google Analytics chargé');
-    };
+.cookie-banner-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.cookie-banner-text p {
+  color: var(--color-gray-light);
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.cookie-banner-text strong {
+  color: var(--color-white);
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.cookie-link {
+  color: var(--color-blue-primary);
+  text-decoration: underline;
+  margin-left: 0.5rem;
+}
+
+.cookie-link:hover {
+  color: var(--color-blue-light);
+}
+
+.cookie-banner-actions {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.cookie-btn {
+  padding: 0.875rem 1.75rem;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-medium);
+  border: 2px solid transparent;
+}
+
+.cookie-btn-accept {
+  background: var(--color-blue-primary);
+  color: var(--color-white);
+  border-color: var(--color-blue-primary);
+}
+
+.cookie-btn-accept:hover {
+  background: var(--color-blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(74, 144, 226, 0.4);
+}
+
+.cookie-btn-decline {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-gray-light);
+}
+
+.cookie-btn-decline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .cookie-banner {
+    padding: 1.25rem;
   }
-
-  // Vérifier le consentement au chargement de la page
-  const cookieConsent = localStorage.getItem('cookieConsent');
-  if (cookieConsent === 'accepted') {
-    loadGoogleAnalytics();
+  
+  .cookie-banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
   }
-</script>
-
-<!-- Script de gestion du bandeau RGPD -->
-<script>
-  // Gestion du bandeau cookies
-  document.addEventListener('DOMContentLoaded', function() {
-    const cookieBanner = document.getElementById('cookie-banner');
-    const cookieAccept = document.getElementById('cookie-accept');
-    const cookieDecline = document.getElementById('cookie-decline');
-    
-    // Vérifier si l'utilisateur a déjà fait un choix
-    const cookieConsent = localStorage.getItem('cookieConsent');
-    
-    if (!cookieConsent) {
-      // Afficher le bandeau après un court délai
-      setTimeout(() => {
-        cookieBanner.classList.add('show');
-      }, 1000);
-    }
-    
-    // Accepter les cookies
-    cookieAccept.addEventListener('click', function() {
-      localStorage.setItem('cookieConsent', 'accepted');
-      cookieBanner.classList.remove('show');
-      loadGoogleAnalytics();
-      console.log('✅ Cookies acceptés');
-    });
-    
-    // Refuser les cookies
-    cookieDecline.addEventListener('click', function() {
-      localStorage.setItem('cookieConsent', 'declined');
-      cookieBanner.classList.remove('show');
-      console.log('❌ Cookies refusés');
-    });
-  });
-</script>
-
-<!-- Header Principal avec Navigation -->
-<header class="main-header">
-  <div class="container">
-    <div class="header-content">
-      
-      <!-- Logo -->
-      <a href="/car-style74/" class="logo">
-        <img src="/car-style74/assets/images/logo.png" alt="Car Style 74 - Detailing Auto Combloux">
-      </a>
-      
-      <!-- Navigation -->
-      <nav class="main-nav">
-        <ul>
-          
-          <!-- Accueil -->
-          <li class="nav-item">
-            <a href="/car-style74/" class="nav-link" data-translate="nav-home">Accueil</a>
-          </li>
-          
-         <!-- Nettoyage -->
-          <li class="nav-item">
-            <a href="/car-style74/nettoyage/" class="nav-link" data-translate="nav-cleaning">Nettoyage</a>
-          </li>
-          
-          <!-- Rénovation & Protection -->
-          <li class="nav-item has-dropdown">
-            <a href="/car-style74/renovation-protection/" class="nav-link has-dropdown-link">
-              <span data-translate="nav-renovation">Rénovation & Protection</span>
-            </a>
-            <button class="dropdown-toggle" aria-label="Ouvrir le menu Rénovation">
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-double">
-              <li><a href="/car-style74/renovation-protection/lustrage-polissage/" class="dropdown-item" data-translate="nav-polishing">Lustrage et polissage</a></li>
-              <li><a href="/car-style74/renovation-protection/protection-cire-ceramique/" class="dropdown-item" data-translate="nav-ceramic">Protection cire & céramique</a></li>
-            </ul>
-          </li>
-          
-          <!-- Services Esthétiques -->
-          <li class="nav-item has-dropdown">
-            <a href="/car-style74/esthetiques/" class="nav-link has-dropdown-link">
-              <span data-translate="nav-aesthetic">Services esthétiques</span>
-            </a>
-            <button class="dropdown-toggle" aria-label="Ouvrir le menu Services esthétiques">
-              <i class="fas fa-chevron-down"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-triple">
-              <li><a href="/car-style74/esthetiques/covering-vitres/" class="dropdown-item" data-translate="nav-covering">Covering & vitres teintées</a></li>
-              <li><a href="/car-style74/esthetiques/accessoires/" class="dropdown-item" data-translate="nav-accessories">Installation d'accessoires</a></li>
-              <li><a href="/car-style74/esthetiques/ciel-etoile-led/" class="dropdown-item" data-translate="nav-starlight">Ciel étoilé / LED d'ambiance</a></li>
-            </ul>
-          </li>
-          
-          <!-- Galerie -->
-          <li class="nav-item">
-            <a href="/car-style74/galerie/" class="nav-link" data-translate="nav-gallery">Galerie</a>
-          </li>
-          
-          <!-- Contact CTA -->
-          <li class="nav-item nav-cta">
-            <a href="/car-style74/contact/" class="btn btn-primary" data-translate="nav-quote">Demander un devis</a>
-          </li>
-          
-        </ul>
-      </nav>
-      
-      <!-- Bouton Menu Mobile -->
-      <button class="mobile-menu-toggle" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      
-    </div>
-  </div>
-</header>
-
-<!-- Bouton Sticky Langue (Mobile uniquement) -->
-<div class="sticky-language-button">
-  <div class="sticky-lang-toggle">
-    <span class="current-flag">🇫🇷</span>
-  </div>
-  <div class="sticky-lang-menu">
-    <div class="sticky-lang-option active" data-lang="fr">
-      <span class="language-flag">🇫🇷</span>
-      <span>FR</span>
-    </div>
-    <div class="sticky-lang-option" data-lang="en">
-      <span class="language-flag">🇬🇧</span>
-      <span>EN</span>
-    </div>
-    <div class="sticky-lang-option" data-lang="de">
-      <span class="language-flag">🇩🇪</span>
-      <span>DE</span>
-    </div>
-    <div class="sticky-lang-option" data-lang="it">
-      <span class="language-flag">🇮🇹</span>
-      <span>IT</span>
-    </div>
-  </div>
-</div>
+  
+  .cookie-banner-text {
+    min-width: auto;
+  }
+  
+  .cookie-banner-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .cookie-btn {
+    width: 100%;
+  }
+}
