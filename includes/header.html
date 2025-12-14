@@ -73,31 +73,6 @@
   </div>
 </div>
 
-<!-- Google tag (gtag.js) - Chargement conditionnel -->
-<script>
-  // Fonction pour charger Google Analytics
-  window.loadGoogleAnalytics = function() {
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-SP3WVGWDEQ';
-    document.head.appendChild(script);
-    
-    script.onload = function() {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-SP3WVGWDEQ');
-      console.log('✅ Google Analytics chargé');
-    };
-  }
-
-  // Vérifier le consentement au chargement de la page
-  const cookieConsent = localStorage.getItem('cookieConsent');
-  if (cookieConsent === 'accepted') {
-    loadGoogleAnalytics();
-  }
-</script>
-
 <!-- Header Principal avec Navigation -->
 <header class="main-header">
   <div class="container">
